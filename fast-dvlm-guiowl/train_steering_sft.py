@@ -36,6 +36,7 @@ def parse_args():
     p.add_argument("--optim", default="adamw_fused")
     p.add_argument("--grad-accum", type=int, default=8)
     p.add_argument("--dtype", choices=["bf16", "fp16"], default="bf16")
+    p.add_argument("--steering-dtype", choices=["match", "bf16", "fp16", "fp32"], default="bf16")
     p.add_argument("--attn", choices=["sdpa", "flex"], default="sdpa")
     p.add_argument("--max-pixels", type=int, default=100352)
     p.add_argument("--ctx-cap", type=int, default=8192)
@@ -79,10 +80,41 @@ def base_grad_nonzero_count(model):
             n += 1
     return n
 
+def cache_vision_features_once(model, sample, dev, dtype, use_deepstack=True):
+    if "vemb" in sample and (not use_deepstack or "deepstack_features" in sample):
+        return
+    with torch.no_grad():
+        igt = sample["image_grid_thw"].to(dev)
+        vo = model.model.get_image_features(sample["pixel_values"].to(dev), igt)
+        sample["vemb"] = torch.cat(list(vo.pooler_output), 0).to(dev, dtype).detach()
+        if use_deepstack and getattr(vo, "deepstack_features", None) is not None:
+            sample["deepstack_features"] = [d.to(dev, dtype).detach() for d in vo.deepstack_features]
+
+
 
 def save_train_log(path, row):
     with open(path, "a") as f:
         f.write(json.dumps(row, sort_keys=True, default=str) + "\n")
+
+
+def load_adapter_if_requested(wrapper, path):
+    if not path:
+        return None
+    from pathlib import Path
+    p = Path(path)
+    if p.is_dir():
+        st = p / "steering_model.safetensors"
+        pt = p / "pytorch_model.bin"
+        p = st if st.exists() else pt
+    if not p.exists():
+        raise FileNotFoundError(f"resume steering adapter not found: {p}")
+    if p.suffix == ".safetensors":
+        from safetensors.torch import load_file
+        state = load_file(str(p), device="cpu")
+    else:
+        state = torch.load(p, map_location="cpu")
+    missing, unexpected = wrapper.load_state_dict(state, strict=False)
+    return {"path": str(p), "missing": list(missing), "unexpected": list(unexpected)}
 
 
 def main():
@@ -90,7 +122,8 @@ def main():
     if a.mode != "teacher_forced_trace_sft":
         raise ValueError("this first implementation supports teacher_forced_trace_sft")
     out = Path(a.out); out.mkdir(parents=True, exist_ok=True)
-    (out / "train_log.jsonl").write_text("")
+    if not a.resume_steering or not (out / "train_log.jsonl").exists():
+        (out / "train_log.jsonl").write_text("")
     torch.set_float32_matmul_precision("high")
     torch.backends.cuda.matmul.allow_tf32 = True
     torch.backends.cudnn.allow_tf32 = True
@@ -117,14 +150,25 @@ def main():
         train_steps_per_block=a.steps_per_block_train, action_token_slice=a.action_token_slice,
         base_model=a.model,
     )
-    wrapper = SteeringWrapper(model, cfg).to(dev)
+    if a.steering_dtype == "match":
+        steering_dtype = model_dtype
+    elif a.steering_dtype == "bf16":
+        steering_dtype = torch.bfloat16
+    elif a.steering_dtype == "fp16":
+        steering_dtype = torch.float16
+    else:
+        steering_dtype = torch.float32
+    wrapper = SteeringWrapper(model, cfg).to(device=dev, dtype=steering_dtype)
+    resume_info = load_adapter_if_requested(wrapper, a.resume_steering)
     wrapper.freeze_base(); wrapper.train()
     trainable = [p for p in wrapper.parameters() if p.requires_grad]
     trainable_names = [n for n, p in wrapper.named_parameters() if p.requires_grad]
     if a.train_steering_only and any(p.requires_grad for p in model.parameters()):
         raise RuntimeError("base parameter is trainable")
     opt = torch.optim.AdamW(trainable, lr=a.lr, betas=(0.9, 0.95), weight_decay=a.weight_decay, fused=(a.optim == "adamw_fused" and dev == "cuda"))
-    print(f"[steering] params={sum(p.numel() for p in trainable):,} tap={wrapper.tap_layer_ids} inject={wrapper.inject_layer_ids} trace={cfg.trace_source} injection={wrapper.injector.injection_point}", flush=True)
+    print(f"[steering] params={sum(p.numel() for p in trainable):,} dtype={steering_dtype} tap={wrapper.tap_layer_ids} inject={wrapper.inject_layer_ids} trace={cfg.trace_source} injection={wrapper.injector.injection_point}", flush=True)
+    if resume_info:
+        print(f"[resume] {resume_info}", flush=True)
     print(f"[base] frozen={all(not p.requires_grad for p in model.parameters())} base_params={sum(p.numel() for p in model.parameters()):,}", flush=True)
     cfg.save_json(out / "steering_config.json")
     (out / "trainable_names.json").write_text(json.dumps(trainable_names, indent=2))
@@ -188,6 +232,7 @@ def main():
         seen += 1
         seed = 1000003 + seen
         try:
+            cache_vision_features_once(model, s, dev, model_dtype, use_deepstack=a.deepstack)
             wrapper.clear_residuals()
             torch.manual_seed(seed)
             wrapper.begin_trace_capture()
@@ -218,7 +263,7 @@ def main():
                 "ce_noisy": info.get("ce_noisy"), "ce_clean": info.get("ce_clean"),
                 "action_loss": None, "coord_loss": None, "res_loss": float(res_loss.detach().cpu()),
                 "residual_norm_mean": wrapper.last_residual_norm_mean, "residual_norm_max": wrapper.last_residual_norm_max,
-                "gate_mean": wrapper.last_gate, "trace_frames_mean": len(wrapper.trace_bank), "trace_source": cfg.trace_source,
+                "gate_mean": wrapper.last_gate, "trace_frames_mean": len(wrapper.trace_bank), "trace_source": cfg.trace_source, "steering_dtype": str(steering_dtype),
                 "injection_point": wrapper.injector.injection_point, "grad_norm_steering": grad_norm,
                 "base_grad_nonzero_count": bg, "lr": opt.param_groups[0]["lr"],
                 "tokens_per_sec": tok / elapsed, "examples_per_sec": seen / elapsed,
@@ -239,7 +284,7 @@ def main():
             raise RuntimeError(f"base_grad_nonzero_count={bg}")
         opt.step(); opt.zero_grad(set_to_none=True); gstep += 1
         elapsed = max(time.time() - t0, 1e-6)
-        row = {"step": gstep, "seen_samples": seen, "loss": last_loss, "grad_norm_steering": grad_norm, "base_grad_nonzero_count": bg, "tokens_per_sec": tok / elapsed, "examples_per_sec": seen / elapsed, "trace_source": cfg.trace_source, "injection_point": wrapper.injector.injection_point}
+        row = {"step": gstep, "seen_samples": seen, "loss": last_loss, "grad_norm_steering": grad_norm, "base_grad_nonzero_count": bg, "tokens_per_sec": tok / elapsed, "examples_per_sec": seen / elapsed, "trace_source": cfg.trace_source, "steering_dtype": str(steering_dtype), "injection_point": wrapper.injector.injection_point}
         save_train_log(out / "train_log.jsonl", row)
     wrapper.save_adapter(out, vars(a))
     print(f"[done] steps={gstep} samples={seen} out={out}", flush=True)

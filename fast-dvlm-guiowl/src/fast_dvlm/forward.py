@@ -41,8 +41,10 @@ def dual_stream_loss(model, sample, bd, *, attn="sdpa", min_noise=MIN_NOISE,
     # --- vision features (pooler for the embedding merge + deepstack for layer injection) ---
     clean = embed(ids).unsqueeze(0).clone()
     deepstack = None
-    if "vemb" in sample and not use_deepstack:
+    if "vemb" in sample and (not use_deepstack or "deepstack_features" in sample):
         img_emb = sample["vemb"].to(dev, dt)
+        if use_deepstack and "deepstack_features" in sample:
+            deepstack = [d.to(dev, dt) for d in sample["deepstack_features"]]
     else:
         vo = model.model.get_image_features(sample["pixel_values"].to(dev), igt)
         img_emb = torch.cat(list(vo.pooler_output), 0).to(dt)
