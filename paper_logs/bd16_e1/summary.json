@@ -1,0 +1,181 @@
+{
+  "bd": 16,
+  "checkpoint": "/workspace/dvlm_ckpts/ckpt_bard_bd16",
+  "checkpoint_exists": true,
+  "checkpoint_model_safetensors_bytes": 4255140312,
+  "config": {
+    "ctx_cap": 8192,
+    "dtype": "bf16",
+    "grad_accum": 8,
+    "lr": "3e-5",
+    "max_ep_steps": 24,
+    "max_pixels": 100352,
+    "prefetch": 32,
+    "producers": 8,
+    "save_every": 100
+  },
+  "decode_demo": {
+    "avg": {
+      "ar_ms": 911.0,
+      "ar_nfe": 42.6,
+      "dvlm_ms": 398.0,
+      "dvlm_nfe": 19.0,
+      "tok_nfe": 1.78,
+      "wall": 2.29
+    },
+    "log": "/workspace/paper_logs/bd16_e1/decode_demo_n32.log"
+  },
+  "epoch": 1,
+  "grounding_compare": {
+    "log": "/workspace/paper_logs/bd16_e1/compare_grounding_n32.log",
+    "metrics": {
+      "bd16_e1_ar": {
+        "action": {
+          "den": 8,
+          "num": 4,
+          "rate": 0.5
+        },
+        "avg_ms": 836.0,
+        "avg_nfe": 40.6,
+        "coord_l2": "mean=121.0 median=112.3",
+        "ground_at_100": {
+          "den": 8,
+          "num": 3,
+          "rate": 0.375
+        },
+        "json": {
+          "den": 8,
+          "num": 8,
+          "rate": 1.0
+        },
+        "mobile_use": {
+          "den": 8,
+          "num": 8,
+          "rate": 1.0
+        },
+        "repaired": {
+          "den": 8,
+          "num": 0,
+          "rate": 0.0
+        },
+        "strict": {
+          "den": 8,
+          "num": 8,
+          "rate": 1.0
+        },
+        "tool_call": {
+          "den": 8,
+          "num": 8,
+          "rate": 1.0
+        }
+      },
+      "bd16_e1_dvlm_repair": {
+        "action": {
+          "den": 8,
+          "num": 6,
+          "rate": 0.75
+        },
+        "avg_ms": 325.0,
+        "avg_nfe": 17.0,
+        "coord_l2": "mean=313.0 median=385.3",
+        "ground_at_100": {
+          "den": 8,
+          "num": 3,
+          "rate": 0.375
+        },
+        "json": {
+          "den": 8,
+          "num": 8,
+          "rate": 1.0
+        },
+        "mobile_use": {
+          "den": 8,
+          "num": 8,
+          "rate": 1.0
+        },
+        "repaired": {
+          "den": 8,
+          "num": 0,
+          "rate": 0.0
+        },
+        "strict": {
+          "den": 8,
+          "num": 8,
+          "rate": 1.0
+        },
+        "tool_call": {
+          "den": 8,
+          "num": 8,
+          "rate": 1.0
+        }
+      },
+      "bd16_e1_dvlm_strict": {
+        "action": {
+          "den": 8,
+          "num": 6,
+          "rate": 0.75
+        },
+        "avg_ms": 332.0,
+        "avg_nfe": 17.0,
+        "coord_l2": "mean=313.0 median=385.3",
+        "ground_at_100": {
+          "den": 8,
+          "num": 3,
+          "rate": 0.375
+        },
+        "json": {
+          "den": 8,
+          "num": 8,
+          "rate": 1.0
+        },
+        "mobile_use": {
+          "den": 8,
+          "num": 8,
+          "rate": 1.0
+        },
+        "repaired": {
+          "den": 8,
+          "num": 0,
+          "rate": 0.0
+        },
+        "strict": {
+          "den": 8,
+          "num": 8,
+          "rate": 1.0
+        },
+        "tool_call": {
+          "den": 8,
+          "num": 8,
+          "rate": 1.0
+        }
+      }
+    }
+  },
+  "logs": {
+    "compare": "/workspace/paper_logs/bd16_e1/compare_grounding_n32.log",
+    "decode": "/workspace/paper_logs/bd16_e1/decode_demo_n32.log",
+    "train": "/workspace/bd16_e1.log"
+  },
+  "source_checkpoint": "/workspace/dvlm_ckpts/ckpt_bard_bd8",
+  "stage": "bd16_e1",
+  "timestamp_utc": "2026-06-03T18:05:36.178205+00:00",
+  "train": {
+    "final": {
+      "gstep": 633,
+      "loss_end": 0.35,
+      "loss_start": 0.972
+    },
+    "last_logged_step": {
+      "bd": 16,
+      "ce_clean": 0.175,
+      "it_per_sec": 0.37,
+      "loss": 0.311,
+      "lr": "3.0e-05",
+      "shard": 252,
+      "step": 620,
+      "tok_per_sec": 6242.0,
+      "vram_gb": 57.6
+    },
+    "logged_step_count": 31
+  }
+}
