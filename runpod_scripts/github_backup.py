@@ -117,6 +117,8 @@ def prepare_snapshot() -> str:
         "bard_stage_run_safe.sh",
         "bard_stage_extend_bd32.sh",
         "run_androidworld_bd8_compare.sh",
+        "run_androidworld_dual_parallel.py",
+        "parse_androidworld_results.py",
         "hf_upload_bard_stage.py",
         "write_paper_stage_summary.py",
         "github_backup.py",
