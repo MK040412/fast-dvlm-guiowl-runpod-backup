@@ -1,0 +1,14 @@
+[androidworld-bd8] start 2026-06-03T17:16:02Z
+[androidworld-bd8] tasks=ContactsAddContact,ClockStopWatchRunning n=1 base=/workspace/models/GUI-Owl-1.5-2B-Instruct bd8=/workspace/dvlm_ckpts/ckpt_bard_bd8
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/md127       80G   63G   18G  78% /workspace
+overlay          20G  1.7G   19G   9% /
+overlay          20G  1.7G   19G   9% /
+/workspace/android-sdk/platform-tools/adb
+/workspace/android-sdk/emulator/emulator
+/workspace/android-sdk/cmdline-tools/latest/bin/sdkmanager
+ls: cannot access '/dev/kvm': No such file or directory
+List of devices attached
+emulator-5554	device
+
+[androidworld-bd8] server name=base_ar decode=ar repair=0 model=/workspace/models/GUI-Owl-1.5-2B-Instruct

@@ -1,3 +1,6 @@
 nohup: ignoring input
 [extend] wait_pid_file=/workspace/bard_stage_retrain.pid ckpt_root=/workspace/dvlm_ckpts paper_n=32
 [extend] waiting for existing run pid=10684
+[extend] existing run finished pid=10684
+[extend] previous run log=/workspace/bard_stage_retrain_20260603_154816.log
+[extend] AndroidWorld bd8 compare -> /workspace/androidworld_bd8_compare_20260603_171602.log
