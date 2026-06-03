@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-03T18:56:31.213070+00:00",
-  "status": "blocked",
+  "timestamp": "2026-06-03T19:27:49.536009+00:00",
+  "status": "partial",
   "benchmark": "general_core_44",
   "description": "Custom AiTW-general-style subset selected from AndroidWorld task metadata.",
   "log_root": "/workspace/paper_logs/androidworld_general_core_44_parallel",
@@ -55,41 +55,110 @@
   "policies": "base_ar,bd32_dvlm_strict,bd32_dvlm_repair",
   "workers_requested": 8,
   "n_task_combinations": 1,
-  "adb_devices": [],
-  "adb_devices_raw": "List of devices attached\n\n",
+  "adb_devices": [
+    "emulator-5554",
+    "emulator-5556",
+    "emulator-5558",
+    "emulator-5560",
+    "emulator-5562",
+    "emulator-5564",
+    "emulator-5566",
+    "emulator-5568"
+  ],
+  "adb_devices_raw": "List of devices attached\nemulator-5554\tdevice\nemulator-5556\tdevice\nemulator-5558\tdevice\nemulator-5560\tdevice\nemulator-5562\tdevice\nemulator-5564\tdevice\nemulator-5566\tdevice\nemulator-5568\tdevice\n\n",
   "kvm_exists": false,
   "record_mp4": true,
   "video_count": 0,
   "videos": [],
   "resources": {
     "nproc": "224",
-    "free_h": "               total        used        free      shared  buff/cache   available\nMem:           2.0Ti        32Gi       1.1Ti       575Mi       863Gi       1.9Ti\nSwap:             0B          0B          0B\n",
-    "df_h": "Filesystem      Size  Used Avail Use% Mounted on\n/dev/md127       80G   55G   26G  68% /workspace\noverlay          20G  1.6G   19G   8% /\noverlay          20G  1.6G   19G   8% /\n"
+    "free_h": "               total        used        free      shared  buff/cache   available\nMem:           2.0Ti        62Gi       1.1Ti       5.1Gi       861Gi       1.9Ti\nSwap:             0B          0B          0B\n",
+    "df_h": "Filesystem      Size  Used Avail Use% Mounted on\n/dev/md127       80G   55G   26G  68% /workspace\noverlay          20G  1.8G   19G   9% /\noverlay          20G  1.8G   19G   9% /\n"
   },
-  "command": "/workspace/run_androidworld_dual_parallel.py --benchmark general_core_44 --workers 8",
-  "blocker": "No ADB device is attached and /dev/kvm is absent. Attach AndroidWorld-compatible emulator(s) with gRPC, or use a KVM-enabled pod. Software emulator is intentionally disabled unless --allow-software-emulator is passed for slow smoke tests.",
-  "policy_specs": [
+  "command": "/workspace/run_androidworld_dual_parallel.py --benchmark both --workers 8 --allow-software-emulator --perform-emulator-setup --boot-timeout-s 900 --server-startup-timeout-s 1200",
+  "device_map": [
     {
-      "name": "base_ar",
-      "model": "/workspace/models/GUI-Owl-1.5-2B-Instruct",
-      "decode": "ar",
-      "repair": 0,
-      "port": 8300
+      "serial": "emulator-5554",
+      "console_port": 5554,
+      "grpc_port": 8554
     },
     {
-      "name": "bd32_dvlm_strict",
-      "model": "/workspace/dvlm_ckpts/ckpt_bard_bd32_e1",
-      "decode": "dvlm",
-      "repair": 0,
-      "port": 8400
+      "serial": "emulator-5556",
+      "console_port": 5556,
+      "grpc_port": 8555
     },
     {
-      "name": "bd32_dvlm_repair",
-      "model": "/workspace/dvlm_ckpts/ckpt_bard_bd32_e1",
-      "decode": "dvlm",
-      "repair": 1,
-      "port": 8500
+      "serial": "emulator-5558",
+      "console_port": 5558,
+      "grpc_port": 8556
+    },
+    {
+      "serial": "emulator-5560",
+      "console_port": 5560,
+      "grpc_port": 8557
+    },
+    {
+      "serial": "emulator-5562",
+      "console_port": 5562,
+      "grpc_port": 8558
+    },
+    {
+      "serial": "emulator-5564",
+      "console_port": 5564,
+      "grpc_port": 8559
+    },
+    {
+      "serial": "emulator-5566",
+      "console_port": 5566,
+      "grpc_port": 8560
+    },
+    {
+      "serial": "emulator-5568",
+      "console_port": 5568,
+      "grpc_port": 8561
     }
   ],
+  "results": {
+    "base_ar": {
+      "status": "failed",
+      "policy": {
+        "name": "base_ar",
+        "model": "/workspace/models/GUI-Owl-1.5-2B-Instruct",
+        "decode": "ar",
+        "repair": 0,
+        "port": 8300
+      },
+      "seconds": 0.00045228004455566406,
+      "error": "NameError: name 'args' is not defined",
+      "server_tail": ""
+    },
+    "bd32_dvlm_strict": {
+      "status": "failed",
+      "policy": {
+        "name": "bd32_dvlm_strict",
+        "model": "/workspace/dvlm_ckpts/ckpt_bard_bd32_e1",
+        "decode": "dvlm",
+        "repair": 0,
+        "port": 8400
+      },
+      "seconds": 0.0003070831298828125,
+      "error": "NameError: name 'args' is not defined",
+      "server_tail": ""
+    },
+    "bd32_dvlm_repair": {
+      "status": "failed",
+      "policy": {
+        "name": "bd32_dvlm_repair",
+        "model": "/workspace/dvlm_ckpts/ckpt_bard_bd32_e1",
+        "decode": "dvlm",
+        "repair": 1,
+        "port": 8500
+      },
+      "seconds": 0.00031876564025878906,
+      "error": "NameError: name 'args' is not defined",
+      "server_tail": ""
+    }
+  },
+  "note": "Task success is AndroidWorld is_successful. Structural validity/repair metrics come from GUI-Owl step metadata. Videos are adb screenrecord mp4 chunks.",
   "hf_upload": "[hf-logs] uploaded stage=androidworld_general_core_44_parallel -> https://huggingface.co/KMK040412/fast-dvlm-guiowl-bard-bd32/tree/main/paper_logs/androidworld_general_core_44_parallel"
 }

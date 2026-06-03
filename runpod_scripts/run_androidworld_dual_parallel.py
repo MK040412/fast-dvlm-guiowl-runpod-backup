@@ -217,7 +217,7 @@ def start_server(policy: Policy, log_root: Path, timeout_s: int) -> subprocess.P
         'GUIOWL_MODEL': policy.model,
         'GUIOWL_DECODE': policy.decode,
         'GUIOWL_REPAIR': str(policy.repair),
-        'PERFORM_EMULATOR_SETUP': 'true' if args.perform_emulator_setup else 'false',
+        'PERFORM_EMULATOR_SETUP': 'true' if perform_setup else 'false',
         'GUIOWL_SERVER_PORT': str(policy.port),
     })
     proc = subprocess.Popen(['bash', str(START_SERVER_SH)], stdout=log_handle, stderr=subprocess.STDOUT, env=env)
@@ -381,7 +381,7 @@ def wait_boot(serial: str, timeout_s: int) -> bool:
     return False
 
 
-def worker_cmd_env(policy: Policy, shard: list[str], worker_id: int, dev: dict[str, Any], policy_root: Path, n_combo: int) -> dict[str, str]:
+def worker_cmd_env(policy: Policy, shard: list[str], worker_id: int, dev: dict[str, Any], policy_root: Path, n_combo: int, perform_setup: bool) -> dict[str, str]:
     worker_root = policy_root / f'worker_{worker_id:02d}'
     worker_root.mkdir(parents=True, exist_ok=True)
     (worker_root / 'tasks.txt').write_text('\n'.join(shard) + '\n')
@@ -394,7 +394,7 @@ def worker_cmd_env(policy: Policy, shard: list[str], worker_id: int, dev: dict[s
         'SERVER_URL': f'http://127.0.0.1:{policy.port}',
         'OUT': str(worker_root / 'runs'),
         'GUIOWL_REPAIR': str(policy.repair),
-        'PERFORM_EMULATOR_SETUP': 'true' if args.perform_emulator_setup else 'false',
+        'PERFORM_EMULATOR_SETUP': 'true' if perform_setup else 'false',
     })
     return env
 
@@ -410,7 +410,7 @@ def run_policy(policy: Policy, shards: list[list[str]], devices: list[dict[str, 
         for i, shard in enumerate(shards):
             dev = devices[i % len(devices)]
             worker_root = policy_root / f'worker_{i:02d}'
-            env = worker_cmd_env(policy, shard, i, dev, policy_root, args.n_task_combinations)
+            env = worker_cmd_env(policy, shard, i, dev, policy_root, args.n_task_combinations, args.perform_emulator_setup)
             log_handle = open(worker_root / 'androidworld.log', 'ab', buffering=0)
             rec = None
             if args.record_mp4:
