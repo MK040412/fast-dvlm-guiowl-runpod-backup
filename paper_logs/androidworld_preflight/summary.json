@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-06-03T16:32:33.069751Z",
+  "android_home": "/workspace/android-sdk",
+  "python": "/workspace/androidworld_eval/venv/bin/python",
+  "adb": "/workspace/android-sdk/platform-tools/adb",
+  "emulator": "/workspace/android-sdk/emulator/emulator",
+  "sdkmanager": "/workspace/android-sdk/cmdline-tools/latest/bin/sdkmanager",
+  "kvm_exists": false,
+  "avds": [
+    "Pixel_6_API_33"
+  ],
+  "adb_devices": "List of devices attached\nemulator-5554\tdevice",
+  "device_count": 1,
+  "sys_boot_completed": "",
+  "bootanim": "stopped",
+  "wm_size": "Physical size: 1080x2400",
+  "home_input_rc": 0,
+  "software_ready": true,
+  "registry_task_count": 116,
+  "smoke_tasks_present": [
+    "ContactsAddContact",
+    "ClockStopWatchRunning"
+  ],
+  "runtime_ready": true,
+  "runtime_ready_basis": "adb device + wm size + HOME input + bootanim stopped/sys.boot_completed",
+  "bd8_compare_wrapper": "/workspace/run_androidworld_bd8_compare.sh",
+  "logs": [
+    "/workspace/androidworld_preflight.log",
+    "/workspace/androidworld_emulator_prestart.log"
+  ],
+  "note": "No /dev/kvm on this pod; emulator is running without KVM and may be slow. External ADB remains faster/preferred."
+}

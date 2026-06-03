@@ -22,10 +22,20 @@ command -v sdkmanager || true
 ls -l /dev/kvm || true
 adb devices || true
 
-if [ ! -f "$BD8_MODEL/model.safetensors" ]; then
-  echo "[androidworld-bd8] missing bd8 checkpoint: $BD8_MODEL/model.safetensors"
-  exit 4
-fi
+BD8_WAIT_SECONDS=${BD8_WAIT_SECONDS:-0}
+BD8_POLL_SECONDS=${BD8_POLL_SECONDS:-30}
+BD8_WAIT_START=$(date +%s)
+while [ ! -f "$BD8_MODEL/model.safetensors" ]; do
+  if [ "$BD8_WAIT_SECONDS" -gt 0 ]; then
+    now=$(date +%s)
+    if [ $((now - BD8_WAIT_START)) -ge "$BD8_WAIT_SECONDS" ]; then
+      echo "[androidworld-bd8] BLOCKED: bd8 checkpoint not found after ${BD8_WAIT_SECONDS}s: $BD8_MODEL/model.safetensors"
+      exit 4
+    fi
+  fi
+  echo "[androidworld-bd8] waiting for bd8 checkpoint: $BD8_MODEL/model.safetensors"
+  sleep "$BD8_POLL_SECONDS"
+done
 
 if ! adb devices | awk 'NR>1 && $2=="device" {found=1} END {exit found?0:1}'; then
   echo "[androidworld-bd8] no adb device; trying non-KVM emulator for smoke availability"
@@ -88,7 +98,8 @@ run_one bd8_dvlm_repair "$BD8_MODEL" dvlm 1 8124
 
 echo "[androidworld-bd8] done $(date -u +%Y-%m-%dT%H:%M:%SZ)"
 
-if [ -f /workspace/hf_upload_bard_stage.py ]; then
+RUN_HF_UPLOAD=${RUN_HF_UPLOAD:-0}
+if [ "$RUN_HF_UPLOAD" = "1" ] && [ -f /workspace/hf_upload_bard_stage.py ]; then
   HF_HUB_OFFLINE=0 TRANSFORMERS_OFFLINE=0 /workspace/androidworld_eval/venv/bin/python /workspace/hf_upload_bard_stage.py \
     --folder "$BD8_MODEL" --stage androidworld_bd8_compare --logs-dir "$LOG_ROOT" || true
 fi
