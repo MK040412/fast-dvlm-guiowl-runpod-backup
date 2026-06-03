@@ -44,6 +44,7 @@ _EMULATOR_SETUP = flags.DEFINE_boolean(
     "Run AndroidWorld one-time emulator setup.",
 )
 _DEVICE_CONSOLE_PORT = flags.DEFINE_integer("console_port", 5554, "Emulator console port.")
+_GRPC_PORT = flags.DEFINE_integer("grpc_port", 8554, "Emulator gRPC port.")
 _SUITE_FAMILY = flags.DEFINE_enum(
     "suite_family",
     registry.TaskRegistry.ANDROID_WORLD_FAMILY,
@@ -79,6 +80,7 @@ def main(argv: Sequence[str]) -> None:
         console_port=_DEVICE_CONSOLE_PORT.value,
         emulator_setup=_EMULATOR_SETUP.value,
         adb_path=_ADB_PATH.value,
+        grpc_port=_GRPC_PORT.value,
     )
     task_registry = registry.TaskRegistry()
     suite = suite_utils.create_suite(
