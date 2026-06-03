@@ -7,6 +7,9 @@ import argparse
 import os
 from pathlib import Path
 
+os.environ["HF_HUB_OFFLINE"] = "0"
+os.environ["TRANSFORMERS_OFFLINE"] = "0"
+
 from huggingface_hub import HfApi, create_repo, upload_folder
 
 

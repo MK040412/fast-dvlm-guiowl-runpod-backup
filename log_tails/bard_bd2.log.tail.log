@@ -46,3 +46,63 @@ Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.
 Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.12s/it]
 [ckpt] step 400 -> /workspace/dvlm_ckpts/ckpt_bard_bd2
 [s166 step 420] bd=2 loss=0.510 ce_c=0.313 lr=3.0e-05 | 0.38 it/s 6356 tok/s | VRAM 57.4GB
+[s175 step 440] bd=2 loss=0.247 ce_c=0.163 lr=3.0e-05 | 0.38 it/s 6363 tok/s | VRAM 57.4GB
+[s185 step 460] bd=2 loss=0.427 ce_c=0.263 lr=3.0e-05 | 0.37 it/s 6370 tok/s | VRAM 57.4GB
+[s193 step 480] bd=2 loss=0.463 ce_c=0.305 lr=3.0e-05 | 0.38 it/s 6368 tok/s | VRAM 57.4GB
+[s201 step 500] bd=2 loss=0.418 ce_c=0.279 lr=3.0e-05 | 0.37 it/s 6373 tok/s | VRAM 57.4GB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:05<00:00,  5.03s/it]
+Writing model shards: 100%|██████████| 1/1 [00:05<00:00,  5.03s/it]
+[ckpt] step 500 -> /workspace/dvlm_ckpts/ckpt_bard_bd2
+[s213 step 520] bd=2 loss=0.195 ce_c=0.107 lr=3.0e-05 | 0.37 it/s 6353 tok/s | VRAM 57.4GB
+[s218 step 540] bd=2 loss=0.228 ce_c=0.147 lr=3.0e-05 | 0.38 it/s 6357 tok/s | VRAM 57.4GB
+[s224 step 560] bd=2 loss=0.460 ce_c=0.303 lr=3.0e-05 | 0.38 it/s 6368 tok/s | VRAM 57.4GB
+[s234 step 580] bd=2 loss=0.412 ce_c=0.260 lr=3.0e-05 | 0.38 it/s 6359 tok/s | VRAM 57.4GB
+[s246 step 600] bd=2 loss=0.269 ce_c=0.175 lr=3.0e-05 | 0.38 it/s 6360 tok/s | VRAM 57.4GB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.17s/it]
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.17s/it]
+[ckpt] step 600 -> /workspace/dvlm_ckpts/ckpt_bard_bd2
+[s252 step 620] bd=2 loss=0.391 ce_c=0.261 lr=3.0e-05 | 0.38 it/s 6347 tok/s | VRAM 57.6GB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.16s/it]
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.16s/it]
+[final] gstep=633 | loss 5.364->0.393 | saved /workspace/dvlm_ckpts/ckpt_bard_bd2
+DONE_FULL
+[verify] saved_size=4.0G path=/workspace/dvlm_ckpts/ckpt_bard_bd2
+Traceback (most recent call last):
+  File "/workspace/hf_upload_bard_stage.py", line 79, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/workspace/hf_upload_bard_stage.py", line 44, in main
+    user = api.whoami()["name"]
+           ^^^^^^^^^^^^
+  File "/workspace/androidworld_eval/venv/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/androidworld_eval/venv/lib/python3.11/site-packages/huggingface_hub/hf_api.py", line 2324, in whoami
+    output = self._inner_whoami(token=token)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/androidworld_eval/venv/lib/python3.11/site-packages/huggingface_hub/hf_api.py", line 2332, in _inner_whoami
+    r = get_session().get(
+        ^^^^^^^^^^^^^^^^^^
+  File "/workspace/androidworld_eval/venv/lib/python3.11/site-packages/httpx/_client.py", line 1053, in get
+    return self.request(
+           ^^^^^^^^^^^^^
+  File "/workspace/androidworld_eval/venv/lib/python3.11/site-packages/httpx/_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/androidworld_eval/venv/lib/python3.11/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/androidworld_eval/venv/lib/python3.11/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/androidworld_eval/venv/lib/python3.11/site-packages/httpx/_client.py", line 977, in _send_handling_redirects
+    hook(request)
+  File "/workspace/androidworld_eval/venv/lib/python3.11/site-packages/huggingface_hub/utils/_http.py", line 224, in hf_request_event_hook
+    raise OfflineModeIsEnabled(
+huggingface_hub.errors.OfflineModeIsEnabled: Cannot reach https://huggingface.co/api/whoami-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.

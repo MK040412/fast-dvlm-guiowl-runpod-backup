@@ -89,6 +89,6 @@ run_one bd8_dvlm_repair "$BD8_MODEL" dvlm 1 8124
 echo "[androidworld-bd8] done $(date -u +%Y-%m-%dT%H:%M:%SZ)"
 
 if [ -f /workspace/hf_upload_bard_stage.py ]; then
-  /workspace/androidworld_eval/venv/bin/python /workspace/hf_upload_bard_stage.py \
+  HF_HUB_OFFLINE=0 TRANSFORMERS_OFFLINE=0 /workspace/androidworld_eval/venv/bin/python /workspace/hf_upload_bard_stage.py \
     --folder "$BD8_MODEL" --stage androidworld_bd8_compare --logs-dir "$LOG_ROOT" || true
 fi

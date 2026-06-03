@@ -80,7 +80,7 @@ for bd in $STAGES; do
   du -sh "$out" | awk '{print "[verify] saved_size="$1" path="$2}' | tee -a "$log"
 
   if [ "$HF_UPLOAD" = "1" ] && [ -f "$HF_UPLOAD_SCRIPT" ]; then
-    /workspace/androidworld_eval/venv/bin/python "$HF_UPLOAD_SCRIPT" \
+    HF_HUB_OFFLINE=0 TRANSFORMERS_OFFLINE=0 /workspace/androidworld_eval/venv/bin/python "$HF_UPLOAD_SCRIPT" \
       --folder "$out" --stage "bd${bd}" 2>&1 | tee -a "$log" || true
   fi
 

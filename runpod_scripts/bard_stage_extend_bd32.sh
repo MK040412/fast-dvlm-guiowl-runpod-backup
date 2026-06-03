@@ -87,7 +87,7 @@ run_eval_bundle() {
     --decode-log "$decode_log" --compare-log "$compare_log" --out-dir "$stage_dir" || true
 
   if [ "$HF_UPLOAD" = "1" ] && [ -f "$HF_UPLOAD_SCRIPT" ]; then
-    /workspace/androidworld_eval/venv/bin/python "$HF_UPLOAD_SCRIPT" \
+    HF_HUB_OFFLINE=0 TRANSFORMERS_OFFLINE=0 /workspace/androidworld_eval/venv/bin/python "$HF_UPLOAD_SCRIPT" \
       --folder "$out" --stage "$stage" --logs-dir "$stage_dir" 2>&1 | tee -a "$train_log" || true
   fi
 }
