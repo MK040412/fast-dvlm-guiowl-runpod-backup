@@ -1,0 +1,3 @@
+nohup: ignoring input
+[extend] wait_pid_file=/workspace/bard_stage_retrain.pid ckpt_root=/workspace/dvlm_ckpts paper_n=32
+[extend] waiting for existing run pid=10684

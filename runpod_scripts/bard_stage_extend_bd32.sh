@@ -117,6 +117,15 @@ run_train_stage() {
   run_eval_bundle "$stage" "$bd" "$epoch" "$src" "$out" "$log"
 }
 
+if [ "$ANDROIDWORLD_BD8" = "1" ] && [ -x "$ANDROIDWORLD_BD8_SCRIPT" ]; then
+  aw_log="/workspace/androidworld_bd8_compare_$(date +%Y%m%d_%H%M%S).log"
+  echo "$aw_log" > /workspace/androidworld_bd8_compare.latest
+  echo "[extend] AndroidWorld bd8 compare -> $aw_log"
+  TASKS=${ANDROIDWORLD_TASKS:-ContactsAddContact,ClockStopWatchRunning} \
+    N_TASK_COMBINATIONS=${ANDROIDWORLD_N_TASK_COMBINATIONS:-1} \
+    bash "$ANDROIDWORLD_BD8_SCRIPT" > "$aw_log" 2>&1 || true
+fi
+
 for stage in bd2_e1 bd4_e1 bd8_e1; do
   case "$stage" in
     bd2_e1) bd=2; out="$CKPT_ROOT/ckpt_bard_bd2"; src="$BASE_MODEL"; train_log="/workspace/bard_bd2.log" ;;
@@ -130,15 +139,6 @@ for stage in bd2_e1 bd4_e1 bd8_e1; do
     exit 4
   fi
 done
-
-if [ "$ANDROIDWORLD_BD8" = "1" ] && [ -x "$ANDROIDWORLD_BD8_SCRIPT" ]; then
-  aw_log="/workspace/androidworld_bd8_compare_$(date +%Y%m%d_%H%M%S).log"
-  echo "$aw_log" > /workspace/androidworld_bd8_compare.latest
-  echo "[extend] AndroidWorld bd8 compare -> $aw_log"
-  TASKS=${ANDROIDWORLD_TASKS:-ContactsAddContact,ClockStopWatchRunning} \
-    N_TASK_COMBINATIONS=${ANDROIDWORLD_N_TASK_COMBINATIONS:-1} \
-    bash "$ANDROIDWORLD_BD8_SCRIPT" > "$aw_log" 2>&1 || true
-fi
 
 run_train_stage bd16_e1 16 1 "$CKPT_ROOT/ckpt_bard_bd8" "$CKPT_ROOT/ckpt_bard_bd16"
 run_train_stage bd32_e1 32 1 "$CKPT_ROOT/ckpt_bard_bd16" "$CKPT_ROOT/ckpt_bard_bd32_e1"

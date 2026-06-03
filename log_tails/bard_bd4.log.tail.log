@@ -5,3 +5,13 @@ Loading weights:   0%|          | 0/625 [00:00<?, ?it/s]
 Loading weights: 100%|██████████| 625/625 [00:00<00:00, 7748.70it/s]
 [opt] adamw_fused trainable 1.72B | weights VRAM 4.3GB
 [s9 step 20] bd=4 loss=0.454 ce_c=0.249 lr=1.2e-05 | 0.32 it/s 5376 tok/s | VRAM 49.6GB
+[s16 step 40] bd=4 loss=0.314 ce_c=0.196 lr=2.4e-05 | 0.34 it/s 5805 tok/s | VRAM 56.3GB
+[s23 step 60] bd=4 loss=0.261 ce_c=0.173 lr=3.0e-05 | 0.36 it/s 5873 tok/s | VRAM 56.3GB
+[s29 step 80] bd=4 loss=0.227 ce_c=0.133 lr=3.0e-05 | 0.37 it/s 6041 tok/s | VRAM 56.3GB
+[s35 step 100] bd=4 loss=0.721 ce_c=0.438 lr=3.0e-05 | 0.37 it/s 6123 tok/s | VRAM 57.0GB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.52s/it]
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.52s/it]
+[ckpt] step 100 -> /workspace/dvlm_ckpts/ckpt_bard_bd4
+[s42 step 120] bd=4 loss=0.545 ce_c=0.350 lr=3.0e-05 | 0.37 it/s 6106 tok/s | VRAM 57.0GB
