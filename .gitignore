@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments and local caches
+venv/
+.venv/
+.env
+.env.*
+.cache/
+hf_cache/
+wandb/
+
+# Data, checkpoints, and generated artifacts
+data/
+models/
+ckpts/
+dvlm_ckpts/
+outputs/
+runs/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.parquet
+*.pkl
+*.pkl.gz
+*.mp4
+*.png
+*.jpg
+*.jpeg
+
+# Logs that may be large or machine-specific
+*.log
+*.nohup.log
+paper_logs/
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/

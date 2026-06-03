@@ -1,0 +1,8 @@
+ROOT=/data2/androidworld_eval/runs/large_8lane_20260603_213633
+TASK_SETS=general_core,standard_full
+LANES_PER_MODEL=4
+N_TASK_COMBINATIONS=1
+TASK_RANDOM_SEED=30
+[suite] start general_core 2026-06-03T21:36:33+00:00
+[suite] done general_core 2026-06-03T21:43:22+00:00
+[suite] start standard_full 2026-06-03T21:43:22+00:00

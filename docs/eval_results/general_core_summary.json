@@ -1,0 +1,29 @@
+{
+  "root": "/data2/androidworld_eval/runs/large_8lane_20260603_213633/general_core",
+  "generated_at": "2026-06-03T21:43:22Z",
+  "aggregate": {
+    "base": {
+      "episodes": 24,
+      "success_count": 0,
+      "success_rate": 0.0,
+      "strict_json_rate_mean": 0.9962121212121212,
+      "mobile_use_rate_mean": 0.8472240790255496,
+      "repair_rate_mean": 0.34405451574569224,
+      "model_latency_ms_mean": 1220.7916970133995,
+      "total_latency_ms_mean": 2276.752346071004,
+      "episode_run_time_mean": 56.553151269753776
+    },
+    "current": {
+      "episodes": 24,
+      "success_count": 0,
+      "success_rate": 0.0,
+      "strict_json_rate_mean": 0.7939867424242424,
+      "mobile_use_rate_mean": 0.9621843434343434,
+      "repair_rate_mean": 0.168197601010101,
+      "model_latency_ms_mean": 1088.7248052557486,
+      "total_latency_ms_mean": 2263.2615548871063,
+      "episode_run_time_mean": 53.165805677572884
+    }
+  },
+  "note": "Intermediate AndroidWorld general-core result for infrastructure validation. Current means bd32 dVLM, not steering adapter. Do not use this as final paper claim because task success is 0 for both models and standard_full was still running when this snapshot was copied."
+}

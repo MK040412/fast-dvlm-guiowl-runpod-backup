@@ -1,0 +1,21 @@
+# H100 SXM (80GB HBM3, ~3.35 TB/s, FP8 Tensor Cores) — maximise batch + throughput.
+# All levers ON. See README "H100 optimisation" for the rationale + measured speedups.
+attn: flex            # FlexAttention BlockMask: block-sparse fused kernel (2.0-2.5x attn on L40S, more on H100)
+compile: true         # torch.compile the LM (fuses kernels; required for flex anyway)
+grad_ckpt: false      # 80GB headroom -> skip recompute (1.21x on L40S; more here)
+freeze_vision: true   # frozen ViT + cached embeds -> no per-step vision forward (1.26x) + enables caching
+optim: adamw_fused    # switch to adamw_8bit to free VRAM for an even larger batch
+grad_accum: 8         # effective batch; raise until VRAM ~70GB. (true sequence-packing = next step, see README)
+max_pixels: 200704    # ~180 vision tok/screenshot. Raise for grounding quality, lower for speed.
+ctx_cap: 16384        # H100 can hold long full-episode trajectories
+max_ep_steps: 64
+lr: 5.0e-5
+warmup: 50
+steps: 2000
+bd_set: [2, 4, 8, 16, 32]
+
+# Advanced (not auto-enabled; see README):
+#  * FP8 matmuls via NVIDIA TransformerEngine  -> ~2x matmul throughput on H100
+#  * FlashAttention-2/3 for the plain-causal eval path (pip install flash-attn)
+#  * Sequence packing (pack episodes into ctx_cap buffers + document-aware flex mask_mod)
+#  * Multi-GPU: torchrun + FSDP (SXM NVLink) — near-linear scaling
