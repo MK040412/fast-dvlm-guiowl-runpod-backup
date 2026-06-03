@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-06-03T18:35:26.791998Z",
+  "status": "blocked",
+  "blocker": "No ADB device and /dev/kvm is absent; proper AndroidWorld android_env eval requires a KVM-enabled or external AndroidWorld-compatible emulator with gRPC",
+  "kvm_exists": false,
+  "adb_devices": "List of devices attached\n",
+  "requested_tasks": [
+    "ContactsAddContact",
+    "ClockStopWatchRunning"
+  ],
+  "base_ar": {
+    "model": "/workspace/models/GUI-Owl-1.5-2B-Instruct",
+    "decode": "ar",
+    "repair": 0,
+    "success_rate": null,
+    "status": "not_run"
+  },
+  "bd32_dvlm_strict": {
+    "model": "/workspace/dvlm_ckpts/ckpt_bard_bd32_e1",
+    "decode": "dvlm",
+    "repair": 0,
+    "success_rate": null,
+    "status": "not_run"
+  },
+  "bd32_dvlm_repair": {
+    "model": "/workspace/dvlm_ckpts/ckpt_bard_bd32_e1",
+    "decode": "dvlm",
+    "repair": 1,
+    "success_rate": null,
+    "status": "not_run"
+  },
+  "note": "AndroidWorld task-level success rate is available via is_successful episodes, but this environment must launch/connect the AndroidWorld emulator first."
+}
