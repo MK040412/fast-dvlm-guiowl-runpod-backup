@@ -1,35 +1,3 @@
-  ..._bard_bd16/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A
-
-
-
-  ...rd_bd16/model.safetensors:  69%|██████▉   | 2.93GB / 4.26GB            [A[A[A
-Processing Files (1 / 2)      :  69%|██████▉   | 2.94GB / 4.27GB,  110MB/s  
-
-New Data Upload               :  97%|█████████▋| 2.93GB / 3.02GB,  109MB/s  [A
-
-
-  ..._bard_bd16/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A
-
-
-
-  ...rd_bd16/model.safetensors:  71%|███████   | 3.02GB / 4.26GB            [A[A[A
-Processing Files (1 / 2)      :  71%|███████   | 3.03GB / 4.27GB,  114MB/s  
-
-New Data Upload               :  98%|█████████▊| 3.02GB / 3.08GB,  113MB/s  [A
-
-
-  ..._bard_bd16/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A
-
-
-
-  ...rd_bd16/model.safetensors:  71%|███████   | 3.02GB / 4.26GB            [A[A[A
-
-
-  ..._bard_bd16/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A
-
-
-
-  ...rd_bd16/model.safetensors:  72%|███████▏  | 3.08GB / 4.26GB            [A[A[A
 Processing Files (1 / 2)      :  73%|███████▎  | 3.10GB / 4.27GB,  114MB/s  
 
 New Data Upload               :  96%|█████████▌| 3.08GB / 3.22GB,  114MB/s  [A
@@ -238,3 +206,35 @@ Loading weights:  89%|████████▉ | 559/625 [00:00<00:00, 5568.6
 Loading weights: 100%|██████████| 625/625 [00:00<00:00, 5546.30it/s]
 [opt] adamw_fused trainable 1.72B | weights VRAM 4.3GB
 [s9 step 20] bd=32 loss=0.366 ce_c=0.183 lr=1.2e-05 | 0.32 it/s 5364 tok/s | VRAM 49.6GB
+[s16 step 40] bd=32 loss=0.298 ce_c=0.185 lr=2.4e-05 | 0.34 it/s 5818 tok/s | VRAM 56.3GB
+[s23 step 60] bd=32 loss=0.363 ce_c=0.209 lr=3.0e-05 | 0.37 it/s 5955 tok/s | VRAM 56.3GB
+[s29 step 80] bd=32 loss=0.194 ce_c=0.134 lr=3.0e-05 | 0.38 it/s 6125 tok/s | VRAM 56.3GB
+[s35 step 100] bd=32 loss=0.614 ce_c=0.358 lr=3.0e-05 | 0.38 it/s 6227 tok/s | VRAM 57.0GB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.24s/it]
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.24s/it]
+[ckpt] step 100 -> /workspace/dvlm_ckpts/ckpt_bard_bd32_e1
+[s42 step 120] bd=32 loss=0.484 ce_c=0.316 lr=3.0e-05 | 0.37 it/s 6209 tok/s | VRAM 57.0GB
+[s51 step 140] bd=32 loss=0.525 ce_c=0.349 lr=3.0e-05 | 0.37 it/s 6221 tok/s | VRAM 57.0GB
+[s58 step 160] bd=32 loss=0.444 ce_c=0.286 lr=3.0e-05 | 0.37 it/s 6270 tok/s | VRAM 57.0GB
+[s68 step 180] bd=32 loss=0.372 ce_c=0.253 lr=3.0e-05 | 0.37 it/s 6300 tok/s | VRAM 57.4GB
+[s76 step 200] bd=32 loss=0.239 ce_c=0.162 lr=3.0e-05 | 0.37 it/s 6334 tok/s | VRAM 57.4GB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.38s/it]
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.38s/it]
+[ckpt] step 200 -> /workspace/dvlm_ckpts/ckpt_bard_bd32_e1
+[s87 step 220] bd=32 loss=0.473 ce_c=0.302 lr=3.0e-05 | 0.37 it/s 6267 tok/s | VRAM 57.4GB
+[s96 step 240] bd=32 loss=0.454 ce_c=0.285 lr=3.0e-05 | 0.37 it/s 6278 tok/s | VRAM 57.4GB
+[s102 step 260] bd=32 loss=0.307 ce_c=0.194 lr=3.0e-05 | 0.37 it/s 6306 tok/s | VRAM 57.4GB
+[s108 step 280] bd=32 loss=0.001 ce_c=0.001 lr=3.0e-05 | 0.37 it/s 6325 tok/s | VRAM 57.4GB
+[s124 step 300] bd=32 loss=0.392 ce_c=0.269 lr=3.0e-05 | 0.38 it/s 6316 tok/s | VRAM 57.4GB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.23s/it]
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.23s/it]
+[ckpt] step 300 -> /workspace/dvlm_ckpts/ckpt_bard_bd32_e1
+[s132 step 320] bd=32 loss=0.338 ce_c=0.223 lr=3.0e-05 | 0.37 it/s 6302 tok/s | VRAM 57.4GB
+[s137 step 340] bd=32 loss=0.533 ce_c=0.348 lr=3.0e-05 | 0.38 it/s 6322 tok/s | VRAM 57.4GB
+[s143 step 360] bd=32 loss=0.412 ce_c=0.268 lr=3.0e-05 | 0.38 it/s 6339 tok/s | VRAM 57.4GB
