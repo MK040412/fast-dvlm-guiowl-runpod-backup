@@ -4,6 +4,7 @@ set -euo pipefail
 cd /opt/androidworld_eval
 TASKS=${TASKS:-ContactsAddContact,ClockStopWatchRunning}
 N_TASK_COMBINATIONS=${N_TASK_COMBINATIONS:-1}
+PERFORM_EMULATOR_SETUP=${PERFORM_EMULATOR_SETUP:-false}
 CONSOLE_PORT=${CONSOLE_PORT:-5554}
 GRPC_PORT=${GRPC_PORT:-8554}
 ADB_PATH=${ADB_PATH:-/workspace/android-sdk/platform-tools/adb}

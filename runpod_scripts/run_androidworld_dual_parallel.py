@@ -217,6 +217,7 @@ def start_server(policy: Policy, log_root: Path, timeout_s: int) -> subprocess.P
         'GUIOWL_MODEL': policy.model,
         'GUIOWL_DECODE': policy.decode,
         'GUIOWL_REPAIR': str(policy.repair),
+        'PERFORM_EMULATOR_SETUP': 'true' if args.perform_emulator_setup else 'false',
         'GUIOWL_SERVER_PORT': str(policy.port),
     })
     proc = subprocess.Popen(['bash', str(START_SERVER_SH)], stdout=log_handle, stderr=subprocess.STDOUT, env=env)
@@ -393,6 +394,7 @@ def worker_cmd_env(policy: Policy, shard: list[str], worker_id: int, dev: dict[s
         'SERVER_URL': f'http://127.0.0.1:{policy.port}',
         'OUT': str(worker_root / 'runs'),
         'GUIOWL_REPAIR': str(policy.repair),
+        'PERFORM_EMULATOR_SETUP': 'true' if args.perform_emulator_setup else 'false',
     })
     return env
 
@@ -568,6 +570,8 @@ def main() -> int:
     ap.add_argument('--allow-software-emulator', action='store_true')
     ap.add_argument('--boot-timeout-s', type=int, default=420)
     ap.add_argument('--server-startup-timeout-s', type=int, default=900)
+    ap.add_argument('--perform-emulator-setup', action='store_true', default=True)
+    ap.add_argument('--no-perform-emulator-setup', dest='perform_emulator_setup', action='store_false')
     ap.add_argument('--record-mp4', action='store_true', default=True)
     ap.add_argument('--no-record-mp4', dest='record_mp4', action='store_false')
     ap.add_argument('--video-segment-s', type=int, default=180)

@@ -1,0 +1,19 @@
+{
+  "status": "booted",
+  "device_seen": true,
+  "booted": true,
+  "boot_completed_seen_in_log": true,
+  "seconds_approx": 420,
+  "kvm_exists": false,
+  "serial": "emulator-5554",
+  "grpc_port": 8554,
+  "console_port": 5554,
+  "screenshot_exists": true,
+  "note": "Software emulator boot smoke only; no AndroidWorld task success measured here. Confirms non-KVM emulator can boot, but boot took roughly 4-5 minutes and is unsuitable for large paper-scale benchmarking.",
+  "logs": [
+    "/workspace/paper_logs/androidworld_software_emulator_smoke/emulator.log",
+    "/workspace/paper_logs/androidworld_software_emulator_smoke/boot_poll.log",
+    "/workspace/paper_logs/androidworld_software_emulator_smoke/command.txt"
+  ],
+  "hf_upload": "https://huggingface.co/KMK040412/fast-dvlm-guiowl-bard-bd32/tree/main/paper_logs/androidworld_software_emulator_smoke"
+}
