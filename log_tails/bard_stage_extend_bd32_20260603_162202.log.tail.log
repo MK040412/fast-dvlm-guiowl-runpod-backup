@@ -1,6 +1,240 @@
-nohup: ignoring input
-[extend] wait_pid_file=/workspace/bard_stage_retrain.pid ckpt_root=/workspace/dvlm_ckpts paper_n=32
-[extend] waiting for existing run pid=10684
-[extend] existing run finished pid=10684
-[extend] previous run log=/workspace/bard_stage_retrain_20260603_154816.log
-[extend] AndroidWorld bd8 compare -> /workspace/androidworld_bd8_compare_20260603_171602.log
+
+
+  ...ard_bd8/model.safetensors:  30%|██▉       | 1.26GB / 4.26GB            [A[A
+
+
+
+  ...t_bard_bd8/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A[A
+Processing Files (1 / 2)      :  30%|██▉       | 1.28GB / 4.27GB,  112MB/s  
+
+
+  ...ard_bd8/model.safetensors:  32%|███▏      | 1.38GB / 4.26GB            [A[A
+
+
+
+  ...t_bard_bd8/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A[A
+Processing Files (1 / 2)      :  33%|███▎      | 1.39GB / 4.27GB,  120MB/s  
+
+
+  ...ard_bd8/model.safetensors:  35%|███▍      | 1.49GB / 4.26GB            [A[A
+
+
+
+  ...t_bard_bd8/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A[A
+Processing Files (1 / 2)      :  35%|███▌      | 1.50GB / 4.27GB,  127MB/s  
+
+
+  ...ard_bd8/model.safetensors:  38%|███▊      | 1.60GB / 4.26GB            [A[A
+
+
+
+  ...t_bard_bd8/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A[A
+Processing Files (1 / 2)      :  38%|███▊      | 1.61GB / 4.27GB,  135MB/s  
+
+
+  ...ard_bd8/model.safetensors:  40%|████      | 1.70GB / 4.26GB            [A[A
+
+
+
+  ...t_bard_bd8/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A[A
+Processing Files (1 / 2)      :  40%|████      | 1.72GB / 4.27GB,  141MB/s  
+
+
+  ...ard_bd8/model.safetensors:  43%|████▎     | 1.83GB / 4.26GB            [A[A
+
+
+
+  ...t_bard_bd8/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A[A
+Processing Files (1 / 2)      :  43%|████▎     | 1.84GB / 4.27GB,  150MB/s  
+
+
+  ...ard_bd8/model.safetensors:  46%|████▌     | 1.97GB / 4.26GB            [A[A
+
+
+
+  ...t_bard_bd8/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A[A
+Processing Files (1 / 2)      :  46%|████▋     | 1.98GB / 4.27GB,  159MB/s  
+
+
+  ...ard_bd8/model.safetensors:  49%|████▊     | 2.07GB / 4.26GB            [A[A
+
+
+
+  ...t_bard_bd8/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A[A
+Processing Files (1 / 2)      :  49%|████▉     | 2.08GB / 4.27GB,  165MB/s  
+
+
+  ...ard_bd8/model.safetensors:  52%|█████▏    | 2.20GB / 4.26GB            [A[A
+
+
+
+  ...t_bard_bd8/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A[A
+Processing Files (1 / 2)      :  52%|█████▏    | 2.21GB / 4.27GB,  172MB/s  
+
+
+  ...ard_bd8/model.safetensors:  54%|█████▍    | 2.29GB / 4.26GB            [A[A
+
+
+
+  ...t_bard_bd8/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A[A
+Processing Files (1 / 2)      :  54%|█████▍    | 2.30GB / 4.27GB,  176MB/s  
+
+
+  ...ard_bd8/model.safetensors:  56%|█████▋    | 2.40GB / 4.26GB            [A[A
+
+
+
+  ...t_bard_bd8/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A[A
+Processing Files (1 / 2)      :  57%|█████▋    | 2.41GB / 4.27GB,  183MB/s  
+
+
+  ...ard_bd8/model.safetensors:  59%|█████▉    | 2.51GB / 4.26GB            [A[A
+
+
+
+  ...t_bard_bd8/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A[A
+Processing Files (1 / 2)      :  59%|█████▉    | 2.52GB / 4.27GB,  188MB/s  
+
+
+  ...ard_bd8/model.safetensors:  62%|██████▏   | 2.62GB / 4.26GB            [A[A
+
+
+
+  ...t_bard_bd8/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A[A
+Processing Files (1 / 2)      :  62%|██████▏   | 2.64GB / 4.27GB,  194MB/s  
+
+
+  ...ard_bd8/model.safetensors:  64%|██████▍   | 2.73GB / 4.26GB            [A[A
+
+
+
+  ...t_bard_bd8/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A[A
+Processing Files (1 / 2)      :  64%|██████▍   | 2.74GB / 4.27GB,  199MB/s  
+
+
+  ...ard_bd8/model.safetensors:  67%|██████▋   | 2.84GB / 4.26GB            [A[A
+
+
+
+  ...t_bard_bd8/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A[A
+Processing Files (1 / 2)      :  67%|██████▋   | 2.85GB / 4.27GB,  204MB/s  
+
+
+  ...ard_bd8/model.safetensors:  69%|██████▉   | 2.94GB / 4.26GB            [A[A
+
+
+
+  ...t_bard_bd8/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A[A
+Processing Files (1 / 2)      :  69%|██████▉   | 2.96GB / 4.27GB,  209MB/s  
+
+
+  ...ard_bd8/model.safetensors:  72%|███████▏  | 3.06GB / 4.26GB            [A[A
+
+
+
+  ...t_bard_bd8/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A[A
+Processing Files (1 / 2)      :  72%|███████▏  | 3.07GB / 4.27GB,  214MB/s  
+
+
+  ...ard_bd8/model.safetensors:  75%|███████▌  | 3.21GB / 4.26GB            [A[A
+
+
+
+  ...t_bard_bd8/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A[A
+Processing Files (1 / 2)      :  75%|███████▌  | 3.22GB / 4.27GB,  223MB/s  
+
+
+  ...ard_bd8/model.safetensors:  78%|███████▊  | 3.31GB / 4.26GB            [A[A
+
+
+
+  ...t_bard_bd8/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A[A
+Processing Files (1 / 2)      :  78%|███████▊  | 3.32GB / 4.27GB,  227MB/s  
+
+
+  ...ard_bd8/model.safetensors:  80%|████████  | 3.42GB / 4.26GB            [A[A
+
+
+
+  ...t_bard_bd8/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A[A
+Processing Files (1 / 2)      :  81%|████████  | 3.44GB / 4.27GB,  232MB/s  
+
+
+  ...ard_bd8/model.safetensors:  83%|████████▎ | 3.53GB / 4.26GB            [A[A
+
+
+
+  ...t_bard_bd8/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A[A
+Processing Files (1 / 2)      :  83%|████████▎ | 3.54GB / 4.27GB,  236MB/s  
+
+
+  ...ard_bd8/model.safetensors:  86%|████████▌ | 3.64GB / 4.26GB            [A[A
+
+
+
+  ...t_bard_bd8/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A[A
+Processing Files (1 / 2)      :  86%|████████▌ | 3.65GB / 4.27GB,  240MB/s  
+
+
+  ...ard_bd8/model.safetensors:  88%|████████▊ | 3.75GB / 4.26GB            [A[A
+
+
+
+  ...t_bard_bd8/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A[A
+Processing Files (1 / 2)      :  88%|████████▊ | 3.76GB / 4.27GB,  244MB/s  
+
+
+  ...ard_bd8/model.safetensors:  91%|█████████ | 3.86GB / 4.26GB            [A[A
+
+
+
+  ...t_bard_bd8/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A[A
+Processing Files (1 / 2)      :  91%|█████████ | 3.87GB / 4.27GB,  248MB/s  
+
+
+  ...ard_bd8/model.safetensors:  93%|█████████▎| 3.96GB / 4.26GB            [A[A
+
+
+
+  ...t_bard_bd8/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A[A
+Processing Files (1 / 2)      :  93%|█████████▎| 3.97GB / 4.27GB,  252MB/s  
+
+
+  ...ard_bd8/model.safetensors:  96%|█████████▌| 4.07GB / 4.26GB            [A[A
+
+
+
+  ...t_bard_bd8/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A[A
+Processing Files (1 / 2)      :  96%|█████████▌| 4.08GB / 4.27GB,  256MB/s  
+
+
+  ...ard_bd8/model.safetensors:  98%|█████████▊| 4.18GB / 4.26GB            [A[A
+
+
+
+  ...t_bard_bd8/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A[A
+Processing Files (1 / 2)      :  98%|█████████▊| 4.20GB / 4.27GB,  260MB/s  
+
+
+  ...ard_bd8/model.safetensors: 100%|██████████| 4.26GB / 4.26GB            [A[A
+
+
+
+  ...t_bard_bd8/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A[A
+Processing Files (2 / 2)      : 100%|██████████| 4.27GB / 4.27GB,  260MB/s  
+Processing Files (2 / 2)      : 100%|██████████| 4.27GB / 4.27GB,  260MB/s  
+
+New Data Upload               : |          |  0.00B /  0.00B,  0.00B/s  
+
+  ...ard_bd8/model.safetensors: 100%|██████████| 4.26GB / 4.26GB            
+
+  ...t_bard_bd8/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            
+[hf] uploaded stage=bd8_e1 -> https://huggingface.co/KMK040412/fast-dvlm-guiowl-bard-bd32/tree/main/checkpoints/bd8_e1
+[hf] uploaded logs stage=bd8_e1 -> https://huggingface.co/KMK040412/fast-dvlm-guiowl-bard-bd32/tree/main/paper_logs/bd8_e1
+[stage] bd16_e1 bd=16 epoch=1 src=/workspace/dvlm_ckpts/ckpt_bard_bd8 out=/workspace/dvlm_ckpts/ckpt_bard_bd16
+[load] /workspace/dvlm_ckpts/ckpt_bard_bd8 attn=flex_block mrope=True deepstack=True prefetch=32/8
+
+Loading weights:   0%|          | 0/625 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 625/625 [00:00<00:00, 7011.71it/s]
+[opt] adamw_fused trainable 1.72B | weights VRAM 4.3GB
+[s9 step 20] bd=16 loss=0.399 ce_c=0.182 lr=1.2e-05 | 0.32 it/s 5359 tok/s | VRAM 49.6GB

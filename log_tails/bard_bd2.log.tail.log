@@ -1,108 +1,240 @@
-[stage] bd=2 src=/workspace/models/GUI-Owl-1.5-2B-Instruct out=/workspace/dvlm_ckpts/ckpt_bard_bd2
-[load] /workspace/models/GUI-Owl-1.5-2B-Instruct attn=flex_block mrope=True deepstack=True prefetch=32/8
 
-Loading weights:   0%|          | 0/625 [00:00<?, ?it/s]
-Loading weights:  96%|█████████▋| 603/625 [00:00<00:00, 5998.98it/s]
-Loading weights: 100%|██████████| 625/625 [00:00<00:00, 5946.95it/s]
-[opt] adamw_fused trainable 1.72B | weights VRAM 4.3GB
-[s9 step 20] bd=2 loss=1.023 ce_c=0.290 lr=1.2e-05 | 0.31 it/s 5343 tok/s | VRAM 49.6GB
-[s16 step 40] bd=2 loss=0.405 ce_c=0.232 lr=2.4e-05 | 0.34 it/s 5827 tok/s | VRAM 56.3GB
-[s23 step 60] bd=2 loss=0.513 ce_c=0.327 lr=3.0e-05 | 0.37 it/s 5988 tok/s | VRAM 56.3GB
-[s29 step 80] bd=2 loss=0.307 ce_c=0.146 lr=3.0e-05 | 0.38 it/s 6169 tok/s | VRAM 56.3GB
-[s35 step 100] bd=2 loss=0.685 ce_c=0.440 lr=3.0e-05 | 0.38 it/s 6241 tok/s | VRAM 57.0GB
+  ...t_bard_bd2/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A
 
-Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
-Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.21s/it]
-Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.21s/it]
-[ckpt] step 100 -> /workspace/dvlm_ckpts/ckpt_bard_bd2
-[s42 step 120] bd=2 loss=0.622 ce_c=0.398 lr=3.0e-05 | 0.38 it/s 6229 tok/s | VRAM 57.0GB
-[s51 step 140] bd=2 loss=0.614 ce_c=0.402 lr=3.0e-05 | 0.38 it/s 6249 tok/s | VRAM 57.0GB
-[s58 step 160] bd=2 loss=0.589 ce_c=0.379 lr=3.0e-05 | 0.37 it/s 6304 tok/s | VRAM 57.0GB
-[s68 step 180] bd=2 loss=0.488 ce_c=0.296 lr=3.0e-05 | 0.37 it/s 6318 tok/s | VRAM 57.4GB
-[s76 step 200] bd=2 loss=0.288 ce_c=0.186 lr=3.0e-05 | 0.38 it/s 6339 tok/s | VRAM 57.4GB
 
-Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
-Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.05s/it]
-Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.05s/it]
-[ckpt] step 200 -> /workspace/dvlm_ckpts/ckpt_bard_bd2
-[s87 step 220] bd=2 loss=0.582 ce_c=0.375 lr=3.0e-05 | 0.38 it/s 6284 tok/s | VRAM 57.4GB
-[s96 step 240] bd=2 loss=0.359 ce_c=0.230 lr=3.0e-05 | 0.38 it/s 6316 tok/s | VRAM 57.4GB
-[s102 step 260] bd=2 loss=0.434 ce_c=0.271 lr=3.0e-05 | 0.38 it/s 6345 tok/s | VRAM 57.4GB
-[s108 step 280] bd=2 loss=0.040 ce_c=0.029 lr=3.0e-05 | 0.38 it/s 6353 tok/s | VRAM 57.4GB
-[s124 step 300] bd=2 loss=0.448 ce_c=0.298 lr=3.0e-05 | 0.38 it/s 6334 tok/s | VRAM 57.4GB
 
-Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
-Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.73s/it]
-Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.73s/it]
-[ckpt] step 300 -> /workspace/dvlm_ckpts/ckpt_bard_bd2
-[s132 step 320] bd=2 loss=0.370 ce_c=0.241 lr=3.0e-05 | 0.38 it/s 6318 tok/s | VRAM 57.4GB
-[s137 step 340] bd=2 loss=0.595 ce_c=0.390 lr=3.0e-05 | 0.38 it/s 6341 tok/s | VRAM 57.4GB
-[s143 step 360] bd=2 loss=0.497 ce_c=0.320 lr=3.0e-05 | 0.38 it/s 6352 tok/s | VRAM 57.4GB
-[s153 step 380] bd=2 loss=0.471 ce_c=0.304 lr=3.0e-05 | 0.38 it/s 6367 tok/s | VRAM 57.4GB
-[s159 step 400] bd=2 loss=0.438 ce_c=0.280 lr=3.0e-05 | 0.38 it/s 6371 tok/s | VRAM 57.4GB
+  ...ard_bd2/model.safetensors:  27%|██▋       | 1.14GB / 4.26GB            [A[A[A
+Processing Files (1 / 2)      :  27%|██▋       | 1.15GB / 4.27GB, 89.5MB/s  
 
-Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
-Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.12s/it]
-Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.12s/it]
-[ckpt] step 400 -> /workspace/dvlm_ckpts/ckpt_bard_bd2
-[s166 step 420] bd=2 loss=0.510 ce_c=0.313 lr=3.0e-05 | 0.38 it/s 6356 tok/s | VRAM 57.4GB
-[s175 step 440] bd=2 loss=0.247 ce_c=0.163 lr=3.0e-05 | 0.38 it/s 6363 tok/s | VRAM 57.4GB
-[s185 step 460] bd=2 loss=0.427 ce_c=0.263 lr=3.0e-05 | 0.37 it/s 6370 tok/s | VRAM 57.4GB
-[s193 step 480] bd=2 loss=0.463 ce_c=0.305 lr=3.0e-05 | 0.38 it/s 6368 tok/s | VRAM 57.4GB
-[s201 step 500] bd=2 loss=0.418 ce_c=0.279 lr=3.0e-05 | 0.37 it/s 6373 tok/s | VRAM 57.4GB
 
-Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
-Writing model shards: 100%|██████████| 1/1 [00:05<00:00,  5.03s/it]
-Writing model shards: 100%|██████████| 1/1 [00:05<00:00,  5.03s/it]
-[ckpt] step 500 -> /workspace/dvlm_ckpts/ckpt_bard_bd2
-[s213 step 520] bd=2 loss=0.195 ce_c=0.107 lr=3.0e-05 | 0.37 it/s 6353 tok/s | VRAM 57.4GB
-[s218 step 540] bd=2 loss=0.228 ce_c=0.147 lr=3.0e-05 | 0.38 it/s 6357 tok/s | VRAM 57.4GB
-[s224 step 560] bd=2 loss=0.460 ce_c=0.303 lr=3.0e-05 | 0.38 it/s 6368 tok/s | VRAM 57.4GB
-[s234 step 580] bd=2 loss=0.412 ce_c=0.260 lr=3.0e-05 | 0.38 it/s 6359 tok/s | VRAM 57.4GB
-[s246 step 600] bd=2 loss=0.269 ce_c=0.175 lr=3.0e-05 | 0.38 it/s 6360 tok/s | VRAM 57.4GB
+  ...t_bard_bd2/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A
 
-Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
-Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.17s/it]
-Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.17s/it]
-[ckpt] step 600 -> /workspace/dvlm_ckpts/ckpt_bard_bd2
-[s252 step 620] bd=2 loss=0.391 ce_c=0.261 lr=3.0e-05 | 0.38 it/s 6347 tok/s | VRAM 57.6GB
 
-Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
-Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.16s/it]
-Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.16s/it]
-[final] gstep=633 | loss 5.364->0.393 | saved /workspace/dvlm_ckpts/ckpt_bard_bd2
-DONE_FULL
-[verify] saved_size=4.0G path=/workspace/dvlm_ckpts/ckpt_bard_bd2
-Traceback (most recent call last):
-  File "/workspace/hf_upload_bard_stage.py", line 79, in <module>
-    raise SystemExit(main())
-                     ^^^^^^
-  File "/workspace/hf_upload_bard_stage.py", line 44, in main
-    user = api.whoami()["name"]
-           ^^^^^^^^^^^^
-  File "/workspace/androidworld_eval/venv/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
-    return fn(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^
-  File "/workspace/androidworld_eval/venv/lib/python3.11/site-packages/huggingface_hub/hf_api.py", line 2324, in whoami
-    output = self._inner_whoami(token=token)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/androidworld_eval/venv/lib/python3.11/site-packages/huggingface_hub/hf_api.py", line 2332, in _inner_whoami
-    r = get_session().get(
-        ^^^^^^^^^^^^^^^^^^
-  File "/workspace/androidworld_eval/venv/lib/python3.11/site-packages/httpx/_client.py", line 1053, in get
-    return self.request(
-           ^^^^^^^^^^^^^
-  File "/workspace/androidworld_eval/venv/lib/python3.11/site-packages/httpx/_client.py", line 825, in request
-    return self.send(request, auth=auth, follow_redirects=follow_redirects)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/androidworld_eval/venv/lib/python3.11/site-packages/httpx/_client.py", line 914, in send
-    response = self._send_handling_auth(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/androidworld_eval/venv/lib/python3.11/site-packages/httpx/_client.py", line 942, in _send_handling_auth
-    response = self._send_handling_redirects(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/androidworld_eval/venv/lib/python3.11/site-packages/httpx/_client.py", line 977, in _send_handling_redirects
-    hook(request)
-  File "/workspace/androidworld_eval/venv/lib/python3.11/site-packages/huggingface_hub/utils/_http.py", line 224, in hf_request_event_hook
-    raise OfflineModeIsEnabled(
-huggingface_hub.errors.OfflineModeIsEnabled: Cannot reach https://huggingface.co/api/whoami-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.
+
+  ...ard_bd2/model.safetensors:  29%|██▉       | 1.24GB / 4.26GB            [A[A[A
+Processing Files (1 / 2)      :  29%|██▉       | 1.25GB / 4.27GB, 96.4MB/s  
+
+
+  ...t_bard_bd2/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A
+
+
+
+  ...ard_bd2/model.safetensors:  32%|███▏      | 1.35GB / 4.26GB            [A[A[A
+Processing Files (1 / 2)      :  32%|███▏      | 1.36GB / 4.27GB,  104MB/s  
+
+
+  ...t_bard_bd2/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A
+
+
+
+  ...ard_bd2/model.safetensors:  34%|███▍      | 1.46GB / 4.26GB            [A[A[A
+Processing Files (1 / 2)      :  35%|███▍      | 1.48GB / 4.27GB,  111MB/s  
+
+
+  ...t_bard_bd2/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A
+
+
+
+  ...ard_bd2/model.safetensors:  37%|███▋      | 1.58GB / 4.26GB            [A[A[A
+Processing Files (1 / 2)      :  37%|███▋      | 1.59GB / 4.27GB,  118MB/s  
+
+
+  ...t_bard_bd2/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A
+
+
+
+  ...ard_bd2/model.safetensors:  40%|███▉      | 1.69GB / 4.26GB            [A[A[A
+Processing Files (1 / 2)      :  40%|███▉      | 1.70GB / 4.27GB,  125MB/s  
+
+
+  ...t_bard_bd2/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A
+
+
+
+  ...ard_bd2/model.safetensors:  42%|████▏     | 1.80GB / 4.26GB            [A[A[A
+Processing Files (1 / 2)      :  42%|████▏     | 1.81GB / 4.27GB,  131MB/s  
+
+
+  ...t_bard_bd2/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A
+
+
+
+  ...ard_bd2/model.safetensors:  45%|████▍     | 1.91GB / 4.26GB            [A[A[A
+Processing Files (1 / 2)      :  45%|████▌     | 1.92GB / 4.27GB,  138MB/s  
+
+
+  ...t_bard_bd2/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A
+
+
+
+  ...ard_bd2/model.safetensors:  48%|████▊     | 2.02GB / 4.26GB            [A[A[A
+Processing Files (1 / 2)      :  48%|████▊     | 2.04GB / 4.27GB,  144MB/s  
+
+
+  ...t_bard_bd2/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A
+
+
+
+  ...ard_bd2/model.safetensors:  50%|█████     | 2.14GB / 4.26GB            [A[A[A
+Processing Files (1 / 2)      :  50%|█████     | 2.15GB / 4.27GB,  150MB/s  
+
+
+  ...t_bard_bd2/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A
+
+
+
+  ...ard_bd2/model.safetensors:  53%|█████▎    | 2.25GB / 4.26GB            [A[A[A
+Processing Files (1 / 2)      :  53%|█████▎    | 2.26GB / 4.27GB,  157MB/s  
+
+
+  ...t_bard_bd2/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A
+
+
+
+  ...ard_bd2/model.safetensors:  55%|█████▌    | 2.36GB / 4.26GB            [A[A[A
+Processing Files (1 / 2)      :  56%|█████▌    | 2.37GB / 4.27GB,  162MB/s  
+
+
+  ...t_bard_bd2/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A
+
+
+
+  ...ard_bd2/model.safetensors:  58%|█████▊    | 2.46GB / 4.26GB            [A[A[A
+Processing Files (1 / 2)      :  58%|█████▊    | 2.48GB / 4.27GB,  168MB/s  
+
+
+  ...t_bard_bd2/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A
+
+
+
+  ...ard_bd2/model.safetensors:  61%|██████    | 2.59GB / 4.26GB            [A[A[A
+Processing Files (1 / 2)      :  61%|██████    | 2.60GB / 4.27GB,  175MB/s  
+
+
+  ...t_bard_bd2/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A
+
+
+
+  ...ard_bd2/model.safetensors:  64%|██████▍   | 2.73GB / 4.26GB            [A[A[A
+Processing Files (1 / 2)      :  64%|██████▍   | 2.74GB / 4.27GB,  182MB/s  
+
+
+  ...t_bard_bd2/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A
+
+
+
+  ...ard_bd2/model.safetensors:  66%|██████▌   | 2.82GB / 4.26GB            [A[A[A
+Processing Files (1 / 2)      :  66%|██████▋   | 2.83GB / 4.27GB,  185MB/s  
+
+
+  ...t_bard_bd2/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A
+
+
+
+  ...ard_bd2/model.safetensors:  69%|██████▉   | 2.93GB / 4.26GB            [A[A[A
+Processing Files (1 / 2)      :  69%|██████▉   | 2.94GB / 4.27GB,  191MB/s  
+
+
+  ...t_bard_bd2/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A
+
+
+
+  ...ard_bd2/model.safetensors:  71%|███████▏  | 3.03GB / 4.26GB            [A[A[A
+Processing Files (1 / 2)      :  71%|███████▏  | 3.04GB / 4.27GB,  195MB/s  
+
+
+  ...t_bard_bd2/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A
+
+
+
+  ...ard_bd2/model.safetensors:  74%|███████▍  | 3.14GB / 4.26GB            [A[A[A
+Processing Files (1 / 2)      :  74%|███████▍  | 3.16GB / 4.27GB,  200MB/s  
+
+
+  ...t_bard_bd2/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A
+
+
+
+  ...ard_bd2/model.safetensors:  76%|███████▌  | 3.23GB / 4.26GB            [A[A[A
+Processing Files (1 / 2)      :  76%|███████▌  | 3.24GB / 4.27GB,  203MB/s  
+
+
+  ...t_bard_bd2/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A
+
+
+
+  ...ard_bd2/model.safetensors:  79%|███████▊  | 3.34GB / 4.26GB            [A[A[A
+Processing Files (1 / 2)      :  79%|███████▊  | 3.36GB / 4.27GB,  208MB/s  
+
+
+  ...t_bard_bd2/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A
+
+
+
+  ...ard_bd2/model.safetensors:  81%|████████  | 3.46GB / 4.26GB            [A[A[A
+Processing Files (1 / 2)      :  81%|████████▏ | 3.47GB / 4.27GB,  213MB/s  
+
+
+  ...t_bard_bd2/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A
+
+
+
+  ...ard_bd2/model.safetensors:  84%|████████▍ | 3.57GB / 4.26GB            [A[A[A
+Processing Files (1 / 2)      :  84%|████████▍ | 3.58GB / 4.27GB,  217MB/s  
+
+
+  ...t_bard_bd2/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A
+
+
+
+  ...ard_bd2/model.safetensors:  87%|████████▋ | 3.70GB / 4.26GB            [A[A[A
+Processing Files (1 / 2)      :  87%|████████▋ | 3.72GB / 4.27GB,  224MB/s  
+
+
+  ...t_bard_bd2/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A
+
+
+
+  ...ard_bd2/model.safetensors:  91%|█████████ | 3.86GB / 4.26GB            [A[A[A
+Processing Files (1 / 2)      :  91%|█████████ | 3.87GB / 4.27GB,  231MB/s  
+
+
+  ...t_bard_bd2/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A
+
+
+
+  ...ard_bd2/model.safetensors:  94%|█████████▍| 4.02GB / 4.26GB            [A[A[A
+Processing Files (1 / 2)      :  94%|█████████▍| 4.03GB / 4.27GB,  239MB/s  
+
+
+  ...t_bard_bd2/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A
+
+
+
+  ...ard_bd2/model.safetensors:  97%|█████████▋| 4.13GB / 4.26GB            [A[A[A
+Processing Files (1 / 2)      :  97%|█████████▋| 4.14GB / 4.27GB,  243MB/s  
+
+
+  ...t_bard_bd2/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A
+
+
+
+  ...ard_bd2/model.safetensors: 100%|█████████▉| 4.25GB / 4.26GB            [A[A[A
+Processing Files (1 / 2)      : 100%|█████████▉| 4.26GB / 4.27GB,  248MB/s  
+
+
+  ...t_bard_bd2/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            [A[A
+
+
+
+  ...ard_bd2/model.safetensors: 100%|██████████| 4.26GB / 4.26GB            [A[A[A
+Processing Files (2 / 2)      : 100%|██████████| 4.27GB / 4.27GB,  244MB/s  
+Processing Files (2 / 2)      : 100%|██████████| 4.27GB / 4.27GB,  244MB/s  
+
+New Data Upload               : |          |  0.00B /  0.00B,  0.00B/s  
+
+  ...t_bard_bd2/tokenizer.json: 100%|██████████| 11.4MB / 11.4MB            
+
+  ...ard_bd2/model.safetensors: 100%|██████████| 4.26GB / 4.26GB            
+[hf] uploaded stage=bd2_e1 -> https://huggingface.co/KMK040412/fast-dvlm-guiowl-bard-bd32/tree/main/checkpoints/bd2_e1
+[hf] uploaded logs stage=bd2_e1 -> https://huggingface.co/KMK040412/fast-dvlm-guiowl-bard-bd32/tree/main/paper_logs/bd2_e1

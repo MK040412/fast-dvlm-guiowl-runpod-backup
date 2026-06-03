@@ -1,0 +1,181 @@
+{
+  "bd": 2,
+  "checkpoint": "/workspace/dvlm_ckpts/ckpt_bard_bd2",
+  "checkpoint_exists": true,
+  "checkpoint_model_safetensors_bytes": 4255140312,
+  "config": {
+    "ctx_cap": 8192,
+    "dtype": "bf16",
+    "grad_accum": 8,
+    "lr": "3e-5",
+    "max_ep_steps": 24,
+    "max_pixels": 100352,
+    "prefetch": 32,
+    "producers": 8,
+    "save_every": 100
+  },
+  "decode_demo": {
+    "avg": {
+      "ar_ms": 885.0,
+      "ar_nfe": 42.7,
+      "dvlm_ms": 396.0,
+      "dvlm_nfe": 19.9,
+      "tok_nfe": 2.91,
+      "wall": 2.23
+    },
+    "log": "/workspace/paper_logs/bd2_e1/decode_demo_n32.log"
+  },
+  "epoch": 1,
+  "grounding_compare": {
+    "log": "/workspace/paper_logs/bd2_e1/compare_grounding_n32.log",
+    "metrics": {
+      "bd2_e1_ar": {
+        "action": {
+          "den": 8,
+          "num": 4,
+          "rate": 0.5
+        },
+        "avg_ms": 837.0,
+        "avg_nfe": 40.8,
+        "coord_l2": "mean=95.2 median=104.1",
+        "ground_at_100": {
+          "den": 8,
+          "num": 3,
+          "rate": 0.375
+        },
+        "json": {
+          "den": 8,
+          "num": 8,
+          "rate": 1.0
+        },
+        "mobile_use": {
+          "den": 8,
+          "num": 8,
+          "rate": 1.0
+        },
+        "repaired": {
+          "den": 8,
+          "num": 0,
+          "rate": 0.0
+        },
+        "strict": {
+          "den": 8,
+          "num": 8,
+          "rate": 1.0
+        },
+        "tool_call": {
+          "den": 8,
+          "num": 8,
+          "rate": 1.0
+        }
+      },
+      "bd2_e1_dvlm_repair": {
+        "action": {
+          "den": 8,
+          "num": 1,
+          "rate": 0.125
+        },
+        "avg_ms": 429.0,
+        "avg_nfe": 22.6,
+        "coord_l2": "none",
+        "ground_at_100": {
+          "den": 8,
+          "num": 1,
+          "rate": 0.125
+        },
+        "json": {
+          "den": 8,
+          "num": 0,
+          "rate": 0.0
+        },
+        "mobile_use": {
+          "den": 8,
+          "num": 2,
+          "rate": 0.25
+        },
+        "repaired": {
+          "den": 8,
+          "num": 2,
+          "rate": 0.25
+        },
+        "strict": {
+          "den": 8,
+          "num": 0,
+          "rate": 0.0
+        },
+        "tool_call": {
+          "den": 8,
+          "num": 1,
+          "rate": 0.125
+        }
+      },
+      "bd2_e1_dvlm_strict": {
+        "action": {
+          "den": 8,
+          "num": 0,
+          "rate": 0.0
+        },
+        "avg_ms": 436.0,
+        "avg_nfe": 22.6,
+        "coord_l2": "none",
+        "ground_at_100": {
+          "den": 8,
+          "num": 0,
+          "rate": 0.0
+        },
+        "json": {
+          "den": 8,
+          "num": 0,
+          "rate": 0.0
+        },
+        "mobile_use": {
+          "den": 8,
+          "num": 0,
+          "rate": 0.0
+        },
+        "repaired": {
+          "den": 8,
+          "num": 0,
+          "rate": 0.0
+        },
+        "strict": {
+          "den": 8,
+          "num": 0,
+          "rate": 0.0
+        },
+        "tool_call": {
+          "den": 8,
+          "num": 1,
+          "rate": 0.125
+        }
+      }
+    }
+  },
+  "logs": {
+    "compare": "/workspace/paper_logs/bd2_e1/compare_grounding_n32.log",
+    "decode": "/workspace/paper_logs/bd2_e1/decode_demo_n32.log",
+    "train": "/workspace/bard_bd2.log"
+  },
+  "source_checkpoint": "/workspace/models/GUI-Owl-1.5-2B-Instruct",
+  "stage": "bd2_e1",
+  "timestamp_utc": "2026-06-03T17:33:45.362367+00:00",
+  "train": {
+    "final": {
+      "gstep": 633,
+      "loss_end": 0.393,
+      "loss_start": 5.364
+    },
+    "last_logged_step": {
+      "bd": 2,
+      "ce_clean": 0.261,
+      "it_per_sec": 0.38,
+      "loss": 0.391,
+      "lr": "3.0e-05",
+      "shard": 252,
+      "step": 620,
+      "tok_per_sec": 6347.0,
+      "vram_gb": 57.6
+    },
+    "logged_step_count": 31
+  }
+}

@@ -12,3 +12,6 @@ List of devices attached
 emulator-5554	device
 
 [androidworld-bd8] server name=base_ar decode=ar repair=0 model=/workspace/models/GUI-Owl-1.5-2B-Instruct
+
+[androidworld-bd8] BLOCKED summary written: /workspace/paper_logs/androidworld_bd8_compare/summary.json
+[androidworld-bd8] terminating stuck base_ar wrapper/server so bd16/bd32 training can continue

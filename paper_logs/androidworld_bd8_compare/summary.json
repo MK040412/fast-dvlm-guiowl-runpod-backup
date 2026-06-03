@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-06-03T17:32:59.941995Z",
+  "status": "blocked",
+  "blocker": "AndroidWorld android_env emulator gRPC connection failed on non-KVM local emulator",
+  "base_ar": {
+    "model": "/workspace/models/GUI-Owl-1.5-2B-Instruct",
+    "decode": "ar",
+    "repair": 0,
+    "success_rate": null,
+    "status": "failed_before_task_execution",
+    "error_log": "/workspace/paper_logs/androidworld_bd8_compare/base_ar_eval.log"
+  },
+  "bd8_dvlm_repair": {
+    "model": "/workspace/dvlm_ckpts/ckpt_bard_bd8",
+    "decode": "dvlm",
+    "repair": 1,
+    "success_rate": null,
+    "status": "skipped_same_emulator_blocker"
+  },
+  "strict_dvlm_success": null,
+  "repaired_dvlm_success": null,
+  "tasks": [
+    "ContactsAddContact",
+    "ClockStopWatchRunning"
+  ],
+  "adb_device": "emulator-5554 device",
+  "kvm_exists": false,
+  "note": "ADB shell is available, but AndroidWorld requires emulator gRPC simulator connectivity. Need /dev/kvm-enabled emulator or external AndroidWorld-compatible emulator/ADB setup for real success-rate comparison."
+}
