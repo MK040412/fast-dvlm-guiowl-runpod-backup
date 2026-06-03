@@ -1,0 +1,22 @@
+# Verified stack (RunPod L40S, py3.11, CUDA 12.6). Pin torch/triton/transformers/fla together.
+# Do NOT `-U` blindly: newer torch can break the CUDA/driver match.
+torch==2.7.1
+torchvision==0.22.1
+triton==3.3.1
+transformers==5.9.0
+accelerate==1.13.0
+# datasets pulls an fsspec ceiling that conflicts with the pinned fsspec; install it with --no-deps:
+#   pip install "datasets" --no-deps     (gives datasets 4.8.5 here)
+datasets
+pyarrow
+pandas
+huggingface_hub
+qwen-vl-utils==0.0.14
+pillow
+einops
+numpy
+pyyaml
+# H100 extras (optional, big throughput wins — see README):
+#   pip install flash-attn --no-build-isolation     # FA2/3 for plain-causal paths
+#   pip install bitsandbytes                          # adamw_8bit
+#   pip install transformer-engine                    # FP8 matmuls

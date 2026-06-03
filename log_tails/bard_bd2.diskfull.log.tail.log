@@ -1,0 +1,52 @@
+[stage] bd=2 src=/workspace/models/GUI-Owl-1.5-2B-Instruct out=/workspace/ckpt_bard_bd2
+[load] /workspace/models/GUI-Owl-1.5-2B-Instruct attn=flex_block mrope=True deepstack=True prefetch=32/8
+
+Loading weights:   0%|          | 0/625 [00:00<?, ?it/s]
+Loading weights:  88%|████████▊ | 553/625 [00:00<00:00, 5523.08it/s]
+Loading weights: 100%|██████████| 625/625 [00:00<00:00, 5814.56it/s]
+[opt] adamw_fused trainable 1.72B | weights VRAM 4.3GB
+[s9 step 20] bd=2 loss=1.002 ce_c=0.291 lr=1.2e-05 | 0.32 it/s 5375 tok/s | VRAM 49.6GB
+[s16 step 40] bd=2 loss=0.397 ce_c=0.234 lr=2.4e-05 | 0.34 it/s 5832 tok/s | VRAM 56.3GB
+[s23 step 60] bd=2 loss=0.348 ce_c=0.226 lr=3.0e-05 | 0.37 it/s 5964 tok/s | VRAM 56.3GB
+[s29 step 80] bd=2 loss=0.275 ce_c=0.147 lr=3.0e-05 | 0.38 it/s 6135 tok/s | VRAM 56.3GB
+[s35 step 100] bd=2 loss=0.682 ce_c=0.444 lr=3.0e-05 | 0.38 it/s 6204 tok/s | VRAM 57.0GB
+[s42 step 120] bd=2 loss=0.629 ce_c=0.402 lr=3.0e-05 | 0.38 it/s 6268 tok/s | VRAM 57.0GB
+[s51 step 140] bd=2 loss=0.613 ce_c=0.403 lr=3.0e-05 | 0.38 it/s 6275 tok/s | VRAM 57.0GB
+[s58 step 160] bd=2 loss=0.626 ce_c=0.384 lr=3.0e-05 | 0.37 it/s 6320 tok/s | VRAM 57.0GB
+[s68 step 180] bd=2 loss=0.440 ce_c=0.286 lr=3.0e-05 | 0.37 it/s 6330 tok/s | VRAM 57.4GB
+[s76 step 200] bd=2 loss=0.319 ce_c=0.213 lr=3.0e-05 | 0.38 it/s 6355 tok/s | VRAM 57.4GB
+[s87 step 220] bd=2 loss=0.579 ce_c=0.383 lr=3.0e-05 | 0.38 it/s 6339 tok/s | VRAM 57.4GB
+[s96 step 240] bd=2 loss=0.362 ce_c=0.223 lr=3.0e-05 | 0.38 it/s 6341 tok/s | VRAM 57.4GB
+[s102 step 260] bd=2 loss=0.425 ce_c=0.268 lr=3.0e-05 | 0.38 it/s 6368 tok/s | VRAM 57.4GB
+[s108 step 280] bd=2 loss=0.036 ce_c=0.021 lr=3.0e-05 | 0.38 it/s 6384 tok/s | VRAM 57.4GB
+[s124 step 300] bd=2 loss=0.443 ce_c=0.295 lr=3.0e-05 | 0.38 it/s 6373 tok/s | VRAM 57.4GB
+[s132 step 320] bd=2 loss=0.383 ce_c=0.247 lr=3.0e-05 | 0.38 it/s 6388 tok/s | VRAM 57.4GB
+[s137 step 340] bd=2 loss=0.614 ce_c=0.396 lr=3.0e-05 | 0.38 it/s 6407 tok/s | VRAM 57.4GB
+[s143 step 360] bd=2 loss=0.485 ce_c=0.314 lr=3.0e-05 | 0.38 it/s 6410 tok/s | VRAM 57.4GB
+[s153 step 380] bd=2 loss=0.478 ce_c=0.300 lr=3.0e-05 | 0.38 it/s 6419 tok/s | VRAM 57.4GB
+[s159 step 400] bd=2 loss=0.443 ce_c=0.293 lr=3.0e-05 | 0.38 it/s 6430 tok/s | VRAM 57.4GB
+[s166 step 420] bd=2 loss=0.517 ce_c=0.319 lr=3.0e-05 | 0.38 it/s 6431 tok/s | VRAM 57.4GB
+[s175 step 440] bd=2 loss=0.228 ce_c=0.150 lr=3.0e-05 | 0.38 it/s 6431 tok/s | VRAM 57.4GB
+[s185 step 460] bd=2 loss=0.409 ce_c=0.267 lr=3.0e-05 | 0.38 it/s 6439 tok/s | VRAM 57.4GB
+[s193 step 480] bd=2 loss=0.479 ce_c=0.305 lr=3.0e-05 | 0.38 it/s 6434 tok/s | VRAM 57.4GB
+[s201 step 500] bd=2 loss=0.429 ce_c=0.288 lr=3.0e-05 | 0.38 it/s 6436 tok/s | VRAM 57.4GB
+[s213 step 520] bd=2 loss=0.181 ce_c=0.107 lr=3.0e-05 | 0.38 it/s 6429 tok/s | VRAM 57.4GB
+[s218 step 540] bd=2 loss=0.224 ce_c=0.150 lr=3.0e-05 | 0.38 it/s 6428 tok/s | VRAM 57.4GB
+[s224 step 560] bd=2 loss=0.433 ce_c=0.286 lr=3.0e-05 | 0.38 it/s 6437 tok/s | VRAM 57.4GB
+[s234 step 580] bd=2 loss=0.408 ce_c=0.263 lr=3.0e-05 | 0.38 it/s 6433 tok/s | VRAM 57.4GB
+[s246 step 600] bd=2 loss=0.281 ce_c=0.182 lr=3.0e-05 | 0.38 it/s 6431 tok/s | VRAM 57.4GB
+[s252 step 620] bd=2 loss=0.395 ce_c=0.243 lr=3.0e-05 | 0.38 it/s 6434 tok/s | VRAM 57.6GB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards:   0%|          | 0/1 [00:04<?, ?it/s]
+Traceback (most recent call last):
+  File "/workspace/fast-dvlm-guiowl/train_full.py", line 242, in <module>
+    main()
+  File "/workspace/fast-dvlm-guiowl/train_full.py", line 231, in main
+    model.save_pretrained(a.out); proc.save_pretrained(a.out)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/venv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 3546, in save_pretrained
+    safe_save_file(shard_state_dict, filename, metadata=metadata)
+  File "/workspace/venv/lib/python3.11/site-packages/safetensors/torch.py", line 307, in save_file
+    serialize_file(_flatten(tensors), filename, metadata=metadata)
+safetensors_rust.SafetensorError: Error while serializing: I/O error: No space left on device (os error 28)

@@ -1,0 +1,48 @@
+[stage] bd=2 src=/workspace/models/GUI-Owl-1.5-2B-Instruct out=/workspace/dvlm_ckpts/ckpt_bard_bd2
+[load] /workspace/models/GUI-Owl-1.5-2B-Instruct attn=flex_block mrope=True deepstack=True prefetch=32/8
+
+Loading weights:   0%|          | 0/625 [00:00<?, ?it/s]
+Loading weights:  96%|█████████▋| 603/625 [00:00<00:00, 5998.98it/s]
+Loading weights: 100%|██████████| 625/625 [00:00<00:00, 5946.95it/s]
+[opt] adamw_fused trainable 1.72B | weights VRAM 4.3GB
+[s9 step 20] bd=2 loss=1.023 ce_c=0.290 lr=1.2e-05 | 0.31 it/s 5343 tok/s | VRAM 49.6GB
+[s16 step 40] bd=2 loss=0.405 ce_c=0.232 lr=2.4e-05 | 0.34 it/s 5827 tok/s | VRAM 56.3GB
+[s23 step 60] bd=2 loss=0.513 ce_c=0.327 lr=3.0e-05 | 0.37 it/s 5988 tok/s | VRAM 56.3GB
+[s29 step 80] bd=2 loss=0.307 ce_c=0.146 lr=3.0e-05 | 0.38 it/s 6169 tok/s | VRAM 56.3GB
+[s35 step 100] bd=2 loss=0.685 ce_c=0.440 lr=3.0e-05 | 0.38 it/s 6241 tok/s | VRAM 57.0GB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.21s/it]
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.21s/it]
+[ckpt] step 100 -> /workspace/dvlm_ckpts/ckpt_bard_bd2
+[s42 step 120] bd=2 loss=0.622 ce_c=0.398 lr=3.0e-05 | 0.38 it/s 6229 tok/s | VRAM 57.0GB
+[s51 step 140] bd=2 loss=0.614 ce_c=0.402 lr=3.0e-05 | 0.38 it/s 6249 tok/s | VRAM 57.0GB
+[s58 step 160] bd=2 loss=0.589 ce_c=0.379 lr=3.0e-05 | 0.37 it/s 6304 tok/s | VRAM 57.0GB
+[s68 step 180] bd=2 loss=0.488 ce_c=0.296 lr=3.0e-05 | 0.37 it/s 6318 tok/s | VRAM 57.4GB
+[s76 step 200] bd=2 loss=0.288 ce_c=0.186 lr=3.0e-05 | 0.38 it/s 6339 tok/s | VRAM 57.4GB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.05s/it]
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.05s/it]
+[ckpt] step 200 -> /workspace/dvlm_ckpts/ckpt_bard_bd2
+[s87 step 220] bd=2 loss=0.582 ce_c=0.375 lr=3.0e-05 | 0.38 it/s 6284 tok/s | VRAM 57.4GB
+[s96 step 240] bd=2 loss=0.359 ce_c=0.230 lr=3.0e-05 | 0.38 it/s 6316 tok/s | VRAM 57.4GB
+[s102 step 260] bd=2 loss=0.434 ce_c=0.271 lr=3.0e-05 | 0.38 it/s 6345 tok/s | VRAM 57.4GB
+[s108 step 280] bd=2 loss=0.040 ce_c=0.029 lr=3.0e-05 | 0.38 it/s 6353 tok/s | VRAM 57.4GB
+[s124 step 300] bd=2 loss=0.448 ce_c=0.298 lr=3.0e-05 | 0.38 it/s 6334 tok/s | VRAM 57.4GB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.73s/it]
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.73s/it]
+[ckpt] step 300 -> /workspace/dvlm_ckpts/ckpt_bard_bd2
+[s132 step 320] bd=2 loss=0.370 ce_c=0.241 lr=3.0e-05 | 0.38 it/s 6318 tok/s | VRAM 57.4GB
+[s137 step 340] bd=2 loss=0.595 ce_c=0.390 lr=3.0e-05 | 0.38 it/s 6341 tok/s | VRAM 57.4GB
+[s143 step 360] bd=2 loss=0.497 ce_c=0.320 lr=3.0e-05 | 0.38 it/s 6352 tok/s | VRAM 57.4GB
+[s153 step 380] bd=2 loss=0.471 ce_c=0.304 lr=3.0e-05 | 0.38 it/s 6367 tok/s | VRAM 57.4GB
+[s159 step 400] bd=2 loss=0.438 ce_c=0.280 lr=3.0e-05 | 0.38 it/s 6371 tok/s | VRAM 57.4GB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.12s/it]
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.12s/it]
+[ckpt] step 400 -> /workspace/dvlm_ckpts/ckpt_bard_bd2
+[s166 step 420] bd=2 loss=0.510 ce_c=0.313 lr=3.0e-05 | 0.38 it/s 6356 tok/s | VRAM 57.4GB

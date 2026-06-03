@@ -1,0 +1,14 @@
+# L40S (46GB) — the verified configuration used to validate the pipeline.
+attn: sdpa            # dense additive mask (works everywhere; flex is the H100 upgrade)
+compile: false
+grad_ckpt: true      # 46GB -> keep checkpointing on
+freeze_vision: true
+optim: adamw_fused
+grad_accum: 1
+max_pixels: 200704
+ctx_cap: 8192
+max_ep_steps: 12
+lr: 1.0e-4
+warmup: 20
+steps: 300
+bd_set: [2, 4, 8, 16, 32]

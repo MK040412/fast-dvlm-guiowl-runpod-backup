@@ -1,0 +1,44 @@
+[stage] bd=8 src=/opt/dvlm_ckpts/ckpt_bard_bd4 out=/opt/dvlm_ckpts/ckpt_bard_bd8
+[load] /opt/dvlm_ckpts/ckpt_bard_bd4 attn=flex_block mrope=True deepstack=True prefetch=32/8
+
+Loading weights:   0%|          | 0/625 [00:00<?, ?it/s]
+Loading weights:  84%|████████▍ | 525/625 [00:00<00:00, 5181.54it/s]
+Loading weights: 100%|██████████| 625/625 [00:00<00:00, 5137.91it/s]
+[opt] adamw_fused trainable 1.72B | weights VRAM 4.3GB
+[s9 step 20] bd=8 loss=0.585 ce_c=0.247 lr=1.2e-05 | 0.32 it/s 5395 tok/s | VRAM 49.6GB
+[s16 step 40] bd=8 loss=0.329 ce_c=0.207 lr=2.4e-05 | 0.34 it/s 5825 tok/s | VRAM 56.3GB
+[s23 step 60] bd=8 loss=0.370 ce_c=0.231 lr=3.0e-05 | 0.37 it/s 5939 tok/s | VRAM 56.3GB
+[s29 step 80] bd=8 loss=0.221 ce_c=0.132 lr=3.0e-05 | 0.37 it/s 6118 tok/s | VRAM 56.3GB
+[s35 step 100] bd=8 loss=0.609 ce_c=0.401 lr=3.0e-05 | 0.38 it/s 6214 tok/s | VRAM 57.0GB
+[s42 step 120] bd=8 loss=0.530 ce_c=0.333 lr=3.0e-05 | 0.38 it/s 6295 tok/s | VRAM 57.0GB
+[s51 step 140] bd=8 loss=0.566 ce_c=0.368 lr=3.0e-05 | 0.38 it/s 6295 tok/s | VRAM 57.0GB
+[s58 step 160] bd=8 loss=0.533 ce_c=0.312 lr=3.0e-05 | 0.37 it/s 6344 tok/s | VRAM 57.0GB
+[s68 step 180] bd=8 loss=0.421 ce_c=0.267 lr=3.0e-05 | 0.37 it/s 6357 tok/s | VRAM 57.4GB
+[s76 step 200] bd=8 loss=0.270 ce_c=0.177 lr=3.0e-05 | 0.38 it/s 6378 tok/s | VRAM 57.4GB
+[s87 step 220] bd=8 loss=0.540 ce_c=0.342 lr=3.0e-05 | 0.38 it/s 6361 tok/s | VRAM 57.4GB
+[s96 step 240] bd=8 loss=0.327 ce_c=0.209 lr=3.0e-05 | 0.38 it/s 6365 tok/s | VRAM 57.4GB
+[s102 step 260] bd=8 loss=0.387 ce_c=0.228 lr=3.0e-05 | 0.38 it/s 6379 tok/s | VRAM 57.4GB
+[s108 step 280] bd=8 loss=0.002 ce_c=0.001 lr=3.0e-05 | 0.38 it/s 6387 tok/s | VRAM 57.4GB
+[s124 step 300] bd=8 loss=0.465 ce_c=0.285 lr=3.0e-05 | 0.38 it/s 6366 tok/s | VRAM 57.4GB
+[s132 step 320] bd=8 loss=0.387 ce_c=0.239 lr=3.0e-05 | 0.38 it/s 6377 tok/s | VRAM 57.4GB
+[s137 step 340] bd=8 loss=0.566 ce_c=0.363 lr=3.0e-05 | 0.38 it/s 6393 tok/s | VRAM 57.4GB
+[s143 step 360] bd=8 loss=0.436 ce_c=0.277 lr=3.0e-05 | 0.38 it/s 6394 tok/s | VRAM 57.4GB
+[s153 step 380] bd=8 loss=0.452 ce_c=0.276 lr=3.0e-05 | 0.38 it/s 6407 tok/s | VRAM 57.4GB
+[s159 step 400] bd=8 loss=0.432 ce_c=0.250 lr=3.0e-05 | 0.38 it/s 6418 tok/s | VRAM 57.4GB
+[s166 step 420] bd=8 loss=0.595 ce_c=0.364 lr=3.0e-05 | 0.38 it/s 6422 tok/s | VRAM 57.4GB
+[s175 step 440] bd=8 loss=0.578 ce_c=0.340 lr=3.0e-05 | 0.38 it/s 6430 tok/s | VRAM 57.4GB
+[s185 step 460] bd=8 loss=0.435 ce_c=0.260 lr=3.0e-05 | 0.38 it/s 6438 tok/s | VRAM 57.4GB
+[s193 step 480] bd=8 loss=0.444 ce_c=0.283 lr=3.0e-05 | 0.38 it/s 6439 tok/s | VRAM 57.4GB
+[s201 step 500] bd=8 loss=0.423 ce_c=0.274 lr=3.0e-05 | 0.38 it/s 6439 tok/s | VRAM 57.4GB
+[s213 step 520] bd=8 loss=0.182 ce_c=0.106 lr=3.0e-05 | 0.38 it/s 6433 tok/s | VRAM 57.4GB
+[s218 step 540] bd=8 loss=0.299 ce_c=0.178 lr=3.0e-05 | 0.38 it/s 6435 tok/s | VRAM 57.4GB
+[s224 step 560] bd=8 loss=0.420 ce_c=0.273 lr=3.0e-05 | 0.38 it/s 6446 tok/s | VRAM 57.4GB
+[s234 step 580] bd=8 loss=0.340 ce_c=0.227 lr=3.0e-05 | 0.38 it/s 6442 tok/s | VRAM 57.4GB
+[s246 step 600] bd=8 loss=0.256 ce_c=0.167 lr=3.0e-05 | 0.38 it/s 6440 tok/s | VRAM 57.4GB
+[s252 step 620] bd=8 loss=0.249 ce_c=0.166 lr=3.0e-05 | 0.38 it/s 6440 tok/s | VRAM 57.6GB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.49s/it]
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.49s/it]
+[final] gstep=633 | loss 1.202->0.384 | saved /opt/dvlm_ckpts/ckpt_bard_bd8
+DONE_FULL

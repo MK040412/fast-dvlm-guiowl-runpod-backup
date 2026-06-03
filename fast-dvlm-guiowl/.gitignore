@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pt
+*.safetensors
+.venv/
+data/
+checkpoints/
+outputs/
+*.parquet
+.DS_Store
+# never commit secrets
+.env
+*hf_*token*

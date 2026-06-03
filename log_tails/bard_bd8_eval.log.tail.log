@@ -1,0 +1,43 @@
+[eval] bd=8 held-out decode
+
+Loading weights:   0%|          | 0/625 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 625/625 [00:00<00:00, 10297.40it/s]
+target: <tool_call>
+{"name": "mobile_use", "arguments": {"action": "system_button", "button": "Home"}}
+</tool_call>
+  AR  : '<tool_call>\n{"name": "mobile_use", "arguments": {"action": "system_button", "button": "Home"}}\n</tool_call>' NFE=27   1183ms | tool=Y json=Y mobile=Y strict=Y act=Y c1=- c2=- ground100=Y
+  dVLM: '<tool_call>\n{"name": "mobile_use", "arguments": {"action": "system_button", "button": "Home"}}\n"}}\n</tool_call>' NFE= 4 tok/NFE=7.00    110ms | tool=Y json=N mobile=N strict=N act=N c1=- c2=- ground100=N
+target: <tool_call>
+{"name": "mobile_use", "arguments": {"action": "swipe", "coordinate": [658, 888], "coordinate2": [745, 361]}}
+</tool_call>
+  AR  : '<tool_call>\n{"name": "mobile_use", "arguments": {"action": "swipe", "coordinate": [598, 831], "coordinate2": [598, 131]}}\n</tool_call>' NFE=49    885ms | tool=Y json=Y mobile=Y strict=Y act=Y c1=82.8 c2=273.0 ground100=N
+  dVLM: '<tool_call>\n{"name": "mobile_use",", "": {" {"action": "swipe", "coordinate [588, 841]}}\n</tool_call>' NFE=26 tok/NFE=1.35    501ms | tool=Y json=N mobile=N strict=N act=N c1=- c2=- ground100=N
+target: <tool_call>
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [695, 793]}}
+</tool_call>
+  AR  : '<tool_call>\n{"name": "mobile_use", "arguments": {"action": "swipe", "coordinate": [598, 827], "coordinate2": [598, 191]}}\n</tool_call>' NFE=49    889ms | tool=Y json=Y mobile=Y strict=Y act=N c1=102.8 c2=- ground100=N
+  dVLM: '<tool_call>\n{"name": "mobile_use",", "": {" {"action": "sw", "coordinate": [589, 840]}}\n</tool_call>' NFE=27 tok/NFE=1.30    513ms | tool=Y json=N mobile=N strict=N act=N c1=- c2=- ground100=N
+target: <tool_call>
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [599, 791]}}
+</tool_call>
+  AR  : '<tool_call>\n{"name": "mobile_use", "arguments": {"action": "swipe", "coordinate": [598, 821], "coordinate2": [598, 221]}}\n</tool_call>' NFE=49    901ms | tool=Y json=Y mobile=Y strict=Y act=N c1=30.0 c2=- ground100=N
+  dVLM: '<tool_call>\n{"name": "mobile_use",", "": {" {"action": "swipe", "coordinate": [581, 841], "coordinate2": [537, 851}}\n</tool_call>' NFE=28 tok/NFE=1.75    540ms | tool=Y json=N mobile=N strict=N act=N c1=- c2=- ground100=N
+target: <tool_call>
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [654, 789]}}
+</tool_call>
+  AR  : '<tool_call>\n{"name": "mobile_use", "arguments": {"action": "swipe", "coordinate": [587, 827], "coordinate2": [587, 219]}}\n</tool_call>' NFE=49    887ms | tool=Y json=Y mobile=Y strict=Y act=N c1=77.0 c2=- ground100=N
+  dVLM: '<tool_call>\n{"name": "mobile_use",", "": {" {"action": "swipe", "coordinate": [581, 851], "coordinate2": [583, 85]}}\n</tool_call>' NFE=31 tok/NFE=1.58    590ms | tool=Y json=N mobile=N strict=N act=N c1=- c2=- ground100=N
+target: <tool_call>
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [677, 774]}}
+</tool_call>
+  AR  : '<tool_call>\n{"name": "mobile_use", "arguments": {"action": "swipe", "coordinate": [598, 831], "coordinate2": [598, 131]}}\n</tool_call>' NFE=49    882ms | tool=Y json=Y mobile=Y strict=Y act=N c1=97.4 c2=- ground100=N
+  dVLM: '<tool_call>\n{"name": "mobile_use",", "": {" {"action": "sw", "coordinate": [588, 801]}}\n</tool_call>' NFE=23 tok/NFE=1.52    437ms | tool=Y json=N mobile=N strict=N act=N c1=- c2=- ground100=N
+target: <tool_call>
+{"name": "mobile_use", "arguments": {"action": "system_button", "button": "Home"}}
+</tool_call>
+  AR  : '<tool_call>\n{"name": "mobile_use", "arguments": {"action": "system_button", "button": "Home"}}\n</tool_call>' NFE=27    499ms | tool=Y json=Y mobile=Y strict=Y act=Y c1=- c2=- ground100=Y
+  dVLM: '<tool_call>\n{"name": "mobile_use", "arguments": {"action": "system_button", "button": "Home"}}\n</tool_call>' NFE= 4 tok/NFE=6.75     81ms | tool=Y json=Y mobile=Y strict=Y act=Y c1=- c2=- ground100=Y
+
+AVG: AR 875ms (NFE 42.7) | dVLM 396ms (NFE 20.4) | tokens/NFE=1.80x  wall 2.21x
+AR: tool_call 7/7 | json 7/7 | mobile_use 7/7 | strict 7/7 | action 3/7 | ground@100 2/7 | coord_l2 mean=78.0 median=82.8
+dVLM: tool_call 7/7 | json 1/7 | mobile_use 1/7 | strict 1/7 | action 1/7 | ground@100 1/7 | coord_l2 none

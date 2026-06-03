@@ -1,0 +1,7 @@
+.secrets/
+*.safetensors
+*.parquet
+venv/
+models/
+data/
+dvlm_ckpts/
