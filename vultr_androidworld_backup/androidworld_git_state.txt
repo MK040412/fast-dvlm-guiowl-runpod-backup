@@ -1,0 +1,10 @@
+remote_origin
+origin	https://github.com/google-research/android_world.git (fetch)
+origin	https://github.com/google-research/android_world.git (push)
+head
+d9c569f764b3a5629321858de03ff653d0f24056
+status
+?? android_world/task_evals/information_retrieval/proto/state_pb2.py
+?? android_world/task_evals/information_retrieval/proto/state_pb2_grpc.py
+?? android_world/task_evals/information_retrieval/proto/task_pb2.py
+?? android_world/task_evals/information_retrieval/proto/task_pb2_grpc.py

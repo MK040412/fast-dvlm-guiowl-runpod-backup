@@ -1,0 +1,1 @@
+OpenAppTaskEval,ClockStopWatchRunning,SystemWifiTurnOn,SystemBluetoothTurnOn
