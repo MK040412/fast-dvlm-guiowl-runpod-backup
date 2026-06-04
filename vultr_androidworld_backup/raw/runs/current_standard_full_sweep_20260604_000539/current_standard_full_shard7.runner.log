@@ -1,0 +1,4 @@
+W0604 00:05:56.920864 140286612946944 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0604 00:09:01.346434 140286612946944 sqlite_validators.py:168] Expected row Expense(name='Library Fees', amount=28416, category=10, note='Remember to transfer funds', created_date=1697328000000, modified_date=1697328000000, expense_id=-1) not found in the 'after' state.
+W0604 00:09:02.149682 140286612946944 android_world_controller.py:98] Could not get a11y tree, retrying.
+Terminated

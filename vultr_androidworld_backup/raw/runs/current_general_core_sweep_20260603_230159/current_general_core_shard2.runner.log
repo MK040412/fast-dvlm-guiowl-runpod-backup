@@ -1,0 +1,95 @@
+W0603 23:02:18.355280 140586049454080 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:05:30.215183 140586049454080 android_world_controller.py:98] Could not get a11y tree, retrying.
+Starting AndroidWorld eval with guiowl_dvlm -> /data2/androidworld_eval/runs/current_general_core_sweep_20260603_230159/current_general_core_shard2/run_20260603T230218069547
+Running task: ClockStopWatchRunning
+===================================
+Running task ClockStopWatchRunning with goal "Run the stopwatch."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Run the stopwatch.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+ClockStopWatchRunning               0                  1.0                0.0                 10.0             98.7              0.0
+========= Average =========         0                  1.0                0.0                 10.0             98.7              0.0
+
+
+           mean_success_rate
+difficulty              easy
+tags                        
+untagged                 0.0
+
+Running task: SystemWifiTurnOn
+==============================
+Running task SystemWifiTurnOn with goal "Turn wifi on."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Turn wifi on.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+ClockStopWatchRunning               0                  1.0                0.0                 10.0            98.70              0.0
+SystemWifiTurnOn                    1                  1.0                0.0                 10.0            92.20              0.0
+========= Average =========         0                  1.0                0.0                 10.0            95.45              0.0
+
+
+               mean_success_rate
+difficulty                  easy
+tags                            
+screen_reading               0.0
+untagged                     0.0
+
+Running task: TasksDueOnDate
+============================
+Running task TasksDueOnDate with goal "What tasks do I have due October 24 2023 in Tasks app? Answer with the titles only. If there are multiples titles, format your answer in a comma separated list."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  What tasks do I have due October 24 2023 in Tasks app? Answer with the titles only. If there are multiples titles, format your answer in a comma separated list.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+ClockStopWatchRunning               0                  1.0                0.0                 10.0             98.7              0.0
+SystemWifiTurnOn                    1                  1.0                0.0                 10.0             92.2              0.0
+TasksDueOnDate                      2                  1.0                0.0                 10.0             77.3              0.0
+========= Average =========         0                  1.0                0.0                 10.0             89.4              0.0
+
+
+               mean_success_rate
+difficulty                  easy
+tags                            
+parameterized                0.0
+screen_reading               0.0
+search                       0.0
+untagged                     0.0
+
+Finished AndroidWorld eval. Wrote to /data2/androidworld_eval/runs/current_general_core_sweep_20260603_230159/current_general_core_shard2/run_20260603T230218069547

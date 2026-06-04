@@ -1,0 +1,14 @@
+{
+  "current": {
+    "episodes": 52,
+    "success_count": 0,
+    "success_rate": 0.0,
+    "strict_json_rate_mean": 0.048423716806069744,
+    "mobile_use_rate_mean": 0.6983421602906897,
+    "repair_rate_mean": 0.6504840543443484,
+    "model_latency_ms_mean": 4628.244458459012,
+    "total_latency_ms_mean": 5927.3910416789095,
+    "episode_run_time_mean": 108.79935764807921
+  }
+}
+WROTE /data2/androidworld_eval/runs/current_general_focus_sweep_20260603_230905/summary.json

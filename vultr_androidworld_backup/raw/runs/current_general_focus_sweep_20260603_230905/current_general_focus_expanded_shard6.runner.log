@@ -1,0 +1,249 @@
+W0603 23:09:24.630590 140439262777344 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:10:50.604906 140439262777344 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:15:16.897408 140439262777344 sqlite_validators.py:168] Expected row CalendarEvent(start_ts=1698620400, end_ts=1698622200, title='Catch up on Project X', location='', description='We will explore team roles. Remember to confirm attendance.', repeat_interval=0, repeat_rule=0, reminder_1_minutes=-1, reminder_2_minutes=-1, reminder_3_minutes=-1, reminder_1_type=0, reminder_2_type=0, reminder_3_type=0, repeat_limit=0, repetition_exceptions='[]', attendees='', import_id='', time_zone='UTC', flags=0, event_type=1, parent_id=0, last_updated=0, source='imported-ics', availability=0, color=0, type=0, id=-1) not found in the 'after' state.
+W0603 23:17:12.653470 140439262777344 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:18:28.708684 140439262777344 android_world_controller.py:98] Could not get a11y tree, retrying.
+Starting AndroidWorld eval with guiowl_dvlm -> /data2/androidworld_eval/runs/current_general_focus_sweep_20260603_230905/current_general_focus_expanded_shard6/run_20260603T230922946807
+Running task: MarkorDeleteNote
+==============================
+Running task MarkorDeleteNote with goal "Delete the note in Markor named 2023_09_22_funny_dog."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Delete the note in Markor named 2023_09_22_funny_dog.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+MarkorDeleteNote                    0                  1.0                0.0                 10.0             85.7              0.0
+========= Average =========         0                  1.0                0.0                 10.0             85.7              0.0
+
+
+               mean_success_rate
+difficulty                  easy
+tags                            
+data_edit                    0.0
+parameterized                0.0
+requires_setup               0.0
+
+Running task: SimpleCalendarAddOneEventInTwoWeeks
+=================================================
+Running task SimpleCalendarAddOneEventInTwoWeeks with goal "In Simple Calendar Pro, create a calendar event in two weeks from today at 23h with the title 'Catch up on Project X' and the description 'We will explore team roles. Remember to confirm attendance.'. The event should last for 30 mins."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Completed step 13.
+Completed step 14.
+Completed step 15.
+Completed step 16.
+Completed step 17.
+Completed step 18.
+Completed step 19.
+Completed step 20.
+Completed step 21.
+Completed step 22.
+Completed step 23.
+Completed step 24.
+Completed step 25.
+Completed step 26.
+Completed step 27.
+Completed step 28.
+Completed step 29.
+Completed step 30.
+Completed step 31.
+Completed step 32.
+Completed step 33.
+Completed step 34.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  In Simple Calendar Pro, create a calendar event in two weeks from today at 23h with the title 'Catch up on Project X' and the description 'We will explore team roles. Remember to confirm attendance.'. The event should last for 30 mins.
+
+
+                                     task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                        
+MarkorDeleteNote                            0                  1.0                0.0                 10.0             85.7              0.0
+SimpleCalendarAddOneEventInTwoWeeks         1                  1.0                0.0                 34.0            267.1              0.0
+========= Average =========                 0                  1.0                0.0                 22.0            176.4              0.0
+
+
+               mean_success_rate       
+difficulty                  easy medium
+tags                                   
+data_edit                    0.0      -
+data_entry                     -    0.0
+math_counting                  -    0.0
+parameterized                0.0    0.0
+requires_setup               0.0      -
+
+Running task: SimpleSmsReply
+============================
+Running task SimpleSmsReply with goal "Reply to +16800361283 with message: Book club meets next Tuesday to discuss '1984'. in Simple SMS Messenger"
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Reply to +16800361283 with message: Book club meets next Tuesday to discuss '1984'. in Simple SMS Messenger
+
+
+                                     task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                        
+MarkorDeleteNote                            0                  1.0                0.0                10.00            85.70              0.0
+SimpleCalendarAddOneEventInTwoWeeks         1                  1.0                0.0                34.00           267.10              0.0
+SimpleSmsReply                              2                  1.0                0.0                12.00           115.00              0.0
+========= Average =========                 0                  1.0                0.0                18.67           155.93              0.0
+
+
+               mean_success_rate       
+difficulty                  easy medium
+tags                                   
+data_edit                    0.0      -
+data_entry                   0.0    0.0
+math_counting                  -    0.0
+parameterized                0.0    0.0
+requires_setup               0.0      -
+search                       0.0      -
+
+Running task: SystemBrightnessMin
+=================================
+Running task SystemBrightnessMin with goal "Turn brightness to the min value."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Turn brightness to the min value.
+
+
+                                     task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                        
+MarkorDeleteNote                            0                  1.0                0.0                 10.0            85.70              0.0
+SimpleCalendarAddOneEventInTwoWeeks         1                  1.0                0.0                 34.0           267.10              0.0
+SimpleSmsReply                              2                  1.0                0.0                 12.0           115.00              0.0
+SystemBrightnessMin                         3                  1.0                0.0                 10.0            75.90              0.0
+========= Average =========                 0                  1.0                0.0                 16.5           135.93              0.0
+
+
+               mean_success_rate       
+difficulty                  easy medium
+tags                                   
+data_edit                    0.0      -
+data_entry                   0.0    0.0
+math_counting                  -    0.0
+parameterized                0.0    0.0
+requires_setup               0.0      -
+search                       0.0      -
+untagged                     0.0      -
+
+Running task: SystemWifiTurnOff
+===============================
+Running task SystemWifiTurnOff with goal "Turn wifi off."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Turn wifi off.
+W0603 23:19:55.915912 140439262777344 android_world_controller.py:98] Could not get a11y tree, retrying.
+
+
+                                     task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                        
+MarkorDeleteNote                            0                  1.0                0.0                 10.0             85.7              0.0
+SimpleCalendarAddOneEventInTwoWeeks         1                  1.0                0.0                 34.0            267.1              0.0
+SimpleSmsReply                              2                  1.0                0.0                 12.0            115.0              0.0
+SystemBrightnessMin                         3                  1.0                0.0                 10.0             75.9              0.0
+SystemWifiTurnOff                           4                  1.0                0.0                 10.0             86.3              0.0
+========= Average =========                 0                  1.0                0.0                 15.2            126.0              0.0
+
+
+               mean_success_rate       
+difficulty                  easy medium
+tags                                   
+data_edit                    0.0      -
+data_entry                   0.0    0.0
+math_counting                  -    0.0
+parameterized                0.0    0.0
+requires_setup               0.0      -
+screen_reading               0.0      -
+search                       0.0      -
+untagged                     0.0      -
+
+Running task: TasksDueNextWeek
+==============================
+Running task TasksDueNextWeek with goal "How many tasks do I have due next week in Tasks app? Assume the week starts from Monday. Express your answer as a single integer."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  How many tasks do I have due next week in Tasks app? Assume the week starts from Monday. Express your answer as a single integer.
+
+
+                                     task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                        
+MarkorDeleteNote                            0                  1.0                0.0                10.00             85.7              0.0
+SimpleCalendarAddOneEventInTwoWeeks         1                  1.0                0.0                34.00            267.1              0.0
+SimpleSmsReply                              2                  1.0                0.0                12.00            115.0              0.0
+SystemBrightnessMin                         3                  1.0                0.0                10.00             75.9              0.0
+SystemWifiTurnOff                           4                  1.0                0.0                10.00             86.3              0.0
+TasksDueNextWeek                            5                  1.0                0.0                10.00             75.0              0.0
+========= Average =========                 0                  1.0                0.0                14.33            117.5              0.0
+
+
+                      mean_success_rate       
+difficulty                         easy medium
+tags                                          
+data_edit                           0.0      -
+data_entry                          0.0    0.0
+information_retrieval                 -    0.0
+math_counting                         -    0.0
+parameterized                       0.0    0.0
+requires_setup                      0.0      -
+screen_reading                      0.0      -
+search                              0.0      -
+untagged                            0.0      -
+
+Finished AndroidWorld eval. Wrote to /data2/androidworld_eval/runs/current_general_focus_sweep_20260603_230905/current_general_focus_expanded_shard6/run_20260603T230922946807

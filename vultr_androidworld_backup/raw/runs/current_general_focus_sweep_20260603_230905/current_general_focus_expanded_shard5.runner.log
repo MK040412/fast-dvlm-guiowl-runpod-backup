@@ -1,0 +1,226 @@
+W0603 23:09:23.492851 140046834937856 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:11:03.894998 140046834937856 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:15:20.745243 140046834937856 sqlite_validators.py:168] Expected row CalendarEvent(start_ts=1697634000, end_ts=1697636700, title='Appointment for Annual Report', location='', description='We will finalize team roles.', repeat_interval=0, repeat_rule=0, reminder_1_minutes=-1, reminder_2_minutes=-1, reminder_3_minutes=-1, reminder_1_type=0, reminder_2_type=0, reminder_3_type=0, repeat_limit=0, repetition_exceptions='[]', attendees='', import_id='', time_zone='UTC', flags=0, event_type=1, parent_id=0, last_updated=0, source='imported-ics', availability=0, color=0, type=0, id=-1) not found in the 'after' state.
+W0603 23:15:27.348739 140046834937856 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:17:17.856358 140046834937856 android_world_controller.py:98] Could not get a11y tree, retrying.
+Starting AndroidWorld eval with guiowl_dvlm -> /data2/androidworld_eval/runs/current_general_focus_sweep_20260603_230905/current_general_focus_expanded_shard5/run_20260603T230922814570
+Running task: MarkorCreateFolder
+================================
+Running task MarkorCreateFolder with goal "Create a new folder in Markor named folder_20260603_230922."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Create a new folder in Markor named folder_20260603_230922.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+MarkorCreateFolder                  0                  1.0                0.0                 10.0             99.9              0.0
+========= Average =========         0                  1.0                0.0                 10.0             99.9              0.0
+
+
+              mean_success_rate
+difficulty                 easy
+tags                           
+data_entry                  0.0
+parameterized               0.0
+
+Running task: SimpleCalendarAddOneEventRelativeDay
+==================================================
+Running task SimpleCalendarAddOneEventRelativeDay with goal "In Simple Calendar Pro, create a calendar event for this Wednesday at 13h with the title 'Appointment for Annual Report' and the description 'We will finalize team roles.'. The event should last for 45 mins."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Completed step 13.
+Completed step 14.
+Completed step 15.
+Completed step 16.
+Completed step 17.
+Completed step 18.
+Completed step 19.
+Completed step 20.
+Completed step 21.
+Completed step 22.
+Completed step 23.
+Completed step 24.
+Completed step 25.
+Completed step 26.
+Completed step 27.
+Completed step 28.
+Completed step 29.
+Completed step 30.
+Completed step 31.
+Completed step 32.
+Completed step 33.
+Completed step 34.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  In Simple Calendar Pro, create a calendar event for this Wednesday at 13h with the title 'Appointment for Annual Report' and the description 'We will finalize team roles.'. The event should last for 45 mins.
+
+
+                                      task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                         
+MarkorCreateFolder                           0                  1.0                0.0                 10.0            99.90              0.0
+SimpleCalendarAddOneEventRelativeDay         1                  1.0                0.0                 34.0           257.80              0.0
+========= Average =========                  0                  1.0                0.0                 22.0           178.85              0.0
+
+
+              mean_success_rate
+difficulty                 easy
+tags                           
+data_entry                  0.0
+parameterized               0.0
+
+Running task: SimpleSmsSend
+===========================
+Running task SimpleSmsSend with goal "Send a text message using Simple SMS Messenger to +15225814254 with message: I think, therefore I am."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Send a text message using Simple SMS Messenger to +15225814254 with message: I think, therefore I am.
+
+
+                                      task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                         
+MarkorCreateFolder                           0                  1.0                0.0                10.00             99.9              0.0
+SimpleCalendarAddOneEventRelativeDay         1                  1.0                0.0                34.00            257.8              0.0
+SimpleSmsSend                                2                  1.0                0.0                12.00            116.3              0.0
+========= Average =========                  0                  1.0                0.0                18.67            158.0              0.0
+
+
+              mean_success_rate       
+difficulty                 easy medium
+tags                                  
+data_entry                  0.0      -
+parameterized               0.0    0.0
+
+Running task: SystemBrightnessMaxVerify
+=======================================
+Running task SystemBrightnessMaxVerify with goal "Turn brightness to the max value."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Turn brightness to the max value.
+
+
+                                      task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                         
+MarkorCreateFolder                           0                  1.0                0.0                 10.0            99.90              0.0
+SimpleCalendarAddOneEventRelativeDay         1                  1.0                0.0                 34.0           257.80              0.0
+SimpleSmsSend                                2                  1.0                0.0                 12.0           116.30              0.0
+SystemBrightnessMaxVerify                    3                  1.0                0.0                 10.0            85.70              0.0
+========= Average =========                  0                  1.0                0.0                 16.5           139.93              0.0
+
+
+              mean_success_rate       
+difficulty                 easy medium
+tags                                  
+data_entry                  0.0      -
+parameterized               0.0    0.0
+verification                0.0      -
+
+Running task: SystemWifiTurnOnVerify
+====================================
+Running task SystemWifiTurnOnVerify with goal "Turn wifi on."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Turn wifi on.
+
+
+                                      task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                         
+MarkorCreateFolder                           0                  1.0                0.0                 10.0            99.90              0.0
+SimpleCalendarAddOneEventRelativeDay         1                  1.0                0.0                 34.0           257.80              0.0
+SimpleSmsSend                                2                  1.0                0.0                 12.0           116.30              0.0
+SystemBrightnessMaxVerify                    3                  1.0                0.0                 10.0            85.70              0.0
+SystemWifiTurnOnVerify                       4                  1.0                0.0                 10.0            67.10              0.0
+========= Average =========                  0                  1.0                0.0                 15.2           125.36              0.0
+
+
+              mean_success_rate       
+difficulty                 easy medium
+tags                                  
+data_entry                  0.0      -
+parameterized               0.0    0.0
+verification                0.0      -
+
+Running task: TasksDueOnDate
+============================
+Running task TasksDueOnDate with goal "What tasks do I have due October 15 in Tasks app? Answer with the titles only. If there are multiples titles, format your answer in a comma separated list."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  What tasks do I have due October 15 in Tasks app? Answer with the titles only. If there are multiples titles, format your answer in a comma separated list.
+
+
+                                      task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                         
+MarkorCreateFolder                           0                  1.0                0.0                10.00             99.9              0.0
+SimpleCalendarAddOneEventRelativeDay         1                  1.0                0.0                34.00            257.8              0.0
+SimpleSmsSend                                2                  1.0                0.0                12.00            116.3              0.0
+SystemBrightnessMaxVerify                    3                  1.0                0.0                10.00             85.7              0.0
+SystemWifiTurnOnVerify                       4                  1.0                0.0                10.00             67.1              0.0
+TasksDueOnDate                               5                  1.0                0.0                10.00             61.4              0.0
+========= Average =========                  0                  1.0                0.0                14.33            114.7              0.0
+
+
+              mean_success_rate       
+difficulty                 easy medium
+tags                                  
+data_entry                  0.0      -
+parameterized               0.0    0.0
+search                      0.0      -
+verification                0.0      -
+
+Finished AndroidWorld eval. Wrote to /data2/androidworld_eval/runs/current_general_focus_sweep_20260603_230905/current_general_focus_expanded_shard5/run_20260603T230922814570

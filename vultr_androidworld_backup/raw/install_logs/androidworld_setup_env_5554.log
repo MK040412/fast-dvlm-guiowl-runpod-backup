@@ -1,0 +1,56 @@
+ERROR:absl:Failed to connect to the emulator.
+Traceback (most recent call last):
+  File "/data2/androidworld_eval/venv/lib/python3.11/site-packages/android_env/components/simulators/emulator/emulator_simulator.py", line 349, in _connect_to_emulator
+    grpc.channel_ready_future(self._channel).result(timeout=timeout_sec)
+  File "/data2/androidworld_eval/venv/lib/python3.11/site-packages/grpc/_utilities.py", line 160, in result
+    self._block(timeout)
+  File "/data2/androidworld_eval/venv/lib/python3.11/site-packages/grpc/_utilities.py", line 105, in _block
+    raise grpc.FutureTimeoutError()
+grpc.FutureTimeoutError
+ERROR:absl:Logfile does not exist: None.
+Traceback (most recent call last):
+  File "/data2/androidworld_eval/venv/lib/python3.11/site-packages/android_env/components/simulators/emulator/emulator_simulator.py", line 349, in _connect_to_emulator
+    grpc.channel_ready_future(self._channel).result(timeout=timeout_sec)
+  File "/data2/androidworld_eval/venv/lib/python3.11/site-packages/grpc/_utilities.py", line 160, in result
+    self._block(timeout)
+  File "/data2/androidworld_eval/venv/lib/python3.11/site-packages/grpc/_utilities.py", line 105, in _block
+    raise grpc.FutureTimeoutError()
+grpc.FutureTimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data2/androidworld_eval/venv/lib/python3.11/site-packages/android_env/components/simulators/base_simulator.py", line 78, in launch
+    self._launch_impl()
+  File "/data2/androidworld_eval/venv/lib/python3.11/site-packages/android_env/components/simulators/emulator/emulator_simulator.py", line 239, in _launch_impl
+    self._emulator_stub, self._snapshot_stub = self._connect_to_emulator(
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data2/androidworld_eval/venv/lib/python3.11/site-packages/android_env/components/simulators/emulator/emulator_simulator.py", line 352, in _connect_to_emulator
+    raise EmulatorBootError(
+android_env.components.simulators.emulator.emulator_simulator.EmulatorBootError: Failed to connect to the emulator.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data2/androidworld_eval/setup_env_once.py", line 9, in <module>
+    env = env_launcher.load_and_setup_env(console_port=a.console_port, emulator_setup=a.perform_emulator_setup, adb_path=a.adb_path, grpc_port=a.grpc_port)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data2/androidworld_eval/android_world/android_world/env/env_launcher.py", line 125, in load_and_setup_env
+    env = _get_env(console_port, adb_path, grpc_port)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data2/androidworld_eval/android_world/android_world/env/env_launcher.py", line 35, in _get_env
+    controller = android_world_controller.get_controller(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data2/androidworld_eval/android_world/android_world/env/android_world_controller.py", line 327, in get_controller
+    android_env_instance = loader.load(config)
+                           ^^^^^^^^^^^^^^^^^^^
+  File "/data2/androidworld_eval/venv/lib/python3.11/site-packages/android_env/loader.py", line 63, in load
+    coordinator = coordinator_lib.Coordinator(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data2/androidworld_eval/venv/lib/python3.11/site-packages/android_env/components/coordinator.py", line 81, in __init__
+    self._launch_simulator()
+  File "/data2/androidworld_eval/venv/lib/python3.11/site-packages/android_env/components/coordinator.py", line 140, in _launch_simulator
+    self._simulator.launch()
+  File "/data2/androidworld_eval/venv/lib/python3.11/site-packages/android_env/components/simulators/base_simulator.py", line 82, in launch
+    raise errors.SimulatorError(
+android_env.components.errors.SimulatorError: Exception caught in simulator. Please see the simulator logs above for more details.

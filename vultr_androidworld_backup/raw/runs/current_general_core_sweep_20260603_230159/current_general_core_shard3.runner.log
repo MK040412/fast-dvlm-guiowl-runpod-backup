@@ -1,0 +1,98 @@
+W0603 23:02:17.540023 139710065876992 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:03:47.613608 139710065876992 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:05:17.927435 139710065876992 android_world_controller.py:98] Could not get a11y tree, retrying.
+Starting AndroidWorld eval with guiowl_dvlm -> /data2/androidworld_eval/runs/current_general_core_sweep_20260603_230159/current_general_core_shard3/run_20260603T230217269022
+Running task: ClockTimerEntry
+=============================
+Running task ClockTimerEntry with goal "Create a timer with 0 hours, 16 minutes, and 35 seconds. Do not start the timer."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Create a timer with 0 hours, 16 minutes, and 35 seconds. Do not start the timer.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+ClockTimerEntry                     0                  1.0                0.0                 10.0             89.8              0.0
+========= Average =========         0                  1.0                0.0                 10.0             89.8              0.0
+
+
+              mean_success_rate
+difficulty                 easy
+tags                           
+data_entry                  0.0
+parameterized               0.0
+
+Running task: SystemWifiTurnOff
+===============================
+Running task SystemWifiTurnOff with goal "Turn wifi off."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Turn wifi off.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+ClockTimerEntry                     0                  1.0                0.0                 10.0            89.80              0.0
+SystemWifiTurnOff                   1                  1.0                0.0                 10.0            89.50              0.0
+========= Average =========         0                  1.0                0.0                 10.0            89.65              0.0
+
+
+               mean_success_rate
+difficulty                  easy
+tags                            
+data_entry                   0.0
+parameterized                0.0
+screen_reading               0.0
+
+Running task: TasksDueNextWeek
+==============================
+Running task TasksDueNextWeek with goal "How many tasks do I have due next week in Tasks app? Assume the week starts from Monday. Express your answer as a single integer."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  How many tasks do I have due next week in Tasks app? Assume the week starts from Monday. Express your answer as a single integer.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+ClockTimerEntry                     0                  1.0                0.0                 10.0            89.80              0.0
+SystemWifiTurnOff                   1                  1.0                0.0                 10.0            89.50              0.0
+TasksDueNextWeek                    2                  1.0                0.0                 10.0            89.00              0.0
+========= Average =========         0                  1.0                0.0                 10.0            89.43              0.0
+
+
+                      mean_success_rate       
+difficulty                         easy medium
+tags                                          
+data_entry                          0.0      -
+information_retrieval                 -    0.0
+parameterized                       0.0    0.0
+screen_reading                      0.0      -
+
+Finished AndroidWorld eval. Wrote to /data2/androidworld_eval/runs/current_general_core_sweep_20260603_230159/current_general_core_shard3/run_20260603T230217269022

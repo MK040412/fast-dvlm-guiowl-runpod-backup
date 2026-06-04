@@ -1,0 +1,250 @@
+W0603 23:09:23.197858 140106892161024 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:11:13.363832 140106892161024 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:12:58.092996 140106892161024 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:17:51.615357 140106892161024 sqlite_validators.py:168] Expected row CalendarEvent(start_ts=1697497200, end_ts=1697499000, title='Workshop on Campaign', location='', description='We will organize software updates. Snacks will be provided.', repeat_interval=0, repeat_rule=0, reminder_1_minutes=-1, reminder_2_minutes=-1, reminder_3_minutes=-1, reminder_1_type=0, reminder_2_type=0, reminder_3_type=0, repeat_limit=0, repetition_exceptions='[]', attendees='', import_id='', time_zone='UTC', flags=0, event_type=1, parent_id=0, last_updated=0, source='imported-ics', availability=0, color=0, type=0, id=-1) not found in the 'after' state.
+W0603 23:17:52.702973 140106892161024 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:19:13.027084 140106892161024 android_world_controller.py:98] Could not get a11y tree, retrying.
+Starting AndroidWorld eval with guiowl_dvlm -> /data2/androidworld_eval/runs/current_general_focus_sweep_20260603_230905/current_general_focus_expanded_shard4/run_20260603T230922926621
+Running task: ContactsNewContactDraft
+=====================================
+Running task ContactsNewContactDraft with goal "Go to the new contact screen and enter the following details: First Name: Bob, Last Name: Brown, Phone: 453-998-8190, Phone Label: Home. Do NOT hit save."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Go to the new contact screen and enter the following details: First Name: Bob, Last Name: Brown, Phone: 453-998-8190, Phone Label: Home. Do NOT hit save.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+ContactsNewContactDraft             0                  1.0                0.0                 12.0            109.5              0.0
+========= Average =========         0                  1.0                0.0                 12.0            109.5              0.0
+
+
+               mean_success_rate
+difficulty                  easy
+tags                            
+data_entry                   0.0
+screen_reading               0.0
+
+Running task: MarkorEditNote
+============================
+Running task MarkorEditNote with goal "Edit note_CEzxv.md in Markor. Add to the top of the note Dry cleaning is ready for pick-up."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Edit note_CEzxv.md in Markor. Add to the top of the note Dry cleaning is ready for pick-up.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+ContactsNewContactDraft             0                  1.0                0.0                 12.0            109.5              0.0
+MarkorEditNote                      1                  1.0                0.0                 12.0            104.3              0.0
+========= Average =========         0                  1.0                0.0                 12.0            106.9              0.0
+
+
+               mean_success_rate
+difficulty                  easy
+tags                            
+data_edit                    0.0
+data_entry                   0.0
+parameterized                0.0
+screen_reading               0.0
+transcription                0.0
+
+Running task: SimpleCalendarAddOneEventTomorrow
+===============================================
+Running task SimpleCalendarAddOneEventTomorrow with goal "In Simple Calendar Pro, create a calendar event for tomorrow at 23h with the title 'Workshop on Campaign' and the description 'We will organize software updates. Snacks will be provided.'. The event should last for 30 mins."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Completed step 13.
+Completed step 14.
+Completed step 15.
+Completed step 16.
+Completed step 17.
+Completed step 18.
+Completed step 19.
+Completed step 20.
+Completed step 21.
+Completed step 22.
+Completed step 23.
+Completed step 24.
+Completed step 25.
+Completed step 26.
+Completed step 27.
+Completed step 28.
+Completed step 29.
+Completed step 30.
+Completed step 31.
+Completed step 32.
+Completed step 33.
+Completed step 34.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  In Simple Calendar Pro, create a calendar event for tomorrow at 23h with the title 'Workshop on Campaign' and the description 'We will organize software updates. Snacks will be provided.'. The event should last for 30 mins.
+
+
+                                   task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                      
+ContactsNewContactDraft                   0                  1.0                0.0                12.00           109.50              0.0
+MarkorEditNote                            1                  1.0                0.0                12.00           104.30              0.0
+SimpleCalendarAddOneEventTomorrow         2                  1.0                0.0                34.00           294.50              0.0
+========= Average =========               0                  1.0                0.0                19.33           169.43              0.0
+
+
+               mean_success_rate
+difficulty                  easy
+tags                            
+data_edit                    0.0
+data_entry                   0.0
+parameterized                0.0
+screen_reading               0.0
+transcription                0.0
+
+Running task: SimpleCalendarNextEvent
+=====================================
+Running task SimpleCalendarNextEvent with goal "What is my next upcoming event in Simple Calendar Pro? Answer with the title only. If there are multiples titles, format your answer in a comma separated list."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  What is my next upcoming event in Simple Calendar Pro? Answer with the title only. If there are multiples titles, format your answer in a comma separated list.
+
+
+                                   task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                      
+ContactsNewContactDraft                   0                  1.0                0.0                 12.0            109.5              0.0
+MarkorEditNote                            1                  1.0                0.0                 12.0            104.3              0.0
+SimpleCalendarAddOneEventTomorrow         2                  1.0                0.0                 34.0            294.5              0.0
+SimpleCalendarNextEvent                   3                  1.0                0.0                 10.0             80.5              0.0
+========= Average =========               0                  1.0                0.0                 17.0            147.2              0.0
+
+
+                         mean_success_rate
+difficulty                            easy
+tags                                      
+complex_ui_understanding               0.0
+data_edit                              0.0
+data_entry                             0.0
+information_retrieval                  0.0
+parameterized                          0.0
+screen_reading                         0.0
+transcription                          0.0
+
+Running task: SystemBrightnessMax
+=================================
+Running task SystemBrightnessMax with goal "Turn brightness to the max value."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Turn brightness to the max value.
+W0603 23:20:35.198202 140106892161024 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:20:36.198591 140106892161024 android_world_controller.py:98] Could not get a11y tree, retrying.
+
+
+                                   task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                      
+ContactsNewContactDraft                   0                  1.0                0.0                 12.0           109.50              0.0
+MarkorEditNote                            1                  1.0                0.0                 12.0           104.30              0.0
+SimpleCalendarAddOneEventTomorrow         2                  1.0                0.0                 34.0           294.50              0.0
+SimpleCalendarNextEvent                   3                  1.0                0.0                 10.0            80.50              0.0
+SystemBrightnessMax                       4                  1.0                0.0                 10.0            82.00              0.0
+========= Average =========               0                  1.0                0.0                 15.6           134.16              0.0
+
+
+                         mean_success_rate
+difficulty                            easy
+tags                                      
+complex_ui_understanding               0.0
+data_edit                              0.0
+data_entry                             0.0
+information_retrieval                  0.0
+parameterized                          0.0
+screen_reading                         0.0
+transcription                          0.0
+untagged                               0.0
+
+Running task: SystemWifiTurnOn
+==============================
+Running task SystemWifiTurnOn with goal "Turn wifi on."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Turn wifi on.
+
+
+                                   task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                      
+ContactsNewContactDraft                   0                  1.0                0.0                12.00           109.50              0.0
+MarkorEditNote                            1                  1.0                0.0                12.00           104.30              0.0
+SimpleCalendarAddOneEventTomorrow         2                  1.0                0.0                34.00           294.50              0.0
+SimpleCalendarNextEvent                   3                  1.0                0.0                10.00            80.50              0.0
+SystemBrightnessMax                       4                  1.0                0.0                10.00            82.00              0.0
+SystemWifiTurnOn                          5                  1.0                0.0                10.00            59.90              0.0
+========= Average =========               0                  1.0                0.0                14.67           121.78              0.0
+
+
+                         mean_success_rate
+difficulty                            easy
+tags                                      
+complex_ui_understanding               0.0
+data_edit                              0.0
+data_entry                             0.0
+information_retrieval                  0.0
+parameterized                          0.0
+screen_reading                         0.0
+transcription                          0.0
+untagged                               0.0
+
+Finished AndroidWorld eval. Wrote to /data2/androidworld_eval/runs/current_general_focus_sweep_20260603_230905/current_general_focus_expanded_shard4/run_20260603T230922926621

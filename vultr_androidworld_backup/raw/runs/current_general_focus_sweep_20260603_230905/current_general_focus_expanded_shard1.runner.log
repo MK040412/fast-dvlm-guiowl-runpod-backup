@@ -1,0 +1,280 @@
+W0603 23:09:23.874607 140647297712128 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:11:01.972060 140647297712128 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:15:15.569268 140647297712128 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:16:54.471079 140647297712128 android_world_controller.py:98] Could not get a11y tree, retrying.
+Starting AndroidWorld eval with guiowl_dvlm -> /data2/androidworld_eval/runs/current_general_focus_sweep_20260603_230905/current_general_focus_expanded_shard1/run_20260603T230923560701
+Running task: ClockStopWatchRunning
+===================================
+Running task ClockStopWatchRunning with goal "Run the stopwatch."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Run the stopwatch.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+ClockStopWatchRunning               0                  1.0                0.0                 10.0             96.7              0.0
+========= Average =========         0                  1.0                0.0                 10.0             96.7              0.0
+
+
+           mean_success_rate
+difficulty              easy
+tags                        
+untagged                 0.0
+
+Running task: FilesMoveFile
+===========================
+Running task FilesMoveFile with goal "Move the file morning_alarm.mp3 from DCIM within the sdk_gphone_x86_64 storage area to the Alarms within the same sdk_gphone_x86_64 storage area in the Android filesystem."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Completed step 13.
+Completed step 14.
+Completed step 15.
+Completed step 16.
+Completed step 17.
+Completed step 18.
+Completed step 19.
+Completed step 20.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Move the file morning_alarm.mp3 from DCIM within the sdk_gphone_x86_64 storage area to the Alarms within the same sdk_gphone_x86_64 storage area in the Android filesystem.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+ClockStopWatchRunning               0                  1.0                0.0                 10.0            96.70              0.0
+FilesMoveFile                       1                  1.0                0.0                 20.0           149.00              0.0
+========= Average =========         0                  1.0                0.0                 15.0           122.85              0.0
+
+
+               mean_success_rate       
+difficulty                  easy medium
+tags                                   
+parameterized                  -    0.0
+screen_reading                 -    0.0
+search                         -    0.0
+untagged                     0.0      -
+
+Running task: SimpleCalendarDeleteEventsOnRelativeDay
+=====================================================
+Running task SimpleCalendarDeleteEventsOnRelativeDay with goal "In Simple Calendar Pro, delete all events scheduled for this Saturday."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  In Simple Calendar Pro, delete all events scheduled for this Saturday.
+
+
+                                         task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                            
+ClockStopWatchRunning                           0                  1.0                0.0                 10.0             96.7              0.0
+FilesMoveFile                                   1                  1.0                0.0                 20.0            149.0              0.0
+SimpleCalendarDeleteEventsOnRelativeDay         2                  1.0                0.0                 12.0             97.8              0.0
+========= Average =========                     0                  1.0                0.0                 14.0            114.5              0.0
+
+
+               mean_success_rate       
+difficulty                  easy medium
+tags                                   
+data_edit                      -    0.0
+parameterized                  -    0.0
+screen_reading                 -    0.0
+search                         -    0.0
+untagged                     0.0      -
+
+Running task: SimpleSmsSendClipboardContent
+===========================================
+Running task SimpleSmsSendClipboardContent with goal "Send a message to +16223308054 with the clipboard content in Simple SMS Messenger"
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Send a message to +16223308054 with the clipboard content in Simple SMS Messenger
+
+
+                                         task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                            
+ClockStopWatchRunning                           0                  1.0                0.0                 10.0            96.70              0.0
+FilesMoveFile                                   1                  1.0                0.0                 20.0           149.00              0.0
+SimpleCalendarDeleteEventsOnRelativeDay         2                  1.0                0.0                 12.0            97.80              0.0
+SimpleSmsSendClipboardContent                   3                  1.0                0.0                 12.0           105.40              0.0
+========= Average =========                     0                  1.0                0.0                 13.5           112.22              0.0
+
+
+               mean_success_rate       
+difficulty                  easy medium
+tags                                   
+data_edit                      -    0.0
+data_entry                   0.0      -
+parameterized                0.0    0.0
+screen_reading                 -    0.0
+search                         -    0.0
+untagged                     0.0      -
+
+Running task: SystemBluetoothTurnOnVerify
+=========================================
+Running task SystemBluetoothTurnOnVerify with goal "Turn bluetooth on."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Turn bluetooth on.
+W0603 23:18:15.353832 140647297712128 android_world_controller.py:98] Could not get a11y tree, retrying.
+
+
+                                         task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                            
+ClockStopWatchRunning                           0                  1.0                0.0                 10.0             96.7              0.0
+FilesMoveFile                                   1                  1.0                0.0                 20.0            149.0              0.0
+SimpleCalendarDeleteEventsOnRelativeDay         2                  1.0                0.0                 12.0             97.8              0.0
+SimpleSmsSendClipboardContent                   3                  1.0                0.0                 12.0            105.4              0.0
+SystemBluetoothTurnOnVerify                     4                  1.0                0.0                 10.0             80.1              0.0
+========= Average =========                     0                  1.0                0.0                 12.8            105.8              0.0
+
+
+               mean_success_rate       
+difficulty                  easy medium
+tags                                   
+data_edit                      -    0.0
+data_entry                   0.0      -
+parameterized                0.0    0.0
+screen_reading                 -    0.0
+search                         -    0.0
+untagged                     0.0      -
+verification                 0.0      -
+
+Running task: TasksCompletedTasksForDate
+========================================
+Running task TasksCompletedTasksForDate with goal "Which tasks have I completed for October 14 2023 in Tasks app? Answer with the titles only. If there are multiples titles, format your answer in a comma separated list."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Which tasks have I completed for October 14 2023 in Tasks app? Answer with the titles only. If there are multiples titles, format your answer in a comma separated list.
+
+
+                                         task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                            
+ClockStopWatchRunning                           0                  1.0                0.0                10.00            96.70              0.0
+FilesMoveFile                                   1                  1.0                0.0                20.00           149.00              0.0
+SimpleCalendarDeleteEventsOnRelativeDay         2                  1.0                0.0                12.00            97.80              0.0
+SimpleSmsSendClipboardContent                   3                  1.0                0.0                12.00           105.40              0.0
+SystemBluetoothTurnOnVerify                     4                  1.0                0.0                10.00            80.10              0.0
+TasksCompletedTasksForDate                      5                  1.0                0.0                10.00            70.90              0.0
+========= Average =========                     0                  1.0                0.0                12.33            99.98              0.0
+
+
+                      mean_success_rate       
+difficulty                         easy medium
+tags                                          
+data_edit                             -    0.0
+data_entry                          0.0      -
+information_retrieval                 -    0.0
+parameterized                       0.0    0.0
+screen_reading                        -    0.0
+search                                -    0.0
+untagged                            0.0      -
+verification                        0.0      -
+
+Running task: TurnOffWifiAndTurnOnBluetooth
+===========================================
+Running task TurnOffWifiAndTurnOnBluetooth with goal "Turn off WiFi, then enable bluetooth"
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Completed step 13.
+Completed step 14.
+Completed step 15.
+Completed step 16.
+Completed step 17.
+Completed step 18.
+Completed step 19.
+Completed step 20.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Turn off WiFi, then enable bluetooth
+
+
+                                         task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                            
+ClockStopWatchRunning                           0                  1.0                0.0                10.00            96.70              0.0
+FilesMoveFile                                   1                  1.0                0.0                20.00           149.00              0.0
+SimpleCalendarDeleteEventsOnRelativeDay         2                  1.0                0.0                12.00            97.80              0.0
+SimpleSmsSendClipboardContent                   3                  1.0                0.0                12.00           105.40              0.0
+SystemBluetoothTurnOnVerify                     4                  1.0                0.0                10.00            80.10              0.0
+TasksCompletedTasksForDate                      5                  1.0                0.0                10.00            70.90              0.0
+TurnOffWifiAndTurnOnBluetooth                   6                  1.0                0.0                20.00           138.30              0.0
+========= Average =========                     0                  1.0                0.0                13.43           105.46              0.0
+
+
+                      mean_success_rate       
+difficulty                         easy medium
+tags                                          
+data_edit                             -    0.0
+data_entry                          0.0      -
+information_retrieval                 -    0.0
+parameterized                       0.0    0.0
+screen_reading                        -    0.0
+search                                -    0.0
+untagged                            0.0    0.0
+verification                        0.0      -
+
+Finished AndroidWorld eval. Wrote to /data2/androidworld_eval/runs/current_general_focus_sweep_20260603_230905/current_general_focus_expanded_shard1/run_20260603T230923560701

@@ -1,0 +1,278 @@
+W0603 23:09:23.032555 139763143794688 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:11:08.487196 139763143794688 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:12:35.153815 139763143794688 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:14:05.517104 139763143794688 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:16:30.497552 139763143794688 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:20:48.843080 139763143794688 sqlite_validators.py:168] Expected row CalendarEvent(start_ts=1698217200, end_ts=1698218100, title='Catch up on Budget Planning', location='', description='We will organize contract details.', repeat_interval=0, repeat_rule=0, reminder_1_minutes=-1, reminder_2_minutes=-1, reminder_3_minutes=-1, reminder_1_type=0, reminder_2_type=0, reminder_3_type=0, repeat_limit=0, repetition_exceptions='[]', attendees='', import_id='', time_zone='UTC', flags=0, event_type=1, parent_id=0, last_updated=0, source='imported-ics', availability=0, color=0, type=0, id=-1) not found in the 'after' state.
+Starting AndroidWorld eval with guiowl_dvlm -> /data2/androidworld_eval/runs/current_general_focus_sweep_20260603_230905/current_general_focus_expanded_shard3/run_20260603T230922772361
+Running task: AudioRecorderRecordAudio
+======================================
+Running task AudioRecorderRecordAudio with goal "Record an audio clip using Audio Recorder app and save it."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Record an audio clip using Audio Recorder app and save it.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+AudioRecorderRecordAudio            0                  1.0                0.0                 12.0            105.3              0.0
+========= Average =========         0                  1.0                0.0                 12.0            105.3              0.0
+
+
+               mean_success_rate
+difficulty                  easy
+tags                            
+requires_setup               0.0
+
+Running task: ClockTimerEntry
+=============================
+Running task ClockTimerEntry with goal "Create a timer with 7 hours, 52 minutes, and 22 seconds. Do not start the timer."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Create a timer with 7 hours, 52 minutes, and 22 seconds. Do not start the timer.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+AudioRecorderRecordAudio            0                  1.0                0.0                 12.0            105.3              0.0
+ClockTimerEntry                     1                  1.0                0.0                 10.0             86.5              0.0
+========= Average =========         0                  1.0                0.0                 11.0             95.9              0.0
+
+
+               mean_success_rate
+difficulty                  easy
+tags                            
+data_entry                   0.0
+parameterized                0.0
+requires_setup               0.0
+
+Running task: ContactsAddContact
+================================
+Running task ContactsAddContact with goal "Create a new contact for Ian Lopez. Their number is +10948887380."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Create a new contact for Ian Lopez. Their number is +10948887380.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+AudioRecorderRecordAudio            0                  1.0                0.0                12.00           105.30              0.0
+ClockTimerEntry                     1                  1.0                0.0                10.00            86.50              0.0
+ContactsAddContact                  2                  1.0                0.0                12.00            89.20              0.0
+========= Average =========         0                  1.0                0.0                11.33            93.67              0.0
+
+
+               mean_success_rate
+difficulty                  easy
+tags                            
+data_entry                   0.0
+parameterized                0.0
+requires_setup               0.0
+
+Running task: MarkorCreateNote
+==============================
+Running task MarkorCreateNote with goal "Create a new note in Markor named final_silly_violin.txt with the following text: Cleanliness is next to godliness."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Completed step 13.
+Completed step 14.
+Completed step 15.
+Completed step 16.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Create a new note in Markor named final_silly_violin.txt with the following text: Cleanliness is next to godliness.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+AudioRecorderRecordAudio            0                  1.0                0.0                 12.0           105.30              0.0
+ClockTimerEntry                     1                  1.0                0.0                 10.0            86.50              0.0
+ContactsAddContact                  2                  1.0                0.0                 12.0            89.20              0.0
+MarkorCreateNote                    3                  1.0                0.0                 16.0           144.40              0.0
+========= Average =========         0                  1.0                0.0                 12.5           106.35              0.0
+
+
+               mean_success_rate       
+difficulty                  easy medium
+tags                                   
+data_entry                   0.0    0.0
+parameterized                0.0    0.0
+requires_setup               0.0      -
+
+Running task: SimpleCalendarAddOneEvent
+=======================================
+Running task SimpleCalendarAddOneEvent with goal "In Simple Calendar Pro, create a calendar event on 2023-10-25 at 7h with the title 'Catch up on Budget Planning' and the description 'We will organize contract details.'. The event should last for 15 mins."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Completed step 13.
+Completed step 14.
+Completed step 15.
+Completed step 16.
+Completed step 17.
+Completed step 18.
+Completed step 19.
+Completed step 20.
+Completed step 21.
+Completed step 22.
+Completed step 23.
+Completed step 24.
+Completed step 25.
+Completed step 26.
+Completed step 27.
+Completed step 28.
+Completed step 29.
+Completed step 30.
+Completed step 31.
+Completed step 32.
+Completed step 33.
+Completed step 34.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  In Simple Calendar Pro, create a calendar event on 2023-10-25 at 7h with the title 'Catch up on Budget Planning' and the description 'We will organize contract details.'. The event should last for 15 mins.
+W0603 23:20:49.907269 139763143794688 android_world_controller.py:98] Could not get a11y tree, retrying.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+AudioRecorderRecordAudio            0                  1.0                0.0                 12.0            105.3              0.0
+ClockTimerEntry                     1                  1.0                0.0                 10.0             86.5              0.0
+ContactsAddContact                  2                  1.0                0.0                 12.0             89.2              0.0
+MarkorCreateNote                    3                  1.0                0.0                 16.0            144.4              0.0
+SimpleCalendarAddOneEvent           4                  1.0                0.0                 34.0            259.1              0.0
+========= Average =========         0                  1.0                0.0                 16.8            136.9              0.0
+
+
+                         mean_success_rate            
+difficulty                            easy medium hard
+tags                                                  
+complex_ui_understanding                 -      -  0.0
+data_entry                             0.0    0.0  0.0
+parameterized                          0.0    0.0  0.0
+requires_setup                         0.0      -    -
+
+Running task: SimpleCalendarEventsOnDate
+========================================
+Running task SimpleCalendarEventsOnDate with goal "What events do I have October 27 in Simple Calendar Pro? Answer with the titles only. If there are multiple titles, format your answer as a comma separated list."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  What events do I have October 27 in Simple Calendar Pro? Answer with the titles only. If there are multiple titles, format your answer as a comma separated list.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+AudioRecorderRecordAudio            0                  1.0                0.0                12.00           105.30              0.0
+ClockTimerEntry                     1                  1.0                0.0                10.00            86.50              0.0
+ContactsAddContact                  2                  1.0                0.0                12.00            89.20              0.0
+MarkorCreateNote                    3                  1.0                0.0                16.00           144.40              0.0
+SimpleCalendarAddOneEvent           4                  1.0                0.0                34.00           259.10              0.0
+SimpleCalendarEventsOnDate          5                  1.0                0.0                10.00            58.00              0.0
+========= Average =========         0                  1.0                0.0                15.67           123.75              0.0
+
+
+                         mean_success_rate            
+difficulty                            easy medium hard
+tags                                                  
+complex_ui_understanding                 -      -  0.0
+data_entry                             0.0    0.0  0.0
+information_retrieval                    -    0.0    -
+parameterized                          0.0    0.0  0.0
+requires_setup                         0.0      -    -
+
+Running task: SystemBluetoothTurnOffVerify
+==========================================
+Running task SystemBluetoothTurnOffVerify with goal "Turn bluetooth off."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Turn bluetooth off.
+
+
+                              task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                 
+AudioRecorderRecordAudio             0                  1.0                0.0                12.00           105.30              0.0
+ClockTimerEntry                      1                  1.0                0.0                10.00            86.50              0.0
+ContactsAddContact                   2                  1.0                0.0                12.00            89.20              0.0
+MarkorCreateNote                     3                  1.0                0.0                16.00           144.40              0.0
+SimpleCalendarAddOneEvent            4                  1.0                0.0                34.00           259.10              0.0
+SimpleCalendarEventsOnDate           5                  1.0                0.0                10.00            58.00              0.0
+SystemBluetoothTurnOffVerify         6                  1.0                0.0                10.00            41.40              0.0
+========= Average =========          0                  1.0                0.0                14.86           111.99              0.0
+
+
+                         mean_success_rate            
+difficulty                            easy medium hard
+tags                                                  
+complex_ui_understanding                 -      -  0.0
+data_entry                             0.0    0.0  0.0
+information_retrieval                    -    0.0    -
+parameterized                          0.0    0.0  0.0
+requires_setup                         0.0      -    -
+verification                           0.0      -    -
+
+Finished AndroidWorld eval. Wrote to /data2/androidworld_eval/runs/current_general_focus_sweep_20260603_230905/current_general_focus_expanded_shard3/run_20260603T230922772361

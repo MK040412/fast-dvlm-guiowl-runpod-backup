@@ -1,0 +1,211 @@
+W0603 23:09:23.457872 140656498909184 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:11:00.430154 140656498909184 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:12:59.925344 140656498909184 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:14:46.934246 140656498909184 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:16:03.736791 140656498909184 android_world_controller.py:98] Could not get a11y tree, retrying.
+Starting AndroidWorld eval with guiowl_dvlm -> /data2/androidworld_eval/runs/current_general_focus_sweep_20260603_230905/current_general_focus_expanded_shard7/run_20260603T230923001019
+Running task: MarkorDeleteNewestNote
+====================================
+Running task MarkorDeleteNewestNote with goal "Delete the newest note in Markor."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Delete the newest note in Markor.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+MarkorDeleteNewestNote              0                  1.0                0.0                 10.0             96.3              0.0
+========= Average =========         0                  1.0                0.0                 10.0             96.3              0.0
+
+
+              mean_success_rate
+difficulty                 easy
+tags                           
+data_edit                   0.0
+parameterized               0.0
+
+Running task: SimpleCalendarDeleteOneEvent
+==========================================
+Running task SimpleCalendarDeleteOneEvent with goal "In Simple Calendar Pro, delete the calendar event on 2023-10-20 at 12h with the title 'Catch up on Annual Report'"
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  In Simple Calendar Pro, delete the calendar event on 2023-10-20 at 12h with the title 'Catch up on Annual Report'
+
+
+                              task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                 
+MarkorDeleteNewestNote               0                  1.0                0.0                 10.0             96.3              0.0
+SimpleCalendarDeleteOneEvent         1                  1.0                0.0                 12.0            102.9              0.0
+========= Average =========          0                  1.0                0.0                 11.0             99.6              0.0
+
+
+                         mean_success_rate
+difficulty                            easy
+tags                                      
+complex_ui_understanding               0.0
+data_edit                              0.0
+parameterized                          0.0
+
+Running task: SimpleSmsReplyMostRecent
+======================================
+Running task SimpleSmsReplyMostRecent with goal "Reply to the most recent text message using Simple SMS Messenger with message: I think, therefore I am."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Reply to the most recent text message using Simple SMS Messenger with message: I think, therefore I am.
+
+
+                              task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                 
+MarkorDeleteNewestNote               0                  1.0                0.0                10.00            96.30              0.0
+SimpleCalendarDeleteOneEvent         1                  1.0                0.0                12.00           102.90              0.0
+SimpleSmsReplyMostRecent             2                  1.0                0.0                12.00           123.80              0.0
+========= Average =========          0                  1.0                0.0                11.33           107.67              0.0
+
+
+                         mean_success_rate       
+difficulty                            easy medium
+tags                                             
+complex_ui_understanding               0.0      -
+data_edit                              0.0      -
+parameterized                          0.0    0.0
+
+Running task: SystemBrightnessMinVerify
+=======================================
+Running task SystemBrightnessMinVerify with goal "Turn brightness to the min value."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Turn brightness to the min value.
+
+
+                              task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                 
+MarkorDeleteNewestNote               0                  1.0                0.0                 10.0             96.3              0.0
+SimpleCalendarDeleteOneEvent         1                  1.0                0.0                 12.0            102.9              0.0
+SimpleSmsReplyMostRecent             2                  1.0                0.0                 12.0            123.8              0.0
+SystemBrightnessMinVerify            3                  1.0                0.0                 10.0             76.6              0.0
+========= Average =========          0                  1.0                0.0                 11.0             99.9              0.0
+
+
+                         mean_success_rate       
+difficulty                            easy medium
+tags                                             
+complex_ui_understanding               0.0      -
+data_edit                              0.0      -
+parameterized                          0.0    0.0
+verification                           0.0      -
+
+Running task: SystemWifiTurnOffVerify
+=====================================
+Running task SystemWifiTurnOffVerify with goal "Turn wifi off."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Turn wifi off.
+
+
+                              task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                 
+MarkorDeleteNewestNote               0                  1.0                0.0                 10.0            96.30              0.0
+SimpleCalendarDeleteOneEvent         1                  1.0                0.0                 12.0           102.90              0.0
+SimpleSmsReplyMostRecent             2                  1.0                0.0                 12.0           123.80              0.0
+SystemBrightnessMinVerify            3                  1.0                0.0                 10.0            76.60              0.0
+SystemWifiTurnOffVerify              4                  1.0                0.0                 10.0            82.00              0.0
+========= Average =========          0                  1.0                0.0                 10.8            96.32              0.0
+
+
+                         mean_success_rate       
+difficulty                            easy medium
+tags                                             
+complex_ui_understanding               0.0      -
+data_edit                              0.0      -
+parameterized                          0.0    0.0
+verification                           0.0      -
+
+Running task: TasksHighPriorityTasks
+====================================
+Running task TasksHighPriorityTasks with goal "What are my high priority tasks in Tasks app? Answer with the titles only. If there are multiples titles, format your answer in a comma separated list."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  What are my high priority tasks in Tasks app? Answer with the titles only. If there are multiples titles, format your answer in a comma separated list.
+
+
+                              task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                 
+MarkorDeleteNewestNote               0                  1.0                0.0                10.00            96.30              0.0
+SimpleCalendarDeleteOneEvent         1                  1.0                0.0                12.00           102.90              0.0
+SimpleSmsReplyMostRecent             2                  1.0                0.0                12.00           123.80              0.0
+SystemBrightnessMinVerify            3                  1.0                0.0                10.00            76.60              0.0
+SystemWifiTurnOffVerify              4                  1.0                0.0                10.00            82.00              0.0
+TasksHighPriorityTasks               5                  1.0                0.0                10.00            88.90              0.0
+========= Average =========          0                  1.0                0.0                10.67            95.08              0.0
+
+
+                         mean_success_rate       
+difficulty                            easy medium
+tags                                             
+complex_ui_understanding               0.0    0.0
+data_edit                              0.0      -
+information_retrieval                    -    0.0
+parameterized                          0.0    0.0
+search                                   -    0.0
+transcription                            -    0.0
+verification                           0.0      -
+
+Finished AndroidWorld eval. Wrote to /data2/androidworld_eval/runs/current_general_focus_sweep_20260603_230905/current_general_focus_expanded_shard7/run_20260603T230923001019

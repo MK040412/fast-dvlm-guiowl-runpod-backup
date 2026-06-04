@@ -1,0 +1,779 @@
+W0603 23:23:37.582581 140676315115520 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:26:55.427865 140676315115520 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:30:20.852875 140676315115520 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:33:33.852240 140676315115520 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:34:59.758528 140676315115520 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:36:28.380022 140676315115520 android_world_controller.py:98] Could not get a11y tree, retrying.
+Starting AndroidWorld eval with guiowl_dvlm -> /data2/androidworld_eval/runs/current_general_focus_multicombo_20260603_232318/current_general_focus_expanded_shard0/run_20260603T232335843625
+Running task: FilesDeleteFile
+=============================
+Running task FilesDeleteFile with goal "Delete the file fine_horse_2023_04_19.mp3 from the Android filesystem located in the Podcasts folder within the sdk_gphone_x86_64 storage area."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Completed step 13.
+Completed step 14.
+Completed step 15.
+Completed step 16.
+Completed step 17.
+Completed step 18.
+Completed step 19.
+Completed step 20.
+Completed step 21.
+Completed step 22.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Delete the file fine_horse_2023_04_19.mp3 from the Android filesystem located in the Podcasts folder within the sdk_gphone_x86_64 storage area.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+FilesDeleteFile                     0                  1.0                0.0                 22.0            197.0              0.0
+========= Average =========         0                  1.0                0.0                 22.0            197.0              0.0
+
+
+              mean_success_rate
+difficulty               medium
+tags                           
+data_edit                   0.0
+parameterized               0.0
+Running task FilesDeleteFile with goal "Delete the file fine_horse_2023_04_19.mp3 from the Android filesystem located in the Podcasts folder within the sdk_gphone_x86_64 storage area."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Completed step 13.
+Completed step 14.
+Completed step 15.
+Completed step 16.
+Completed step 17.
+Completed step 18.
+Completed step 19.
+Completed step 20.
+Completed step 21.
+Completed step 22.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Delete the file fine_horse_2023_04_19.mp3 from the Android filesystem located in the Podcasts folder within the sdk_gphone_x86_64 storage area.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+FilesDeleteFile                     0                  2.0                0.0                 22.0            401.3              0.0
+========= Average =========         0                  2.0                0.0                 22.0            401.3              0.0
+
+
+              mean_success_rate
+difficulty               medium
+tags                           
+data_edit                   0.0
+parameterized               0.0
+Running task FilesDeleteFile with goal "Delete the file fine_horse_2023_04_19.mp3 from the Android filesystem located in the Podcasts folder within the sdk_gphone_x86_64 storage area."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Completed step 13.
+Completed step 14.
+Completed step 15.
+Completed step 16.
+Completed step 17.
+Completed step 18.
+Completed step 19.
+Completed step 20.
+Completed step 21.
+Completed step 22.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Delete the file fine_horse_2023_04_19.mp3 from the Android filesystem located in the Podcasts folder within the sdk_gphone_x86_64 storage area.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+FilesDeleteFile                     0                  3.0                0.0                 22.0            594.0              0.0
+========= Average =========         0                  3.0                0.0                 22.0            594.0              0.0
+
+
+              mean_success_rate
+difficulty               medium
+tags                           
+data_edit                   0.0
+parameterized               0.0
+
+Running task: OpenAppTaskEval
+=============================
+Running task OpenAppTaskEval with goal "Open the camera app. Clear any pop-ups that may appear by granting all permissions that are required."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Open the camera app. Clear any pop-ups that may appear by granting all permissions that are required.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+FilesDeleteFile                     0                  3.0                0.0                 22.0           594.00              0.0
+OpenAppTaskEval                     1                  1.0                0.0                 10.0            85.50              0.0
+========= Average =========         0                  2.0                0.0                 16.0           339.75              0.0
+
+
+              mean_success_rate       
+difficulty                 easy medium
+tags                                  
+data_edit                     -    0.0
+parameterized               0.0    0.0
+Running task OpenAppTaskEval with goal "Open the camera app. Clear any pop-ups that may appear by granting all permissions that are required."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Open the camera app. Clear any pop-ups that may appear by granting all permissions that are required.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+FilesDeleteFile                     0                  3.0                0.0                 22.0           594.00              0.0
+OpenAppTaskEval                     1                  2.0                0.0                 10.0           173.70              0.0
+========= Average =========         0                  2.5                0.0                 16.0           383.85              0.0
+
+
+              mean_success_rate       
+difficulty                 easy medium
+tags                                  
+data_edit                     -    0.0
+parameterized               0.0    0.0
+Running task OpenAppTaskEval with goal "Open the camera app. Clear any pop-ups that may appear by granting all permissions that are required."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Open the camera app. Clear any pop-ups that may appear by granting all permissions that are required.
+W0603 23:37:48.584448 140676315115520 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:39:47.665192 140676315115520 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:41:51.765220 140676315115520 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:46:21.202033 140676315115520 android_world_controller.py:98] Could not get a11y tree, retrying.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+FilesDeleteFile                     0                  3.0                0.0                 22.0            594.0              0.0
+OpenAppTaskEval                     1                  3.0                0.0                 10.0            253.0              0.0
+========= Average =========         0                  3.0                0.0                 16.0            423.5              0.0
+
+
+              mean_success_rate       
+difficulty                 easy medium
+tags                                  
+data_edit                     -    0.0
+parameterized               0.0    0.0
+
+Running task: SimpleCalendarDeleteEvents
+========================================
+Running task SimpleCalendarDeleteEvents with goal "In Simple Calendar Pro, delete all the calendar events on 2023-10-26"
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Completed step 13.
+Completed step 14.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  In Simple Calendar Pro, delete all the calendar events on 2023-10-26
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+FilesDeleteFile                     0                 3.00                0.0                22.00           594.00              0.0
+OpenAppTaskEval                     1                 3.00                0.0                10.00           253.00              0.0
+SimpleCalendarDeleteEvents          2                 1.00                0.0                14.00           118.90              0.0
+========= Average =========         0                 2.33                0.0                15.33           321.97              0.0
+
+
+              mean_success_rate       
+difficulty                 easy medium
+tags                                  
+data_edit                   0.0    0.0
+parameterized               0.0    0.0
+Running task SimpleCalendarDeleteEvents with goal "In Simple Calendar Pro, delete all the calendar events on 2023-10-26"
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Completed step 13.
+Completed step 14.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  In Simple Calendar Pro, delete all the calendar events on 2023-10-26
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+FilesDeleteFile                     0                 3.00                0.0                22.00           594.00              0.0
+OpenAppTaskEval                     1                 3.00                0.0                10.00           253.00              0.0
+SimpleCalendarDeleteEvents          2                 2.00                0.0                14.00           242.20              0.0
+========= Average =========         0                 2.67                0.0                15.33           363.07              0.0
+
+
+              mean_success_rate       
+difficulty                 easy medium
+tags                                  
+data_edit                   0.0    0.0
+parameterized               0.0    0.0
+Running task SimpleCalendarDeleteEvents with goal "In Simple Calendar Pro, delete all the calendar events on 2023-10-26"
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Completed step 13.
+Completed step 14.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  In Simple Calendar Pro, delete all the calendar events on 2023-10-26
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+FilesDeleteFile                     0                  3.0                0.0                22.00           594.00              0.0
+OpenAppTaskEval                     1                  3.0                0.0                10.00           253.00              0.0
+SimpleCalendarDeleteEvents          2                  3.0                0.0                14.00           370.00              0.0
+========= Average =========         0                  3.0                0.0                15.33           405.67              0.0
+
+
+              mean_success_rate       
+difficulty                 easy medium
+tags                                  
+data_edit                   0.0    0.0
+parameterized               0.0    0.0
+
+Running task: SimpleSmsResend
+=============================
+Running task SimpleSmsResend with goal "Resend the message I just sent to Valentina Ali in Simple SMS Messenger"
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Resend the message I just sent to Valentina Ali in Simple SMS Messenger
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+FilesDeleteFile                     0                  3.0                0.0                 22.0            594.0              0.0
+OpenAppTaskEval                     1                  3.0                0.0                 10.0            253.0              0.0
+SimpleCalendarDeleteEvents          2                  3.0                0.0                 14.0            370.0              0.0
+SimpleSmsResend                     3                  1.0                0.0                 12.0            119.8              0.0
+========= Average =========         0                  2.5                0.0                 14.5            334.2              0.0
+
+
+              mean_success_rate       
+difficulty                 easy medium
+tags                                  
+data_edit                   0.0    0.0
+parameterized               0.0    0.0
+Running task SimpleSmsResend with goal "Resend the message I just sent to Valentina Ali in Simple SMS Messenger"
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Resend the message I just sent to Valentina Ali in Simple SMS Messenger
+W0603 23:48:34.971598 140676315115520 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:50:29.455431 140676315115520 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:53:04.606146 140676315115520 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:54:31.819531 140676315115520 android_world_controller.py:98] Could not get a11y tree, retrying.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+FilesDeleteFile                     0                 3.00                0.0                 22.0           594.00              0.0
+OpenAppTaskEval                     1                 3.00                0.0                 10.0           253.00              0.0
+SimpleCalendarDeleteEvents          2                 3.00                0.0                 14.0           370.00              0.0
+SimpleSmsResend                     3                 2.00                0.0                 12.0           253.50              0.0
+========= Average =========         0                 2.75                0.0                 14.5           367.62              0.0
+
+
+              mean_success_rate       
+difficulty                 easy medium
+tags                                  
+data_edit                   0.0    0.0
+parameterized               0.0    0.0
+Running task SimpleSmsResend with goal "Resend the message I just sent to Valentina Ali in Simple SMS Messenger"
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Resend the message I just sent to Valentina Ali in Simple SMS Messenger
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+FilesDeleteFile                     0                  3.0                0.0                 22.0            594.0              0.0
+OpenAppTaskEval                     1                  3.0                0.0                 10.0            253.0              0.0
+SimpleCalendarDeleteEvents          2                  3.0                0.0                 14.0            370.0              0.0
+SimpleSmsResend                     3                  3.0                0.0                 12.0            389.8              0.0
+========= Average =========         0                  3.0                0.0                 14.5            401.7              0.0
+
+
+              mean_success_rate       
+difficulty                 easy medium
+tags                                  
+data_edit                   0.0    0.0
+parameterized               0.0    0.0
+
+Running task: SystemBluetoothTurnOn
+===================================
+Running task SystemBluetoothTurnOn with goal "Turn bluetooth on."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Turn bluetooth on.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+FilesDeleteFile                     0                  3.0                0.0                 22.0           594.00              0.0
+OpenAppTaskEval                     1                  3.0                0.0                 10.0           253.00              0.0
+SimpleCalendarDeleteEvents          2                  3.0                0.0                 14.0           370.00              0.0
+SimpleSmsResend                     3                  3.0                0.0                 12.0           389.80              0.0
+SystemBluetoothTurnOn               4                  1.0                0.0                 10.0            91.10              0.0
+========= Average =========         0                  2.6                0.0                 13.6           339.58              0.0
+
+
+               mean_success_rate       
+difficulty                  easy medium
+tags                                   
+data_edit                    0.0    0.0
+parameterized                0.0    0.0
+screen_reading               0.0      -
+Running task SystemBluetoothTurnOn with goal "Turn bluetooth on."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Turn bluetooth on.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+FilesDeleteFile                     0                  3.0                0.0                 22.0           594.00              0.0
+OpenAppTaskEval                     1                  3.0                0.0                 10.0           253.00              0.0
+SimpleCalendarDeleteEvents          2                  3.0                0.0                 14.0           370.00              0.0
+SimpleSmsResend                     3                  3.0                0.0                 12.0           389.80              0.0
+SystemBluetoothTurnOn               4                  2.0                0.0                 10.0           155.00              0.0
+========= Average =========         0                  2.8                0.0                 13.6           352.36              0.0
+
+
+               mean_success_rate       
+difficulty                  easy medium
+tags                                   
+data_edit                    0.0    0.0
+parameterized                0.0    0.0
+screen_reading               0.0      -
+Running task SystemBluetoothTurnOn with goal "Turn bluetooth on."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Turn bluetooth on.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+FilesDeleteFile                     0                  3.0                0.0                 22.0           594.00              0.0
+OpenAppTaskEval                     1                  3.0                0.0                 10.0           253.00              0.0
+SimpleCalendarDeleteEvents          2                  3.0                0.0                 14.0           370.00              0.0
+SimpleSmsResend                     3                  3.0                0.0                 12.0           389.80              0.0
+SystemBluetoothTurnOn               4                  3.0                0.0                 10.0           241.40              0.0
+========= Average =========         0                  3.0                0.0                 13.6           369.64              0.0
+
+
+               mean_success_rate       
+difficulty                  easy medium
+tags                                   
+data_edit                    0.0    0.0
+parameterized                0.0    0.0
+screen_reading               0.0      -
+
+Running task: SystemCopyToClipboard
+===================================
+Running task SystemCopyToClipboard with goal "Copy the following text to the clipboard: Reach out at 555-9101"
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+W0603 23:55:31.313089 140676315115520 android_world_controller.py:98] Could not get a11y tree, retrying.
+E0603 23:56:35.614894 140676315115520 suite_utils.py:251] Logging exception and skipping task. Will keep running. Task: SystemCopyToClipboard: Clipper app must be in the foreground to access clipboard. Additionally, app privileges must be granted manually by opening the clipper app and granting them.
+Traceback (most recent call last):
+  File "/data2/androidworld_eval/android_world/android_world/suite_utils.py", line 248, in _run_task
+    task_successful = task.is_successful(env)
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data2/androidworld_eval/android_world/android_world/task_evals/single/system.py", line 327, in is_successful
+    actual_clipboard_content = adb_utils.get_clipboard_contents(env.controller)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data2/androidworld_eval/android_world/android_world/env/adb_utils.py", line 1159, in get_clipboard_contents
+    result = _extract_clipper_output(output_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data2/androidworld_eval/android_world/android_world/env/adb_utils.py", line 1124, in _extract_clipper_output
+    raise RuntimeError(
+RuntimeError: Clipper app must be in the foreground to access clipboard. Additionally, app privileges must be granted manually by opening the clipper app and granting them.
+Traceback (most recent call last):
+  File "/data2/androidworld_eval/android_world/android_world/suite_utils.py", line 248, in _run_task
+    task_successful = task.is_successful(env)
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data2/androidworld_eval/android_world/android_world/task_evals/single/system.py", line 327, in is_successful
+    actual_clipboard_content = adb_utils.get_clipboard_contents(env.controller)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data2/androidworld_eval/android_world/android_world/env/adb_utils.py", line 1159, in get_clipboard_contents
+    result = _extract_clipper_output(output_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data2/androidworld_eval/android_world/android_world/env/adb_utils.py", line 1124, in _extract_clipper_output
+    raise RuntimeError(
+RuntimeError: Clipper app must be in the foreground to access clipboard. Additionally, app privileges must be granted manually by opening the clipper app and granting them.
+W0603 23:56:36.510102 140676315115520 android_world_controller.py:98] Could not get a11y tree, retrying.
+E0603 23:57:40.805481 140676315115520 suite_utils.py:251] Logging exception and skipping task. Will keep running. Task: SystemCopyToClipboard: Clipper app must be in the foreground to access clipboard. Additionally, app privileges must be granted manually by opening the clipper app and granting them.
+Traceback (most recent call last):
+  File "/data2/androidworld_eval/android_world/android_world/suite_utils.py", line 248, in _run_task
+    task_successful = task.is_successful(env)
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data2/androidworld_eval/android_world/android_world/task_evals/single/system.py", line 327, in is_successful
+    actual_clipboard_content = adb_utils.get_clipboard_contents(env.controller)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data2/androidworld_eval/android_world/android_world/env/adb_utils.py", line 1159, in get_clipboard_contents
+    result = _extract_clipper_output(output_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data2/androidworld_eval/android_world/android_world/env/adb_utils.py", line 1124, in _extract_clipper_output
+    raise RuntimeError(
+RuntimeError: Clipper app must be in the foreground to access clipboard. Additionally, app privileges must be granted manually by opening the clipper app and granting them.
+Traceback (most recent call last):
+  File "/data2/androidworld_eval/android_world/android_world/suite_utils.py", line 248, in _run_task
+    task_successful = task.is_successful(env)
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data2/androidworld_eval/android_world/android_world/task_evals/single/system.py", line 327, in is_successful
+    actual_clipboard_content = adb_utils.get_clipboard_contents(env.controller)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data2/androidworld_eval/android_world/android_world/env/adb_utils.py", line 1159, in get_clipboard_contents
+    result = _extract_clipper_output(output_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data2/androidworld_eval/android_world/android_world/env/adb_utils.py", line 1124, in _extract_clipper_output
+    raise RuntimeError(
+RuntimeError: Clipper app must be in the foreground to access clipboard. Additionally, app privileges must be granted manually by opening the clipper app and granting them.
+W0603 23:57:41.507926 140676315115520 android_world_controller.py:98] Could not get a11y tree, retrying.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Copy the following text to the clipboard: Reach out at 555-9101
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+FilesDeleteFile                     0                 3.00                0.0                 22.0           594.00              0.0
+OpenAppTaskEval                     1                 3.00                0.0                 10.0           253.00              0.0
+SimpleCalendarDeleteEvents          2                 3.00                0.0                 14.0           370.00              0.0
+SimpleSmsResend                     3                 3.00                0.0                 12.0           389.80              0.0
+SystemBluetoothTurnOn               4                 3.00                0.0                 10.0           241.40              0.0
+SystemCopyToClipboard               5                 1.00                0.0                 10.0            58.80              0.0
+========= Average =========         0                 2.67                0.0                 13.0           317.83              0.0
+
+
+               mean_success_rate       
+difficulty                  easy medium
+tags                                   
+data_edit                    0.0    0.0
+data_entry                   0.0      -
+parameterized                0.0    0.0
+screen_reading               0.0      -
+Running task SystemCopyToClipboard with goal "Copy the following text to the clipboard: Reach out at 555-9101"
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SKIPPING SystemCopyToClipboard.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+FilesDeleteFile                     0                 3.00                0.0                 22.0           594.00             0.00
+OpenAppTaskEval                     1                 3.00                0.0                 10.0           253.00             0.00
+SimpleCalendarDeleteEvents          2                 3.00                0.0                 14.0           370.00             0.00
+SimpleSmsResend                     3                 3.00                0.0                 12.0           389.80             0.00
+SystemBluetoothTurnOn               4                 3.00                0.0                 10.0           241.40             0.00
+SystemCopyToClipboard               5                 1.00                0.0                 10.0           123.80             1.00
+========= Average =========         0                 2.67                0.0                 13.0           328.67             0.17
+
+
+               mean_success_rate       
+difficulty                  easy medium
+tags                                   
+data_edit                    0.0    0.0
+data_entry                   0.0      -
+parameterized                0.0    0.0
+screen_reading               0.0      -
+Running task SystemCopyToClipboard with goal "Copy the following text to the clipboard: Reach out at 555-9101"
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SKIPPING SystemCopyToClipboard.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+FilesDeleteFile                     0                 3.00                0.0                 22.0           594.00             0.00
+OpenAppTaskEval                     1                 3.00                0.0                 10.0           253.00             0.00
+SimpleCalendarDeleteEvents          2                 3.00                0.0                 14.0           370.00             0.00
+SimpleSmsResend                     3                 3.00                0.0                 12.0           389.80             0.00
+SystemBluetoothTurnOn               4                 3.00                0.0                 10.0           241.40             0.00
+SystemCopyToClipboard               5                 1.00                0.0                 10.0           189.00             2.00
+========= Average =========         0                 2.67                0.0                 13.0           339.53             0.33
+
+
+               mean_success_rate       
+difficulty                  easy medium
+tags                                   
+data_edit                    0.0    0.0
+data_entry                   0.0      -
+parameterized                0.0    0.0
+screen_reading               0.0      -
+
+Running task: TasksHighPriorityTasksDueOnDate
+=============================================
+Running task TasksHighPriorityTasksDueOnDate with goal "Which tasks with high priority are due the Monday after next in the Tasks app? Answer with the title only. If there are multiples titles, format your answer in a comma separated list."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Which tasks with high priority are due the Monday after next in the Tasks app? Answer with the title only. If there are multiples titles, format your answer in a comma separated list.
+
+
+                                 task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                    
+FilesDeleteFile                         0                 3.00                0.0                22.00           594.00             0.00
+OpenAppTaskEval                         1                 3.00                0.0                10.00           253.00             0.00
+SimpleCalendarDeleteEvents              2                 3.00                0.0                14.00           370.00             0.00
+SimpleSmsResend                         3                 3.00                0.0                12.00           389.80             0.00
+SystemBluetoothTurnOn                   4                 3.00                0.0                10.00           241.40             0.00
+SystemCopyToClipboard                   5                 1.00                0.0                10.00           189.00             2.00
+TasksHighPriorityTasksDueOnDate         6                 1.00                0.0                10.00            70.70             0.00
+========= Average =========             0                 2.43                0.0                12.57           301.13             0.29
+
+
+                      mean_success_rate       
+difficulty                         easy medium
+tags                                          
+data_edit                           0.0    0.0
+data_entry                          0.0      -
+information_retrieval                 -    0.0
+parameterized                       0.0    0.0
+screen_reading                      0.0    0.0
+W0603 23:58:52.466602 140676315115520 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:59:43.868173 140676315115520 android_world_controller.py:98] Could not get a11y tree, retrying.
+Running task TasksHighPriorityTasksDueOnDate with goal "Which tasks with high priority are due the Monday after next in the Tasks app? Answer with the title only. If there are multiples titles, format your answer in a comma separated list."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Which tasks with high priority are due the Monday after next in the Tasks app? Answer with the title only. If there are multiples titles, format your answer in a comma separated list.
+
+
+                                 task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                    
+FilesDeleteFile                         0                 3.00                0.0                22.00           594.00             0.00
+OpenAppTaskEval                         1                 3.00                0.0                10.00           253.00             0.00
+SimpleCalendarDeleteEvents              2                 3.00                0.0                14.00           370.00             0.00
+SimpleSmsResend                         3                 3.00                0.0                12.00           389.80             0.00
+SystemBluetoothTurnOn                   4                 3.00                0.0                10.00           241.40             0.00
+SystemCopyToClipboard                   5                 1.00                0.0                10.00           189.00             2.00
+TasksHighPriorityTasksDueOnDate         6                 2.00                0.0                10.00           121.80             0.00
+========= Average =========             0                 2.57                0.0                12.57           308.43             0.29
+
+
+                      mean_success_rate       
+difficulty                         easy medium
+tags                                          
+data_edit                           0.0    0.0
+data_entry                          0.0      -
+information_retrieval                 -    0.0
+parameterized                       0.0    0.0
+screen_reading                      0.0    0.0
+Running task TasksHighPriorityTasksDueOnDate with goal "Which tasks with high priority are due the Monday after next in the Tasks app? Answer with the title only. If there are multiples titles, format your answer in a comma separated list."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Which tasks with high priority are due the Monday after next in the Tasks app? Answer with the title only. If there are multiples titles, format your answer in a comma separated list.
+
+
+                                 task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                    
+FilesDeleteFile                         0                 3.00                0.0                22.00           594.00             0.00
+OpenAppTaskEval                         1                 3.00                0.0                10.00           253.00             0.00
+SimpleCalendarDeleteEvents              2                 3.00                0.0                14.00           370.00             0.00
+SimpleSmsResend                         3                 3.00                0.0                12.00           389.80             0.00
+SystemBluetoothTurnOn                   4                 3.00                0.0                10.00           241.40             0.00
+SystemCopyToClipboard                   5                 1.00                0.0                10.00           189.00             2.00
+TasksHighPriorityTasksDueOnDate         6                 3.00                0.0                10.00           171.80             0.00
+========= Average =========             0                 2.71                0.0                12.57           315.57             0.29
+
+
+                      mean_success_rate       
+difficulty                         easy medium
+tags                                          
+data_edit                           0.0    0.0
+data_entry                          0.0      -
+information_retrieval                 -    0.0
+parameterized                       0.0    0.0
+screen_reading                      0.0    0.0
+
+Finished AndroidWorld eval. Wrote to /data2/androidworld_eval/runs/current_general_focus_multicombo_20260603_232318/current_general_focus_expanded_shard0/run_20260603T232335843625

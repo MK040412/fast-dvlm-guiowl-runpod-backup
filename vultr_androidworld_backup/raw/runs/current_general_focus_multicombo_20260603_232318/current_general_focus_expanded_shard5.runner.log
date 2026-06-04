@@ -1,0 +1,642 @@
+W0603 23:23:36.104859 139918418833408 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:24:55.358544 139918418833408 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:26:25.721409 139918418833408 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:28:23.670043 139918418833408 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:33:18.862543 139918418833408 sqlite_validators.py:168] Expected row CalendarEvent(start_ts=1697900400, end_ts=1697904000, title='Call with the Team', location='', description='We will strategize about marketing strategies. Looking forward to productive discussions.', repeat_interval=0, repeat_rule=0, reminder_1_minutes=-1, reminder_2_minutes=-1, reminder_3_minutes=-1, reminder_1_type=0, reminder_2_type=0, reminder_3_type=0, repeat_limit=0, repetition_exceptions='[]', attendees='', import_id='', time_zone='UTC', flags=0, event_type=1, parent_id=0, last_updated=0, source='imported-ics', availability=0, color=0, type=0, id=-1) not found in the 'after' state.
+W0603 23:37:41.511098 139918418833408 sqlite_validators.py:168] Expected row CalendarEvent(start_ts=1697900400, end_ts=1697904000, title='Call with the Team', location='', description='We will strategize about marketing strategies. Looking forward to productive discussions.', repeat_interval=0, repeat_rule=0, reminder_1_minutes=-1, reminder_2_minutes=-1, reminder_3_minutes=-1, reminder_1_type=0, reminder_2_type=0, reminder_3_type=0, repeat_limit=0, repetition_exceptions='[]', attendees='', import_id='', time_zone='UTC', flags=0, event_type=1, parent_id=0, last_updated=0, source='imported-ics', availability=0, color=0, type=0, id=-1) not found in the 'after' state.
+Starting AndroidWorld eval with guiowl_dvlm -> /data2/androidworld_eval/runs/current_general_focus_multicombo_20260603_232318/current_general_focus_expanded_shard5/run_20260603T232335765921
+Running task: MarkorCreateFolder
+================================
+Running task MarkorCreateFolder with goal "Create a new folder in Markor named folder_20260603_232335."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Create a new folder in Markor named folder_20260603_232335.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+MarkorCreateFolder                  0                  1.0                0.0                 10.0             78.9              0.0
+========= Average =========         0                  1.0                0.0                 10.0             78.9              0.0
+
+
+              mean_success_rate
+difficulty                 easy
+tags                           
+data_entry                  0.0
+parameterized               0.0
+Running task MarkorCreateFolder with goal "Create a new folder in Markor named folder_20260603_232335."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Create a new folder in Markor named folder_20260603_232335.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+MarkorCreateFolder                  0                  2.0                0.0                 10.0            169.2              0.0
+========= Average =========         0                  2.0                0.0                 10.0            169.2              0.0
+
+
+              mean_success_rate
+difficulty                 easy
+tags                           
+data_entry                  0.0
+parameterized               0.0
+Running task MarkorCreateFolder with goal "Create a new folder in Markor named folder_20260603_232335."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Create a new folder in Markor named folder_20260603_232335.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+MarkorCreateFolder                  0                  3.0                0.0                 10.0            286.6              0.0
+========= Average =========         0                  3.0                0.0                 10.0            286.6              0.0
+
+
+              mean_success_rate
+difficulty                 easy
+tags                           
+data_entry                  0.0
+parameterized               0.0
+
+Running task: SimpleCalendarAddOneEventRelativeDay
+==================================================
+Running task SimpleCalendarAddOneEventRelativeDay with goal "In Simple Calendar Pro, create a calendar event for this Saturday at 15h with the title 'Call with the Team' and the description 'We will strategize about marketing strategies. Looking forward to productive discussions.'. The event should last for 60 mins."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Completed step 13.
+Completed step 14.
+Completed step 15.
+Completed step 16.
+Completed step 17.
+Completed step 18.
+Completed step 19.
+Completed step 20.
+Completed step 21.
+Completed step 22.
+Completed step 23.
+Completed step 24.
+Completed step 25.
+Completed step 26.
+Completed step 27.
+Completed step 28.
+Completed step 29.
+Completed step 30.
+Completed step 31.
+Completed step 32.
+Completed step 33.
+Completed step 34.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  In Simple Calendar Pro, create a calendar event for this Saturday at 15h with the title 'Call with the Team' and the description 'We will strategize about marketing strategies. Looking forward to productive discussions.'. The event should last for 60 mins.
+
+
+                                      task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                         
+MarkorCreateFolder                           0                  3.0                0.0                 10.0           286.60              0.0
+SimpleCalendarAddOneEventRelativeDay         1                  1.0                0.0                 34.0           295.90              0.0
+========= Average =========                  0                  2.0                0.0                 22.0           291.25              0.0
+
+
+              mean_success_rate
+difficulty                 easy
+tags                           
+data_entry                  0.0
+parameterized               0.0
+Running task SimpleCalendarAddOneEventRelativeDay with goal "In Simple Calendar Pro, create a calendar event for this Saturday at 15h with the title 'Call with the Team' and the description 'We will strategize about marketing strategies. Looking forward to productive discussions.'. The event should last for 60 mins."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Completed step 13.
+Completed step 14.
+Completed step 15.
+Completed step 16.
+Completed step 17.
+Completed step 18.
+Completed step 19.
+Completed step 20.
+Completed step 21.
+Completed step 22.
+Completed step 23.
+Completed step 24.
+Completed step 25.
+Completed step 26.
+Completed step 27.
+Completed step 28.
+Completed step 29.
+Completed step 30.
+Completed step 31.
+Completed step 32.
+Completed step 33.
+Completed step 34.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  In Simple Calendar Pro, create a calendar event for this Saturday at 15h with the title 'Call with the Team' and the description 'We will strategize about marketing strategies. Looking forward to productive discussions.'. The event should last for 60 mins.
+
+
+                                      task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                         
+MarkorCreateFolder                           0                  3.0                0.0                 10.0           286.60              0.0
+SimpleCalendarAddOneEventRelativeDay         1                  2.0                0.0                 34.0           558.10              0.0
+========= Average =========                  0                  2.5                0.0                 22.0           422.35              0.0
+
+
+              mean_success_rate
+difficulty                 easy
+tags                           
+data_entry                  0.0
+parameterized               0.0
+W0603 23:42:02.932476 139918418833408 sqlite_validators.py:168] Expected row CalendarEvent(start_ts=1697900400, end_ts=1697904000, title='Call with the Team', location='', description='We will strategize about marketing strategies. Looking forward to productive discussions.', repeat_interval=0, repeat_rule=0, reminder_1_minutes=-1, reminder_2_minutes=-1, reminder_3_minutes=-1, reminder_1_type=0, reminder_2_type=0, reminder_3_type=0, repeat_limit=0, repetition_exceptions='[]', attendees='', import_id='', time_zone='UTC', flags=0, event_type=1, parent_id=0, last_updated=0, source='imported-ics', availability=0, color=0, type=0, id=-1) not found in the 'after' state.
+W0603 23:42:09.613014 139918418833408 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:44:12.205224 139918418833408 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:46:07.298881 139918418833408 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:47:45.673273 139918418833408 android_world_controller.py:98] Could not get a11y tree, retrying.
+Running task SimpleCalendarAddOneEventRelativeDay with goal "In Simple Calendar Pro, create a calendar event for this Saturday at 15h with the title 'Call with the Team' and the description 'We will strategize about marketing strategies. Looking forward to productive discussions.'. The event should last for 60 mins."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Completed step 13.
+Completed step 14.
+Completed step 15.
+Completed step 16.
+Completed step 17.
+Completed step 18.
+Completed step 19.
+Completed step 20.
+Completed step 21.
+Completed step 22.
+Completed step 23.
+Completed step 24.
+Completed step 25.
+Completed step 26.
+Completed step 27.
+Completed step 28.
+Completed step 29.
+Completed step 30.
+Completed step 31.
+Completed step 32.
+Completed step 33.
+Completed step 34.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  In Simple Calendar Pro, create a calendar event for this Saturday at 15h with the title 'Call with the Team' and the description 'We will strategize about marketing strategies. Looking forward to productive discussions.'. The event should last for 60 mins.
+
+
+                                      task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                         
+MarkorCreateFolder                           0                  3.0                0.0                 10.0            286.6              0.0
+SimpleCalendarAddOneEventRelativeDay         1                  3.0                0.0                 34.0            819.2              0.0
+========= Average =========                  0                  3.0                0.0                 22.0            552.9              0.0
+
+
+              mean_success_rate
+difficulty                 easy
+tags                           
+data_entry                  0.0
+parameterized               0.0
+
+Running task: SimpleSmsSend
+===========================
+Running task SimpleSmsSend with goal "Send a text message using Simple SMS Messenger to +19414072253 with message: The early bird catches the worm."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Send a text message using Simple SMS Messenger to +19414072253 with message: The early bird catches the worm.
+
+
+                                      task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                         
+MarkorCreateFolder                           0                 3.00                0.0                10.00            286.6              0.0
+SimpleCalendarAddOneEventRelativeDay         1                 3.00                0.0                34.00            819.2              0.0
+SimpleSmsSend                                2                 1.00                0.0                12.00            122.4              0.0
+========= Average =========                  0                 2.33                0.0                18.67            409.4              0.0
+
+
+              mean_success_rate       
+difficulty                 easy medium
+tags                                  
+data_entry                  0.0      -
+parameterized               0.0    0.0
+Running task SimpleSmsSend with goal "Send a text message using Simple SMS Messenger to +19414072253 with message: The early bird catches the worm."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Send a text message using Simple SMS Messenger to +19414072253 with message: The early bird catches the worm.
+
+
+                                      task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                         
+MarkorCreateFolder                           0                 3.00                0.0                10.00           286.60              0.0
+SimpleCalendarAddOneEventRelativeDay         1                 3.00                0.0                34.00           819.20              0.0
+SimpleSmsSend                                2                 2.00                0.0                12.00           237.40              0.0
+========= Average =========                  0                 2.67                0.0                18.67           447.73              0.0
+
+
+              mean_success_rate       
+difficulty                 easy medium
+tags                                  
+data_entry                  0.0      -
+parameterized               0.0    0.0
+Running task SimpleSmsSend with goal "Send a text message using Simple SMS Messenger to +19414072253 with message: The early bird catches the worm."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Send a text message using Simple SMS Messenger to +19414072253 with message: The early bird catches the worm.
+
+
+                                      task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                         
+MarkorCreateFolder                           0                  3.0                0.0                10.00           286.60              0.0
+SimpleCalendarAddOneEventRelativeDay         1                  3.0                0.0                34.00           819.20              0.0
+SimpleSmsSend                                2                  3.0                0.0                12.00           341.50              0.0
+========= Average =========                  0                  3.0                0.0                18.67           482.43              0.0
+
+
+              mean_success_rate       
+difficulty                 easy medium
+tags                                  
+data_entry                  0.0      -
+parameterized               0.0    0.0
+
+Running task: SystemBrightnessMaxVerify
+=======================================
+Running task SystemBrightnessMaxVerify with goal "Turn brightness to the max value."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Turn brightness to the max value.
+W0603 23:49:32.029969 139918418833408 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:50:52.706541 139918418833408 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:52:20.466562 139918418833408 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:53:39.935254 139918418833408 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:54:53.275485 139918418833408 android_world_controller.py:98] Could not get a11y tree, retrying.
+
+
+                                      task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                         
+MarkorCreateFolder                           0                  3.0                0.0                 10.0            286.6              0.0
+SimpleCalendarAddOneEventRelativeDay         1                  3.0                0.0                 34.0            819.2              0.0
+SimpleSmsSend                                2                  3.0                0.0                 12.0            341.5              0.0
+SystemBrightnessMaxVerify                    3                  1.0                0.0                 10.0            106.3              0.0
+========= Average =========                  0                  2.5                0.0                 16.5            388.4              0.0
+
+
+              mean_success_rate       
+difficulty                 easy medium
+tags                                  
+data_entry                  0.0      -
+parameterized               0.0    0.0
+verification                0.0      -
+Running task SystemBrightnessMaxVerify with goal "Turn brightness to the max value."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Turn brightness to the max value.
+
+
+                                      task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                         
+MarkorCreateFolder                           0                 3.00                0.0                 10.0           286.60              0.0
+SimpleCalendarAddOneEventRelativeDay         1                 3.00                0.0                 34.0           819.20              0.0
+SimpleSmsSend                                2                 3.00                0.0                 12.0           341.50              0.0
+SystemBrightnessMaxVerify                    3                 2.00                0.0                 10.0           186.80              0.0
+========= Average =========                  0                 2.75                0.0                 16.5           408.53              0.0
+
+
+              mean_success_rate       
+difficulty                 easy medium
+tags                                  
+data_entry                  0.0      -
+parameterized               0.0    0.0
+verification                0.0      -
+Running task SystemBrightnessMaxVerify with goal "Turn brightness to the max value."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Turn brightness to the max value.
+
+
+                                      task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                         
+MarkorCreateFolder                           0                  3.0                0.0                 10.0           286.60              0.0
+SimpleCalendarAddOneEventRelativeDay         1                  3.0                0.0                 34.0           819.20              0.0
+SimpleSmsSend                                2                  3.0                0.0                 12.0           341.50              0.0
+SystemBrightnessMaxVerify                    3                  3.0                0.0                 10.0           274.20              0.0
+========= Average =========                  0                  3.0                0.0                 16.5           430.38              0.0
+
+
+              mean_success_rate       
+difficulty                 easy medium
+tags                                  
+data_entry                  0.0      -
+parameterized               0.0    0.0
+verification                0.0      -
+
+Running task: SystemWifiTurnOnVerify
+====================================
+Running task SystemWifiTurnOnVerify with goal "Turn wifi on."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Turn wifi on.
+
+
+                                      task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                         
+MarkorCreateFolder                           0                  3.0                0.0                 10.0           286.60              0.0
+SimpleCalendarAddOneEventRelativeDay         1                  3.0                0.0                 34.0           819.20              0.0
+SimpleSmsSend                                2                  3.0                0.0                 12.0           341.50              0.0
+SystemBrightnessMaxVerify                    3                  3.0                0.0                 10.0           274.20              0.0
+SystemWifiTurnOnVerify                       4                  1.0                0.0                 10.0            79.40              0.0
+========= Average =========                  0                  2.6                0.0                 15.2           360.18              0.0
+
+
+              mean_success_rate       
+difficulty                 easy medium
+tags                                  
+data_entry                  0.0      -
+parameterized               0.0    0.0
+verification                0.0      -
+Running task SystemWifiTurnOnVerify with goal "Turn wifi on."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Turn wifi on.
+
+
+                                      task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                         
+MarkorCreateFolder                           0                  3.0                0.0                 10.0           286.60              0.0
+SimpleCalendarAddOneEventRelativeDay         1                  3.0                0.0                 34.0           819.20              0.0
+SimpleSmsSend                                2                  3.0                0.0                 12.0           341.50              0.0
+SystemBrightnessMaxVerify                    3                  3.0                0.0                 10.0           274.20              0.0
+SystemWifiTurnOnVerify                       4                  2.0                0.0                 10.0           152.60              0.0
+========= Average =========                  0                  2.8                0.0                 15.2           374.82              0.0
+
+
+              mean_success_rate       
+difficulty                 easy medium
+tags                                  
+data_entry                  0.0      -
+parameterized               0.0    0.0
+verification                0.0      -
+Running task SystemWifiTurnOnVerify with goal "Turn wifi on."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.W0603 23:55:57.146980 139918418833408 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:57:15.941037 139918418833408 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:58:28.587956 139918418833408 android_world_controller.py:98] Could not get a11y tree, retrying.
+
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Turn wifi on.
+
+
+                                      task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                         
+MarkorCreateFolder                           0                  3.0                0.0                 10.0           286.60              0.0
+SimpleCalendarAddOneEventRelativeDay         1                  3.0                0.0                 34.0           819.20              0.0
+SimpleSmsSend                                2                  3.0                0.0                 12.0           341.50              0.0
+SystemBrightnessMaxVerify                    3                  3.0                0.0                 10.0           274.20              0.0
+SystemWifiTurnOnVerify                       4                  3.0                0.0                 10.0           215.90              0.0
+========= Average =========                  0                  3.0                0.0                 15.2           387.48              0.0
+
+
+              mean_success_rate       
+difficulty                 easy medium
+tags                                  
+data_entry                  0.0      -
+parameterized               0.0    0.0
+verification                0.0      -
+
+Running task: TasksDueOnDate
+============================
+Running task TasksDueOnDate with goal "What tasks do I have due October 28 in Tasks app? Answer with the titles only. If there are multiples titles, format your answer in a comma separated list."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  What tasks do I have due October 28 in Tasks app? Answer with the titles only. If there are multiples titles, format your answer in a comma separated list.
+
+
+                                      task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                         
+MarkorCreateFolder                           0                 3.00                0.0                10.00           286.60              0.0
+SimpleCalendarAddOneEventRelativeDay         1                 3.00                0.0                34.00           819.20              0.0
+SimpleSmsSend                                2                 3.00                0.0                12.00           341.50              0.0
+SystemBrightnessMaxVerify                    3                 3.00                0.0                10.00           274.20              0.0
+SystemWifiTurnOnVerify                       4                 3.00                0.0                10.00           215.90              0.0
+TasksDueOnDate                               5                 1.00                0.0                10.00            78.30              0.0
+========= Average =========                  0                 2.67                0.0                14.33           335.95              0.0
+
+
+              mean_success_rate       
+difficulty                 easy medium
+tags                                  
+data_entry                  0.0      -
+parameterized               0.0    0.0
+search                      0.0      -
+verification                0.0      -
+Running task TasksDueOnDate with goal "What tasks do I have due October 28 in Tasks app? Answer with the titles only. If there are multiples titles, format your answer in a comma separated list."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  What tasks do I have due October 28 in Tasks app? Answer with the titles only. If there are multiples titles, format your answer in a comma separated list.
+
+
+                                      task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                         
+MarkorCreateFolder                           0                 3.00                0.0                10.00           286.60              0.0
+SimpleCalendarAddOneEventRelativeDay         1                 3.00                0.0                34.00           819.20              0.0
+SimpleSmsSend                                2                 3.00                0.0                12.00           341.50              0.0
+SystemBrightnessMaxVerify                    3                 3.00                0.0                10.00           274.20              0.0
+SystemWifiTurnOnVerify                       4                 3.00                0.0                10.00           215.90              0.0
+TasksDueOnDate                               5                 2.00                0.0                10.00           150.50              0.0
+========= Average =========                  0                 2.83                0.0                14.33           347.98              0.0
+
+
+              mean_success_rate       
+difficulty                 easy medium
+tags                                  
+data_entry                  0.0      -
+parameterized               0.0    0.0
+search                      0.0      -
+verification                0.0      -
+Running task TasksDueOnDate with goal "What tasks do I have due October 28 in Tasks app? Answer with the titles only. If there are multiples titles, format your answer in a comma separated list."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  What tasks do I have due October 28 in Tasks app? Answer with the titles only. If there are multiples titles, format your answer in a comma separated list.
+
+
+                                      task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                         
+MarkorCreateFolder                           0                  3.0                0.0                10.00           286.60              0.0
+SimpleCalendarAddOneEventRelativeDay         1                  3.0                0.0                34.00           819.20              0.0
+SimpleSmsSend                                2                  3.0                0.0                12.00           341.50              0.0
+SystemBrightnessMaxVerify                    3                  3.0                0.0                10.00           274.20              0.0
+SystemWifiTurnOnVerify                       4                  3.0                0.0                10.00           215.90              0.0
+TasksDueOnDate                               5                  3.0                0.0                10.00           216.20              0.0
+========= Average =========                  0                  3.0                0.0                14.33           358.93              0.0
+
+
+              mean_success_rate       
+difficulty                 easy medium
+tags                                  
+data_entry                  0.0      -
+parameterized               0.0    0.0
+search                      0.0      -
+verification                0.0      -
+
+Finished AndroidWorld eval. Wrote to /data2/androidworld_eval/runs/current_general_focus_multicombo_20260603_232318/current_general_focus_expanded_shard5/run_20260603T232335765921

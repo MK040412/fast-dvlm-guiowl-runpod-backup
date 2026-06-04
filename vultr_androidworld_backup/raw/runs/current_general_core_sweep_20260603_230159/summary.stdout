@@ -1,0 +1,14 @@
+{
+  "current": {
+    "episodes": 24,
+    "success_count": 0,
+    "success_rate": 0.0,
+    "strict_json_rate_mean": 0.04756387403446227,
+    "mobile_use_rate_mean": 0.7087139780154487,
+    "repair_rate_mean": 0.6611501039809864,
+    "model_latency_ms_mean": 4207.266570383764,
+    "total_latency_ms_mean": 5716.759746360665,
+    "episode_run_time_mean": 108.7663125495116
+  }
+}
+WROTE /data2/androidworld_eval/runs/current_general_core_sweep_20260603_230159/summary.json

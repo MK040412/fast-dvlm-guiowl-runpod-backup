@@ -1,0 +1,8 @@
+WARNING:absl:Failed to automatically setup app chrome: Target text "Accept & continue" not found..
+
+You will need to manually setup the app.
+WARNING:absl:Failed to automatically setup app contacts: Target text "Don't allow" not found..
+
+You will need to manually setup the app.
+WARNING:absl:First time setup did not click through all anticipated screens.
+ENV_READY 5568 8561

@@ -1,0 +1,25 @@
+{
+  "base": {
+    "episodes": 4,
+    "success_count": 2,
+    "success_rate": 0.5,
+    "strict_json_rate_mean": 0.975,
+    "mobile_use_rate_mean": 0.975,
+    "repair_rate_mean": 0.0,
+    "model_latency_ms_mean": 3411.3193763626946,
+    "total_latency_ms_mean": 4858.813888888889,
+    "episode_run_time_mean": 68.54762887954712
+  },
+  "current": {
+    "episodes": 4,
+    "success_count": 0,
+    "success_rate": 0.0,
+    "strict_json_rate_mean": 0.025,
+    "mobile_use_rate_mean": 0.65,
+    "repair_rate_mean": 0.625,
+    "model_latency_ms_mean": 3853.4870982170105,
+    "total_latency_ms_mean": 5498.725,
+    "episode_run_time_mean": 77.28602683544159
+  }
+}
+WROTE /data2/androidworld_eval/runs/mobileagent_norm_smoke_20260603_223919/summary.json

@@ -1,0 +1,127 @@
+W0603 23:02:18.231607 140387565953024 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:06:59.514005 140387565953024 sqlite_validators.py:168] Expected row CalendarEvent(start_ts=1698584400, end_ts=1698588000, title='Call with the Team', location='', description='We will understand upcoming project milestones.', repeat_interval=0, repeat_rule=0, reminder_1_minutes=-1, reminder_2_minutes=-1, reminder_3_minutes=-1, reminder_1_type=0, reminder_2_type=0, reminder_3_type=0, repeat_limit=0, repetition_exceptions='[]', attendees='', import_id='', time_zone='UTC', flags=0, event_type=1, parent_id=0, last_updated=0, source='imported-ics', availability=0, color=0, type=0, id=-1) not found in the 'after' state.
+W0603 23:07:55.479896 140387565953024 android_world_controller.py:98] Could not get a11y tree, retrying.
+Starting AndroidWorld eval with guiowl_dvlm -> /data2/androidworld_eval/runs/current_general_core_sweep_20260603_230159/current_general_core_shard4/run_20260603T230217285682
+Running task: SimpleCalendarAddOneEvent
+=======================================
+Running task SimpleCalendarAddOneEvent with goal "In Simple Calendar Pro, create a calendar event on 2023-10-29 at 13h with the title 'Call with the Team' and the description 'We will understand upcoming project milestones.'. The event should last for 60 mins."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Completed step 13.
+Completed step 14.
+Completed step 15.
+Completed step 16.
+Completed step 17.
+Completed step 18.
+Completed step 19.
+Completed step 20.
+Completed step 21.
+Completed step 22.
+Completed step 23.
+Completed step 24.
+Completed step 25.
+Completed step 26.
+Completed step 27.
+Completed step 28.
+Completed step 29.
+Completed step 30.
+Completed step 31.
+Completed step 32.
+Completed step 33.
+Completed step 34.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  In Simple Calendar Pro, create a calendar event on 2023-10-29 at 13h with the title 'Call with the Team' and the description 'We will understand upcoming project milestones.'. The event should last for 60 mins.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+SimpleCalendarAddOneEvent           0                  1.0                0.0                 34.0            282.2              0.0
+========= Average =========         0                  1.0                0.0                 34.0            282.2              0.0
+
+
+                         mean_success_rate
+difficulty                            hard
+tags                                      
+complex_ui_understanding               0.0
+data_entry                             0.0
+parameterized                          0.0
+
+Running task: SystemBluetoothTurnOn
+===================================
+Running task SystemBluetoothTurnOn with goal "Turn bluetooth on."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Turn bluetooth on.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+SimpleCalendarAddOneEvent           0                  1.0                0.0                 34.0           282.20              0.0
+SystemBluetoothTurnOn               1                  1.0                0.0                 10.0            54.50              0.0
+========= Average =========         0                  1.0                0.0                 22.0           168.35              0.0
+
+
+                         mean_success_rate     
+difficulty                            easy hard
+tags                                           
+complex_ui_understanding                 -  0.0
+data_entry                               -  0.0
+parameterized                            -  0.0
+screen_reading                         0.0    -
+
+Running task: TasksHighPriorityTasks
+====================================
+Running task TasksHighPriorityTasks with goal "What are my high priority tasks in Tasks app? Answer with the titles only. If there are multiples titles, format your answer in a comma separated list."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  What are my high priority tasks in Tasks app? Answer with the titles only. If there are multiples titles, format your answer in a comma separated list.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+SimpleCalendarAddOneEvent           0                  1.0                0.0                 34.0           282.20              0.0
+SystemBluetoothTurnOn               1                  1.0                0.0                 10.0            54.50              0.0
+TasksHighPriorityTasks              2                  1.0                0.0                 10.0            49.20              0.0
+========= Average =========         0                  1.0                0.0                 18.0           128.63              0.0
+
+
+                         mean_success_rate            
+difficulty                            easy medium hard
+tags                                                  
+complex_ui_understanding                 -    0.0  0.0
+data_entry                               -      -  0.0
+information_retrieval                    -    0.0    -
+parameterized                            -    0.0  0.0
+screen_reading                         0.0      -    -
+search                                   -    0.0    -
+transcription                            -    0.0    -
+
+Finished AndroidWorld eval. Wrote to /data2/androidworld_eval/runs/current_general_core_sweep_20260603_230159/current_general_core_shard4/run_20260603T230217285682

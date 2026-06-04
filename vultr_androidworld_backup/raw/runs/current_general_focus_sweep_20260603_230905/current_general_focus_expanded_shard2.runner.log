@@ -1,0 +1,262 @@
+W0603 23:09:23.034043 140143089487872 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:10:36.014475 140143089487872 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:12:02.514428 140143089487872 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:13:40.688426 140143089487872 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:16:22.033682 140143089487872 android_world_controller.py:98] Could not get a11y tree, retrying.
+Starting AndroidWorld eval with guiowl_dvlm -> /data2/androidworld_eval/runs/current_general_focus_sweep_20260603_230905/current_general_focus_expanded_shard2/run_20260603T230922759443
+Running task: CameraTakePhoto
+=============================
+Running task CameraTakePhoto with goal "Take one photo."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Take one photo.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+CameraTakePhoto                     0                  1.0                0.0                 10.0             72.9              0.0
+========= Average =========         0                  1.0                0.0                 10.0             72.9              0.0
+
+
+           mean_success_rate
+difficulty              easy
+tags                        
+untagged                 0.0
+
+Running task: ClockStopWatchPausedVerify
+========================================
+Running task ClockStopWatchPausedVerify with goal "Pause the stopwatch."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Pause the stopwatch.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+CameraTakePhoto                     0                  1.0                0.0                 10.0            72.90              0.0
+ClockStopWatchPausedVerify          1                  1.0                0.0                 10.0            86.00              0.0
+========= Average =========         0                  1.0                0.0                 10.0            79.45              0.0
+
+
+             mean_success_rate
+difficulty                easy
+tags                          
+untagged                   0.0
+verification               0.0
+
+Running task: SimpleCalendarAnyEventsOnDate
+===========================================
+Running task SimpleCalendarAnyEventsOnDate with goal "Do I have any events October 26 in Simple Calendar Pro? Answer with the titles only. If there are multiples titles, format your answer in a comma separated list."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Do I have any events October 26 in Simple Calendar Pro? Answer with the titles only. If there are multiples titles, format your answer in a comma separated list.
+
+
+                               task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                  
+CameraTakePhoto                       0                  1.0                0.0                 10.0            72.90              0.0
+ClockStopWatchPausedVerify            1                  1.0                0.0                 10.0            86.00              0.0
+SimpleCalendarAnyEventsOnDate         2                  1.0                0.0                 10.0            80.00              0.0
+========= Average =========           0                  1.0                0.0                 10.0            79.63              0.0
+
+
+                      mean_success_rate
+difficulty                         easy
+tags                                   
+information_retrieval               0.0
+parameterized                       0.0
+untagged                            0.0
+verification                        0.0
+
+Running task: SimpleSmsSendReceivedAddress
+==========================================
+Running task SimpleSmsSendReceivedAddress with goal "Text the address of the event to Matteo Zhang that Ian Zhang just sent me in Simple SMS Messenger"
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Completed step 13.
+Completed step 14.
+Completed step 15.
+Completed step 16.
+Completed step 17.
+Completed step 18.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Text the address of the event to Matteo Zhang that Ian Zhang just sent me in Simple SMS Messenger
+
+
+                               task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                  
+CameraTakePhoto                       0                  1.0                0.0                 10.0             72.9              0.0
+ClockStopWatchPausedVerify            1                  1.0                0.0                 10.0             86.0              0.0
+SimpleCalendarAnyEventsOnDate         2                  1.0                0.0                 10.0             80.0              0.0
+SimpleSmsSendReceivedAddress          3                  1.0                0.0                 18.0            179.1              0.0
+========= Average =========           0                  1.0                0.0                 12.0            104.5              0.0
+
+
+                      mean_success_rate       
+difficulty                         easy medium
+tags                                          
+information_retrieval               0.0    0.0
+parameterized                       0.0    0.0
+untagged                            0.0      -
+verification                        0.0      -
+
+Running task: SystemBluetoothTurnOff
+====================================
+Running task SystemBluetoothTurnOff with goal "Turn bluetooth off."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Turn bluetooth off.
+
+
+                               task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                  
+CameraTakePhoto                       0                  1.0                0.0                 10.0            72.90              0.0
+ClockStopWatchPausedVerify            1                  1.0                0.0                 10.0            86.00              0.0
+SimpleCalendarAnyEventsOnDate         2                  1.0                0.0                 10.0            80.00              0.0
+SimpleSmsSendReceivedAddress          3                  1.0                0.0                 18.0           179.10              0.0
+SystemBluetoothTurnOff                4                  1.0                0.0                 10.0            79.30              0.0
+========= Average =========           0                  1.0                0.0                 11.6            99.46              0.0
+W0603 23:17:41.739252 140143089487872 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:18:56.167114 140143089487872 android_world_controller.py:98] Could not get a11y tree, retrying.
+
+
+                      mean_success_rate       
+difficulty                         easy medium
+tags                                          
+information_retrieval               0.0    0.0
+parameterized                       0.0    0.0
+untagged                            0.0      -
+verification                        0.0      -
+
+Running task: TasksIncompleteTasksOnDate
+========================================
+Running task TasksIncompleteTasksOnDate with goal "What incomplete tasks do I have still have to do by October 26 2023 in Tasks app? Answer with the titles only. If there are multiples titles, format your answer in a comma separated list."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  What incomplete tasks do I have still have to do by October 26 2023 in Tasks app? Answer with the titles only. If there are multiples titles, format your answer in a comma separated list.
+
+
+                               task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                  
+CameraTakePhoto                       0                  1.0                0.0                10.00            72.90              0.0
+ClockStopWatchPausedVerify            1                  1.0                0.0                10.00            86.00              0.0
+SimpleCalendarAnyEventsOnDate         2                  1.0                0.0                10.00            80.00              0.0
+SimpleSmsSendReceivedAddress          3                  1.0                0.0                18.00           179.10              0.0
+SystemBluetoothTurnOff                4                  1.0                0.0                10.00            79.30              0.0
+TasksIncompleteTasksOnDate            5                  1.0                0.0                10.00            73.80              0.0
+========= Average =========           0                  1.0                0.0                11.33            95.18              0.0
+
+
+                      mean_success_rate       
+difficulty                         easy medium
+tags                                          
+information_retrieval               0.0    0.0
+parameterized                       0.0    0.0
+screen_reading                      0.0      -
+untagged                            0.0      -
+verification                        0.0      -
+
+Running task: TurnOnWifiAndOpenApp
+==================================
+Running task TurnOnWifiAndOpenApp with goal "Turn on Wifi, then open the settings app"
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Completed step 13.
+Completed step 14.
+Completed step 15.
+Completed step 16.
+Completed step 17.
+Completed step 18.
+Completed step 19.
+Completed step 20.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Turn on Wifi, then open the settings app
+
+
+                               task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                  
+CameraTakePhoto                       0                  1.0                0.0                10.00            72.90              0.0
+ClockStopWatchPausedVerify            1                  1.0                0.0                10.00            86.00              0.0
+SimpleCalendarAnyEventsOnDate         2                  1.0                0.0                10.00            80.00              0.0
+SimpleSmsSendReceivedAddress          3                  1.0                0.0                18.00           179.10              0.0
+SystemBluetoothTurnOff                4                  1.0                0.0                10.00            79.30              0.0
+TasksIncompleteTasksOnDate            5                  1.0                0.0                10.00            73.80              0.0
+TurnOnWifiAndOpenApp                  6                  1.0                0.0                20.00           151.10              0.0
+========= Average =========           0                  1.0                0.0                12.57           103.17              0.0
+
+
+                      mean_success_rate       
+difficulty                         easy medium
+tags                                          
+information_retrieval               0.0    0.0
+parameterized                       0.0    0.0
+screen_reading                      0.0      -
+untagged                            0.0      -
+verification                        0.0      -
+
+Finished AndroidWorld eval. Wrote to /data2/androidworld_eval/runs/current_general_focus_sweep_20260603_230905/current_general_focus_expanded_shard2/run_20260603T230922759443

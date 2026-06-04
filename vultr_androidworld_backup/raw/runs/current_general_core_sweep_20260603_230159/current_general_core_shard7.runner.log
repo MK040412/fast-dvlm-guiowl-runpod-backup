@@ -1,0 +1,115 @@
+W0603 23:02:20.685614 140450993803264 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:07:01.251893 140450993803264 android_world_controller.py:98] Could not get a11y tree, retrying.
+Starting AndroidWorld eval with guiowl_dvlm -> /data2/androidworld_eval/runs/current_general_core_sweep_20260603_230159/current_general_core_shard7/run_20260603T230219013931
+Running task: FilesMoveFile
+===========================
+Running task FilesMoveFile with goal "Move the file holiday_photos.jpg from Podcasts within the sdk_gphone_x86_64 storage area to the DCIM within the same sdk_gphone_x86_64 storage area in the Android filesystem."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Completed step 13.
+Completed step 14.
+Completed step 15.
+Completed step 16.
+Completed step 17.
+Completed step 18.
+Completed step 19.
+Completed step 20.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Move the file holiday_photos.jpg from Podcasts within the sdk_gphone_x86_64 storage area to the DCIM within the same sdk_gphone_x86_64 storage area in the Android filesystem.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+FilesMoveFile                       0                  1.0                0.0                 20.0            182.1              0.0
+========= Average =========         0                  1.0                0.0                 20.0            182.1              0.0
+
+
+               mean_success_rate
+difficulty                medium
+tags                            
+parameterized                0.0
+screen_reading               0.0
+search                       0.0
+
+Running task: MarkorEditNote
+============================
+Running task MarkorEditNote with goal "Edit note_SiFbv.txt in Markor. Add to the top of the note Hello, World!"
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Edit note_SiFbv.txt in Markor. Add to the top of the note Hello, World!
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+FilesMoveFile                       0                  1.0                0.0                 20.0           182.10              0.0
+MarkorEditNote                      1                  1.0                0.0                 12.0            92.60              0.0
+========= Average =========         0                  1.0                0.0                 16.0           137.35              0.0
+
+
+               mean_success_rate       
+difficulty                  easy medium
+tags                                   
+data_edit                    0.0      -
+parameterized                0.0    0.0
+screen_reading                 -    0.0
+search                         -    0.0
+transcription                0.0      -
+
+Running task: SimpleSmsSend
+===========================
+Running task SimpleSmsSend with goal "Send a text message using Simple SMS Messenger to +16597910719 with message: Beauty is in the eye of the beholder."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Send a text message using Simple SMS Messenger to +16597910719 with message: Beauty is in the eye of the beholder.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+FilesMoveFile                       0                  1.0                0.0                20.00           182.10              0.0
+MarkorEditNote                      1                  1.0                0.0                12.00            92.60              0.0
+SimpleSmsSend                       2                  1.0                0.0                12.00            69.50              0.0
+========= Average =========         0                  1.0                0.0                14.67           114.73              0.0
+
+
+               mean_success_rate       
+difficulty                  easy medium
+tags                                   
+data_edit                    0.0      -
+parameterized                0.0    0.0
+screen_reading                 -    0.0
+search                         -    0.0
+transcription                0.0      -
+
+Finished AndroidWorld eval. Wrote to /data2/androidworld_eval/runs/current_general_core_sweep_20260603_230159/current_general_core_shard7/run_20260603T230219013931

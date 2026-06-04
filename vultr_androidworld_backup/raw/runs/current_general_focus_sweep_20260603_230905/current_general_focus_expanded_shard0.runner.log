@@ -1,0 +1,256 @@
+W0603 23:09:24.938024 139846318280704 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:12:24.725043 139846318280704 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:16:16.709739 139846318280704 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:17:56.367486 139846318280704 android_world_controller.py:98] Could not get a11y tree, retrying.
+Starting AndroidWorld eval with guiowl_dvlm -> /data2/androidworld_eval/runs/current_general_focus_sweep_20260603_230905/current_general_focus_expanded_shard0/run_20260603T230923541691
+Running task: FilesDeleteFile
+=============================
+Running task FilesDeleteFile with goal "Delete the file calm_owl_edited.mp3 from the Android filesystem located in the Ringtones folder within the sdk_gphone_x86_64 storage area."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Completed step 13.
+Completed step 14.
+Completed step 15.
+Completed step 16.
+Completed step 17.
+Completed step 18.
+Completed step 19.
+Completed step 20.
+Completed step 21.
+Completed step 22.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Delete the file calm_owl_edited.mp3 from the Android filesystem located in the Ringtones folder within the sdk_gphone_x86_64 storage area.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+FilesDeleteFile                     0                  1.0                0.0                 22.0            179.5              0.0
+========= Average =========         0                  1.0                0.0                 22.0            179.5              0.0
+
+
+              mean_success_rate
+difficulty               medium
+tags                           
+data_edit                   0.0
+parameterized               0.0
+
+Running task: OpenAppTaskEval
+=============================
+Running task OpenAppTaskEval with goal "Open the contacts app. Clear any pop-ups that may appear by granting all permissions that are required."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Open the contacts app. Clear any pop-ups that may appear by granting all permissions that are required.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+FilesDeleteFile                     0                  1.0                0.0                 22.0           179.50              0.0
+OpenAppTaskEval                     1                  1.0                0.0                 10.0            87.80              0.0
+========= Average =========         0                  1.0                0.0                 16.0           133.65              0.0
+
+
+              mean_success_rate       
+difficulty                 easy medium
+tags                                  
+data_edit                     -    0.0
+parameterized               0.0    0.0
+
+Running task: SimpleCalendarDeleteEvents
+========================================
+Running task SimpleCalendarDeleteEvents with goal "In Simple Calendar Pro, delete all the calendar events on 2023-10-17"
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Completed step 13.
+Completed step 14.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  In Simple Calendar Pro, delete all the calendar events on 2023-10-17
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+FilesDeleteFile                     0                  1.0                0.0                22.00            179.5              0.0
+OpenAppTaskEval                     1                  1.0                0.0                10.00             87.8              0.0
+SimpleCalendarDeleteEvents          2                  1.0                0.0                14.00            121.5              0.0
+========= Average =========         0                  1.0                0.0                15.33            129.6              0.0
+
+
+              mean_success_rate       
+difficulty                 easy medium
+tags                                  
+data_edit                   0.0    0.0
+parameterized               0.0    0.0
+
+Running task: SimpleSmsResend
+=============================
+Running task SimpleSmsResend with goal "Resend the message I just sent to Noa Ibrahim in Simple SMS Messenger"
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Resend the message I just sent to Noa Ibrahim in Simple SMS Messenger
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+FilesDeleteFile                     0                  1.0                0.0                 22.0           179.50              0.0
+OpenAppTaskEval                     1                  1.0                0.0                 10.0            87.80              0.0
+SimpleCalendarDeleteEvents          2                  1.0                0.0                 14.0           121.50              0.0
+SimpleSmsResend                     3                  1.0                0.0                 12.0           121.30              0.0
+========= Average =========         0                  1.0                0.0                 14.5           127.53              0.0
+
+
+              mean_success_rate       
+difficulty                 easy medium
+tags                                  
+data_edit                   0.0    0.0
+parameterized               0.0    0.0
+
+Running task: SystemBluetoothTurnOn
+===================================
+Running task SystemBluetoothTurnOn with goal "Turn bluetooth on."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Turn bluetooth on.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+FilesDeleteFile                     0                  1.0                0.0                 22.0           179.50              0.0
+OpenAppTaskEval                     1                  1.0                0.0                 10.0            87.80              0.0
+SimpleCalendarDeleteEvents          2                  1.0                0.0                 14.0           121.50              0.0
+SimpleSmsResend                     3                  1.0                0.0                 12.0           121.30              0.0
+SystemBluetoothTurnOn               4                  1.0                0.0                 10.0            80.20              0.0
+========= Average =========         0                  1.0                0.0                 13.6           118.06              0.0
+W0603 23:19:17.649580 139846318280704 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:20:28.806058 139846318280704 android_world_controller.py:98] Could not get a11y tree, retrying.
+
+
+               mean_success_rate       
+difficulty                  easy medium
+tags                                   
+data_edit                    0.0    0.0
+parameterized                0.0    0.0
+screen_reading               0.0      -
+
+Running task: SystemCopyToClipboard
+===================================
+Running task SystemCopyToClipboard with goal "Copy the following text to the clipboard: Membership ID: ABC123"
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Copy the following text to the clipboard: Membership ID: ABC123
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+FilesDeleteFile                     0                  1.0                0.0                 22.0            179.5              0.0
+OpenAppTaskEval                     1                  1.0                0.0                 10.0             87.8              0.0
+SimpleCalendarDeleteEvents          2                  1.0                0.0                 14.0            121.5              0.0
+SimpleSmsResend                     3                  1.0                0.0                 12.0            121.3              0.0
+SystemBluetoothTurnOn               4                  1.0                0.0                 10.0             80.2              0.0
+SystemCopyToClipboard               5                  1.0                0.0                 10.0             70.9              0.0
+========= Average =========         0                  1.0                0.0                 13.0            110.2              0.0
+
+
+               mean_success_rate       
+difficulty                  easy medium
+tags                                   
+data_edit                    0.0    0.0
+data_entry                   0.0      -
+parameterized                0.0    0.0
+screen_reading               0.0      -
+
+Running task: TasksHighPriorityTasksDueOnDate
+=============================================
+Running task TasksHighPriorityTasksDueOnDate with goal "Which tasks with high priority are due October 28 in the Tasks app? Answer with the title only. If there are multiples titles, format your answer in a comma separated list."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Which tasks with high priority are due October 28 in the Tasks app? Answer with the title only. If there are multiples titles, format your answer in a comma separated list.
+
+
+                                 task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                    
+FilesDeleteFile                         0                  1.0                0.0                22.00           179.50              0.0
+OpenAppTaskEval                         1                  1.0                0.0                10.00            87.80              0.0
+SimpleCalendarDeleteEvents              2                  1.0                0.0                14.00           121.50              0.0
+SimpleSmsResend                         3                  1.0                0.0                12.00           121.30              0.0
+SystemBluetoothTurnOn                   4                  1.0                0.0                10.00            80.20              0.0
+SystemCopyToClipboard                   5                  1.0                0.0                10.00            70.90              0.0
+TasksHighPriorityTasksDueOnDate         6                  1.0                0.0                10.00            57.80              0.0
+========= Average =========             0                  1.0                0.0                12.57           102.71              0.0
+
+
+                      mean_success_rate       
+difficulty                         easy medium
+tags                                          
+data_edit                           0.0    0.0
+data_entry                          0.0      -
+information_retrieval                 -    0.0
+parameterized                       0.0    0.0
+screen_reading                      0.0    0.0
+
+Finished AndroidWorld eval. Wrote to /data2/androidworld_eval/runs/current_general_focus_sweep_20260603_230905/current_general_focus_expanded_shard0/run_20260603T230923541691

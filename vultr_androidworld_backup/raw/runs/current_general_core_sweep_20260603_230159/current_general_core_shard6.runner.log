@@ -1,0 +1,118 @@
+W0603 23:02:19.071371 139853010329600 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:05:49.068441 139853010329600 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:07:34.004537 139853010329600 android_world_controller.py:98] Could not get a11y tree, retrying.
+Starting AndroidWorld eval with guiowl_dvlm -> /data2/androidworld_eval/runs/current_general_core_sweep_20260603_230159/current_general_core_shard6/run_20260603T230217342334
+Running task: FilesDeleteFile
+=============================
+Running task FilesDeleteFile with goal "Delete the file q2a8_fancy_banana.mp3 from the Android filesystem located in the Notifications folder within the sdk_gphone_x86_64 storage area."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Completed step 13.
+Completed step 14.
+Completed step 15.
+Completed step 16.
+Completed step 17.
+Completed step 18.
+Completed step 19.
+Completed step 20.
+Completed step 21.
+Completed step 22.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Delete the file q2a8_fancy_banana.mp3 from the Android filesystem located in the Notifications folder within the sdk_gphone_x86_64 storage area.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+FilesDeleteFile                     0                  1.0                0.0                 22.0            209.3              0.0
+========= Average =========         0                  1.0                0.0                 22.0            209.3              0.0
+
+
+              mean_success_rate
+difficulty               medium
+tags                           
+data_edit                   0.0
+parameterized               0.0
+
+Running task: MarkorCreateNote
+==============================
+Running task MarkorCreateNote with goal "Create a new note in Markor named 2023_01_26_wise_yacht.md with the following text: Ignorance is bliss."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Completed step 13.
+Completed step 14.
+Completed step 15.
+Completed step 16.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Create a new note in Markor named 2023_01_26_wise_yacht.md with the following text: Ignorance is bliss.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+FilesDeleteFile                     0                  1.0                0.0                 22.0           209.30              0.0
+MarkorCreateNote                    1                  1.0                0.0                 16.0           104.20              0.0
+========= Average =========         0                  1.0                0.0                 19.0           156.75              0.0
+
+
+              mean_success_rate
+difficulty               medium
+tags                           
+data_edit                   0.0
+data_entry                  0.0
+parameterized               0.0
+
+Running task: SimpleCalendarDeleteOneEvent
+==========================================
+Running task SimpleCalendarDeleteOneEvent with goal "In Simple Calendar Pro, delete the calendar event on 2023-10-24 at 23h with the title 'Workshop on Project X'"
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  In Simple Calendar Pro, delete the calendar event on 2023-10-24 at 23h with the title 'Workshop on Project X'
+
+
+                              task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                 
+FilesDeleteFile                      0                  1.0                0.0                22.00           209.30              0.0
+MarkorCreateNote                     1                  1.0                0.0                16.00           104.20              0.0
+SimpleCalendarDeleteOneEvent         2                  1.0                0.0                12.00            61.40              0.0
+========= Average =========          0                  1.0                0.0                16.67           124.97              0.0
+
+
+                         mean_success_rate       
+difficulty                            easy medium
+tags                                             
+complex_ui_understanding               0.0      -
+data_edit                              0.0    0.0
+data_entry                               -    0.0
+parameterized                          0.0    0.0
+
+Finished AndroidWorld eval. Wrote to /data2/androidworld_eval/runs/current_general_core_sweep_20260603_230159/current_general_core_shard6/run_20260603T230217342334

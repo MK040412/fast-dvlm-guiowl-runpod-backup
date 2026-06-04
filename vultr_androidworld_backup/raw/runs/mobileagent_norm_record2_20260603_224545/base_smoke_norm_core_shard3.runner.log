@@ -1,0 +1,31 @@
+W0603 22:46:02.599038 140432299773952 android_world_controller.py:98] Could not get a11y tree, retrying.
+Starting AndroidWorld eval with guiowl_dvlm -> /data2/androidworld_eval/runs/mobileagent_norm_record2_20260603_224545/base_smoke_norm_core_shard3/run_20260603T224602323098
+Running task: SystemBluetoothTurnOn
+===================================
+Running task SystemBluetoothTurnOn with goal "Turn bluetooth on."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent indicates task is done.
+Task Successful ✅;  Turn bluetooth on.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+SystemBluetoothTurnOn               0                  1.0                1.0                 10.0             62.4              0.0
+========= Average =========         0                  1.0                1.0                 10.0             62.4              0.0
+
+
+               mean_success_rate
+difficulty                  easy
+tags                            
+screen_reading               1.0
+
+Finished AndroidWorld eval. Wrote to /data2/androidworld_eval/runs/mobileagent_norm_record2_20260603_224545/base_smoke_norm_core_shard3/run_20260603T224602323098

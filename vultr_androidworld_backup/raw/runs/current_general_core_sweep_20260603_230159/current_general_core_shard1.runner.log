@@ -1,0 +1,103 @@
+W0603 23:02:18.566336 140653107249152 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:04:11.740870 140653107249152 android_world_controller.py:98] Could not get a11y tree, retrying.
+W0603 23:05:33.007416 140653107249152 android_world_controller.py:98] Could not get a11y tree, retrying.
+Starting AndroidWorld eval with guiowl_dvlm -> /data2/androidworld_eval/runs/current_general_core_sweep_20260603_230159/current_general_core_shard1/run_20260603T230218262329
+Running task: ContactsNewContactDraft
+=====================================
+Running task ContactsNewContactDraft with goal "Go to the new contact screen and enter the following details: First Name: Grace, Last Name: Taylor, Phone: 799-802-1530, Phone Label: Work. Do NOT hit save."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Completed step 11.
+Completed step 12.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Go to the new contact screen and enter the following details: First Name: Grace, Last Name: Taylor, Phone: 799-802-1530, Phone Label: Work. Do NOT hit save.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+ContactsNewContactDraft             0                  1.0                0.0                 12.0            112.0              0.0
+========= Average =========         0                  1.0                0.0                 12.0            112.0              0.0
+
+
+               mean_success_rate
+difficulty                  easy
+tags                            
+data_entry                   0.0
+screen_reading               0.0
+
+Running task: MarkorDeleteNote
+==============================
+Running task MarkorDeleteNote with goal "Delete the note in Markor named bold_king_edited."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Delete the note in Markor named bold_king_edited.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+ContactsNewContactDraft             0                  1.0                0.0                 12.0            112.0              0.0
+MarkorDeleteNote                    1                  1.0                0.0                 10.0             80.4              0.0
+========= Average =========         0                  1.0                0.0                 11.0             96.2              0.0
+
+
+               mean_success_rate
+difficulty                  easy
+tags                            
+data_edit                    0.0
+data_entry                   0.0
+parameterized                0.0
+requires_setup               0.0
+screen_reading               0.0
+
+Running task: SystemCopyToClipboard
+===================================
+Running task SystemCopyToClipboard with goal "Copy the following text to the clipboard: Tracking #: 5K672F4C"
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Completed step 4.
+Completed step 5.
+Completed step 6.
+Completed step 7.
+Completed step 8.
+Completed step 9.
+Completed step 10.
+Agent did not indicate task is done. Reached max number of steps.
+Task Failed ❌;  Copy the following text to the clipboard: Tracking #: 5K672F4C
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+ContactsNewContactDraft             0                  1.0                0.0                12.00            112.0              0.0
+MarkorDeleteNote                    1                  1.0                0.0                10.00             80.4              0.0
+SystemCopyToClipboard               2                  1.0                0.0                10.00             83.6              0.0
+========= Average =========         0                  1.0                0.0                10.67             92.0              0.0
+
+
+               mean_success_rate
+difficulty                  easy
+tags                            
+data_edit                    0.0
+data_entry                   0.0
+parameterized                0.0
+requires_setup               0.0
+screen_reading               0.0
+
+Finished AndroidWorld eval. Wrote to /data2/androidworld_eval/runs/current_general_core_sweep_20260603_230159/current_general_core_shard1/run_20260603T230218262329

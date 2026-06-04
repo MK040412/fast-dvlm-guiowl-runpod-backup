@@ -1,0 +1,24 @@
+W0603 22:46:02.859373 140377964879872 android_world_controller.py:98] Could not get a11y tree, retrying.
+Starting AndroidWorld eval with guiowl_dvlm -> /data2/androidworld_eval/runs/mobileagent_norm_record2_20260603_224545/base_smoke_norm_core_shard0/run_20260603T224602211924
+Running task: OpenAppTaskEval
+=============================
+Running task OpenAppTaskEval with goal "Open the contacts app. Clear any pop-ups that may appear by granting all permissions that are required."
+Completed step 1.
+Completed step 2.
+Completed step 3.
+Agent indicates task is done.
+Task Failed ❌;  Open the contacts app. Clear any pop-ups that may appear by granting all permissions that are required.
+
+
+                             task_num  num_complete_trials  mean_success_rate  mean_episode_length  total_runtime_s  num_fail_trials
+task                                                                                                                                
+OpenAppTaskEval                     0                  1.0                0.0                  3.0             22.8              0.0
+========= Average =========         0                  1.0                0.0                  3.0             22.8              0.0
+
+
+              mean_success_rate
+difficulty                 easy
+tags                           
+parameterized               0.0
+
+Finished AndroidWorld eval. Wrote to /data2/androidworld_eval/runs/mobileagent_norm_record2_20260603_224545/base_smoke_norm_core_shard0/run_20260603T224602211924
