@@ -9,11 +9,33 @@ finishes in far fewer sequential forwards than autoregressive decoding — the l
 `tokens / NFE` (see [`docs/RESULTS.md`](docs/RESULTS.md)).
 
 > **Status.** The full pipeline (dual-stream mask, dual-CE loss, block annealing,
-> auto-truncation, complementary pair, AR + diffusion decode) is **implemented and verified on
-> an L40S**. The H100 fast paths (`--attn flex`, `--compile`, `--no-grad-ckpt`, large
-> `--grad-accum`) are wired and individually micro-benchmarked, but the full H100 config should
-> be smoke-tested once on the target box. Two fidelity items are deliberately deferred (full
-> vision mRoPE + DeepStack injection) — see *Faithfulness* below.
+> auto-truncation, complementary pair, AR + diffusion decode) is implemented. The current
+> research state is documented in [`docs/CURRENT_MODEL_DECISIONS_2026_06_06.md`](docs/CURRENT_MODEL_DECISIONS_2026_06_06.md):
+> the canonical action target is GUI-Owl-style normalized 0..1000 `mobile_use`, noisy-branch KD
+> is now the main Fast-dVLM stabilization direction, and large-block AndroidWorld success is
+> not yet a proven claim. The dVLM decode path now has a grounded mode with vision mRoPE +
+> DeepStack injection to match the training path.
+
+## Current Handoff Docs
+
+- [`docs/CURRENT_MODEL_DECISIONS_2026_06_06.md`](docs/CURRENT_MODEL_DECISIONS_2026_06_06.md) -
+  current model, KD, TPU, AndroidWorld, and non-claim decisions
+- [`docs/COORDINATE_CONVENTION.md`](docs/COORDINATE_CONVENTION.md) - locked GUI-Owl
+  normalized 0..1000 coordinate convention
+- [`docs/TPU_KD_TRAINING_NOTES.md`](docs/TPU_KD_TRAINING_NOTES.md) - v6e KD recipe and
+  step-3000 checkpoint notes
+- [`docs/ANDROIDWORLD_LOCAL_STATUS.md`](docs/ANDROIDWORLD_LOCAL_STATUS.md) - local
+  AndroidWorld/model-server status
+- [`docs/DATA_CURATION_PLAN.md`](docs/DATA_CURATION_PLAN.md) and
+  [`docs/DATA_CURATION_PLAN_FULL.md`](docs/DATA_CURATION_PLAN_FULL.md) - mobile GUI SFT
+  curation plan
+- [`docs/STEERABLE_MODULE_PLAN.md`](docs/STEERABLE_MODULE_PLAN.md) and
+  [`docs/STEERABLE_MODULE_PLAN_FULL.md`](docs/STEERABLE_MODULE_PLAN_FULL.md) - planned
+  KV/cache-aware steering module
+- [`docs/KNOWN_FAILURES_AND_NON_CLAIMS.md`](docs/KNOWN_FAILURES_AND_NON_CLAIMS.md) - what
+  should not be claimed yet
+- [`docs/CLAUDE_HANDOFF_2026_06_06.md`](docs/CLAUDE_HANDOFF_2026_06_06.md) - operational
+  handoff for another agent
 
 ## What's faithful to the paper
 - **Dual-stream input** `[w_t ; x]`: noisy stream = masked response tokens only (vision dropped,
@@ -86,11 +108,17 @@ uses. (Install `flash-attn` only if you also want FA2/3 for a plain-causal eval 
 - **Multi-GPU** (SXM NVLink): `torchrun` + FSDP → near-linear scaling.
 - **8-bit AdamW** (`--optim adamw_8bit`) to trade a little speed for a much larger batch.
 
-## Faithfulness — deferred items (flagged in `forward.py`)
-1. **position_ids = arange standard RoPE** instead of full vision mRoPE (`get_rope_index` needs
-   `mm_token_type_ids`). Affects spatial grounding quality, not pipeline correctness.
-2. **DeepStack injection skipped** (embedding-level vision merge only). The Qwen3-VL text model
-   already accepts `visual_pos_masks` + `deepstack_visual_embeds`; add them on the clean half.
+## Vision Grounding Fidelity
+
+Qwen3-VL / GUI-Owl depends on vision-aware position handling. The current grounded dVLM decode
+path in [`src/fast_dvlm/decode.py`](src/fast_dvlm/decode.py) injects:
+
+- `get_rope_index`-derived vision mRoPE position ids when available
+- `visual_pos_masks`
+- `deepstack_visual_embeds`
+
+The grounded path should be used for spatial and AndroidWorld tests. The legacy pooler-only /
+arange-position path is only an ablation.
 
 ## Repo layout
 ```
